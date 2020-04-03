@@ -1,6 +1,6 @@
 package exceptions;
 
-import static constants.PhoneBookConstants.NO_FILE_FOUND_MESSAGE;
+import static constants.VehicleSurveyAnalyserConstants.NO_FILE_FOUND_MESSAGE;
 
 public class NoSuchFileFoundException extends Exception {
     private final String message;
