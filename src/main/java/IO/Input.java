@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class Input {
-    public List<String> loadFile() throws IOException, NoSuchFileFoundException {
+    public List<String> loadData() throws IOException, NoSuchFileFoundException {
         try {
             return Files.readAllLines(getPath(), StandardCharsets.UTF_8);
         } catch (NoSuchFileException exception) {
