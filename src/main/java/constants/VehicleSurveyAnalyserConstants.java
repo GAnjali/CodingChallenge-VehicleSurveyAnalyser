@@ -6,4 +6,5 @@ public class VehicleSurveyAnalyserConstants {
     public static final String SENSOR2_NAME = "B";
     public static final String NO_FILE_FOUND_MESSAGE = "No Such File found, Please provide data file";
     public static final String INVALID_DATA_MESSAGE = "Invalid Data found, Please provide proper data";
+    public static final String INVALID_TIME_MESSAGE = "Invalid Time found, Please provide proper data";
 }
