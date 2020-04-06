@@ -1,4 +1,4 @@
-package IO;
+package IO.input;
 
 import exceptions.NoSuchFileFoundException;
 
