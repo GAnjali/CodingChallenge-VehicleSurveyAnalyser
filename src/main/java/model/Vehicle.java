@@ -1,16 +1,25 @@
 package model;
 
 public class Vehicle {
-    private final int frontAxleTime;
-    private final int rearAxleTime;
+    private final int passingTime;
     private final Direction direction;
-    private int day;
+    private float speed;
 
-
-    public Vehicle(int frontAxleTime, int rearAxleTime, Direction direction, int day) {
-        this.frontAxleTime = frontAxleTime;
-        this.rearAxleTime = rearAxleTime;
+    public Vehicle(Direction direction, int passingTime, float speed) {
+        this.passingTime = passingTime;
+        this.speed = speed;
         this.direction = direction;
-        this.day = day;
+    }
+
+    public Direction getDirection() {
+        return direction;
+    }
+
+    public int getPassingTime() {
+        return passingTime;
+    }
+
+    public float getSpeed() {
+        return speed;
     }
 }

@@ -4,20 +4,20 @@ import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
 import model.Direction;
 import model.Vehicle;
-import helper.TimeHelper;
+import helper.Helper;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static constants.VehicleSurveyAnalyserConstants.SENSOR1_NAME;
-import static constants.VehicleSurveyAnalyserConstants.SENSOR2_NAME;
+import static constants.VehicleSurveyAnalyserConstants.*;
 
 public class VehicleCounter {
     private List<Vehicle> vehicles;
-    private TimeHelper timeHelper;
+    private Helper helper;
 
     public VehicleCounter() {
         vehicles = new ArrayList<>();
+        helper = new Helper();
     }
 
     public int getVehiclesCount(List<String> records) throws InvalidDataException, InvalidTimeException {
@@ -46,18 +46,16 @@ public class VehicleCounter {
     }
 
     private void handleVehicleMovingInNorthDirection(List<String> records, int recordIndex, List<Vehicle> vehicles) throws InvalidTimeException {
-        int frontAxleTime = timeHelper.getTime(records.get(recordIndex));
-        int rearAxleTime = timeHelper.getTime(records.get(recordIndex + 1));
-        vehicles.add(new Vehicle(frontAxleTime, rearAxleTime, Direction.NORTH, timeHelper.calculateDay(frontAxleTime)));
+        int frontAxleTime = helper.getTime(records.get(recordIndex));
+        vehicles.add(new Vehicle(Direction.NORTH, frontAxleTime, helper.getSpeed(frontAxleTime)));
     }
 
     private void handleVehicleMovingInSouthDirection(List<String> records, int recordIndex, List<Vehicle> vehicles) throws InvalidDataException, InvalidTimeException {
         if (!isValidRecords(records, recordIndex)) {
             throw new InvalidDataException();
         }
-        int frontAxleTime = timeHelper.getTime(records.get(recordIndex));
-        int rearAxleTime = timeHelper.getTime(records.get(recordIndex + 2));
-        vehicles.add(new Vehicle(frontAxleTime, rearAxleTime, Direction.SOUTH, timeHelper.calculateDay(frontAxleTime)));
+        int frontAxleTime = helper.getTime(records.get(recordIndex));
+        vehicles.add(new Vehicle(Direction.SOUTH, frontAxleTime, helper.getSpeed(frontAxleTime)));
     }
 
     private boolean isValidRecords(List<String> records, int recordIndex) {
