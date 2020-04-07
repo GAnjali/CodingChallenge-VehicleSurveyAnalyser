@@ -1,12 +1,12 @@
 package model;
 
 public class Vehicle {
-    private final int passingTime;
+    private final int passingTimeInMilliSeconds;
     private final Direction direction;
     private float speed;
 
-    public Vehicle(Direction direction, int passingTime, float speed) {
-        this.passingTime = passingTime;
+    public Vehicle(Direction direction, int passingTimeInMilliSeconds, float speed) {
+        this.passingTimeInMilliSeconds = passingTimeInMilliSeconds;
         this.speed = speed;
         this.direction = direction;
     }
@@ -15,8 +15,8 @@ public class Vehicle {
         return direction;
     }
 
-    public int getPassingTime() {
-        return passingTime;
+    public int getPassingTimeInMilliSeconds() {
+        return passingTimeInMilliSeconds;
     }
 
     public float getSpeed() {
