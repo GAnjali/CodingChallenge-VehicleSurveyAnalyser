@@ -46,8 +46,15 @@ public class VehicleCountReportGenerator {
         } else if (timePeriod.equals(TimePeriod.PER_HALF_AN_HOUR)) {
             for (int hour = 0; hour < 24; hour++) {
                 for (int half_part = 0; half_part < 2; half_part++) {
-                    System.out.println("  \t\tHalf AN HOUR " + helper.getFormattedTime(hour, (half_part * 30)) + " to " + helper.getFormattedTime(hour, ((half_part * 30) + 30)));
+                    System.out.println("  \t\tFrom " + helper.getFormattedTime(hour, (half_part * 30)) + " to " + helper.getFormattedTime(hour, ((half_part * 30) + 30)));
                     formatReport(helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 30));
+                }
+            }
+        } else if (timePeriod.equals(TimePeriod.PER_20_MINUTES)) {
+            for (int hour = 0; hour < 24; hour++) {
+                for (int half_part = 0; half_part < 3; half_part++) {
+                    System.out.println("  \t\tFrom " + helper.getFormattedTime(hour, (half_part * 20)) + " to " + helper.getFormattedTime(hour, ((half_part * 20) + 20)));
+                    formatReport(helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 20));
                 }
             }
         }

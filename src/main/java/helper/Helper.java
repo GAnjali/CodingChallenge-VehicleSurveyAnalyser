@@ -55,7 +55,7 @@ public class Helper {
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour, int minutes) {
         int fromMinutes = hour * 60 + minutes;
         int toMinutes = (hour + 1) * 60;
-        return vehicles.stream().filter(vehicle -> getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && getMinutes(vehicle.getPassingTimeInMilliSeconds()) > fromMinutes).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && getMinutes(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
     }
 
     private long getHours(int passingTimeInMilliSeconds) {
