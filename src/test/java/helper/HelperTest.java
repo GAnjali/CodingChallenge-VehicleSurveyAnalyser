@@ -54,28 +54,30 @@ public class HelperTest {
 
     @Test
     public void shouldReturnDays1ForGivenVehicleDataWith56060186MilliSeconds() {
-        vehicles.add(new Vehicle(Direction.NORTH, 99060186, 5));
-        Assert.assertEquals(1, helper.getTotalDays(vehicles));
+        vehicles.add(new Vehicle(Direction.NORTH, 180060911, 5));
+        Assert.assertEquals(3, helper.getTotalDays(vehicles));
     }
 
     @Test
     public void shouldReturnDays6ForGivenVehicleDataWith560601863MilliSeconds() {
         vehicles.add(new Vehicle(Direction.NORTH, 560601863, 5));
-        Assert.assertEquals(6, helper.getTotalDays(vehicles));
-    }
-
-    @Test
-    public void shouldReturnDays7ForGivenVehicleDataWith646356956MilliSeconds() {
-        vehicles.add(new Vehicle(Direction.NORTH, 646356956, 5));
         Assert.assertEquals(7, helper.getTotalDays(vehicles));
     }
 
     @Test
+    public void shouldReturnDays7ForGivenVehicleDataWith646356956MilliSeconds() {
+        vehicles.add(new Vehicle(Direction.SOUTH, 18006091, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 64635695, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 90060911, 5));
+        Assert.assertEquals(2, helper.getTotalDays(vehicles));
+    }
+
+    @Test
     public void shouldReturnListOfVehiclesForGivenVehicleDataWithDay1() {
-        vehicles.add(new Vehicle(Direction.NORTH, 99060186, 5));
-        vehicles.add(new Vehicle(Direction.NORTH, 560601863, 5));
-        vehicles.add(new Vehicle(Direction.NORTH, 646356956, 5));
-        List<Vehicle> vehiclesOnDay1 = helper.getVehiclesByDay(1, vehicles);
+        vehicles.add(new Vehicle(Direction.SOUTH, 18006091, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 64635695, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 90060911, 5));
+        List<Vehicle> vehiclesOnDay1 = helper.getVehiclesByDay(0, vehicles);
         Assert.assertTrue(vehiclesOnDay1.contains(vehicles.get(0)));
     }
 
@@ -122,5 +124,14 @@ public class HelperTest {
         vehicles.add(new Vehicle(Direction.SOUTH, 776356956, 5));
         int countOfVehiclesMovingTowardsSouth = helper.getVehicleCountByDirection(vehicles, Direction.NORTH);
         Assert.assertEquals(2, countOfVehiclesMovingTowardsSouth);
+    }
+
+    @Test
+    public void shouldReturnVehiclesByTimePeriodWithGivenHour() {
+        vehicles.add(new Vehicle(Direction.SOUTH, 18006091, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 64635695, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 90060911, 5));
+        List<Vehicle> vehiclesByTimePeriod = helper.getVehiclesByTimePeriod(vehicles, 17);
+        Assert.assertTrue(vehiclesByTimePeriod.contains(vehicles.get(1)));
     }
 }

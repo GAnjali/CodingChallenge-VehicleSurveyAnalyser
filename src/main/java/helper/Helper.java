@@ -5,6 +5,8 @@ import model.Direction;
 import model.Vehicle;
 import reportGenerator.timeperiod.TimePeriod;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -32,7 +34,7 @@ public class Helper {
 
     public long getTotalDays(List<Vehicle> vehicles) {
         Vehicle lastVehicle = vehicles.get(vehicles.size() - 1);
-        return getDay(lastVehicle.getPassingTimeInMilliSeconds());
+        return getDay(lastVehicle.getPassingTimeInMilliSeconds()) + 1;
     }
 
     public List<Vehicle> getVehiclesByDay(long day, List<Vehicle> vehicles) {
@@ -44,6 +46,14 @@ public class Helper {
             return vehicles.stream().filter(this::isVehicleMovingInMorning).collect(Collectors.toList());
         else
             return vehicles.stream().filter(this::isVehicleMovingInEvening).collect(Collectors.toList());
+    }
+
+    public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour) {
+        return vehicles.stream().filter(vehicle -> getHours(vehicle.getPassingTimeInMilliSeconds()) == hour).collect(Collectors.toList());
+    }
+
+    private long getHours(int passingTimeInMilliSeconds) {
+        return TimeUnit.MILLISECONDS.toHours(passingTimeInMilliSeconds) % 24;
     }
 
     private boolean isVehicleMovingInEvening(Vehicle vehicle) {
@@ -62,5 +72,13 @@ public class Helper {
 
     public int getVehicleCountByDirection(List<Vehicle> vehicles, Direction direction) {
         return (int) vehicles.stream().filter(vehicle -> vehicle.getDirection().equals(direction)).count();
+    }
+
+    public String getFormattedTime(int hour) {
+        if (hour == 24)
+            hour = 0;
+        DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
+        LocalTime localTime = LocalTime.of(hour, 0, 0);
+        return DATE_TIME_FORMATTER.format(localTime);
     }
 }
