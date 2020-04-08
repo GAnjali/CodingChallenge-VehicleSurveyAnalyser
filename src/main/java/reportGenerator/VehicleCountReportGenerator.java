@@ -57,6 +57,13 @@ public class VehicleCountReportGenerator {
                     formatReport(helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 20));
                 }
             }
+        } else if (timePeriod.equals(TimePeriod.PER_15_MINUTES)) {
+            for (int hour = 0; hour < 24; hour++) {
+                for (int half_part = 0; half_part < 4; half_part++) {
+                    System.out.println("  \t\tFrom " + helper.getFormattedTime(hour, (half_part * 15)) + " to " + helper.getFormattedTime(hour, ((half_part * 15) + 15)));
+                    formatReport(helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 15));
+                }
+            }
         }
     }
 
