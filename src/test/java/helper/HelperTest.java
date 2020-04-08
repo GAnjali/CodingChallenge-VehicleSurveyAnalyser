@@ -134,4 +134,37 @@ public class HelperTest {
         List<Vehicle> vehiclesByTimePeriod = helper.getVehiclesByTimePeriod(vehicles, 17);
         Assert.assertTrue(vehiclesByTimePeriod.contains(vehicles.get(1)));
     }
+
+    @Test
+    public void shouldReturnVehiclesByTimePeriodWithGivenHourGivenMinutes() {
+        vehicles.add(new Vehicle(Direction.SOUTH, 18006091, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 64635695, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 90060911, 5));
+        List<Vehicle> vehiclesByTimePeriod = helper.getVehiclesByTimePeriod(vehicles, 17, 30);
+        Assert.assertTrue(vehiclesByTimePeriod.contains(vehicles.get(1)));
+    }
+
+    @Test
+    public void shouldReturnVehiclesByTimePeriodWithGivenHourGivenMinutes2() {
+        vehicles.add(new Vehicle(Direction.SOUTH, 18006091, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 64635695, 5));
+        vehicles.add(new Vehicle(Direction.SOUTH, 90060911, 5));
+        List<Vehicle> vehiclesByTimePeriod = helper.getVehiclesByTimePeriod(vehicles, 5, 0);
+        Assert.assertTrue(vehiclesByTimePeriod.contains(vehicles.get(0)));
+    }
+
+    @Test
+    public void shouldReturnMinutes1ForGivenMilliseconds98186() {
+        Assert.assertEquals(1077, helper.getMinutes(64635695));
+    }
+
+    @Test
+    public void shouldReturnMinutes2ForGivenMilliseconds5060911() {
+        Assert.assertEquals(300, helper.getMinutes(18006091));
+    }
+
+    @Test
+    public void shouldReturnMinutesForGivenMilliseconds499718() {
+        Assert.assertEquals(1501, helper.getMinutes(90060911));
+    }
 }

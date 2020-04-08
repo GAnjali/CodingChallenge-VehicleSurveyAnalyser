@@ -52,8 +52,18 @@ public class Helper {
         return vehicles.stream().filter(vehicle -> getHours(vehicle.getPassingTimeInMilliSeconds()) == hour).collect(Collectors.toList());
     }
 
+    public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour, int minutes) {
+        int fromMinutes = hour * 60 + minutes;
+        int toMinutes = (hour + 1) * 60;
+        return vehicles.stream().filter(vehicle -> getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && getMinutes(vehicle.getPassingTimeInMilliSeconds()) > fromMinutes).collect(Collectors.toList());
+    }
+
     private long getHours(int passingTimeInMilliSeconds) {
         return TimeUnit.MILLISECONDS.toHours(passingTimeInMilliSeconds) % 24;
+    }
+
+    public long getMinutes(int passingTimeInMilliSeconds) {
+        return TimeUnit.MILLISECONDS.toMinutes(passingTimeInMilliSeconds);
     }
 
     private boolean isVehicleMovingInEvening(Vehicle vehicle) {
@@ -79,6 +89,18 @@ public class Helper {
             hour = 0;
         DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
         LocalTime localTime = LocalTime.of(hour, 0, 0);
+        return DATE_TIME_FORMATTER.format(localTime);
+    }
+
+    public String getFormattedTime(int hour, int min) {
+        if (min == 60) {
+            hour = hour + 1;
+            min = 0;
+        }
+        if (hour == 24)
+            hour = 0;
+        DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
+        LocalTime localTime = LocalTime.of(hour, min, 0);
         return DATE_TIME_FORMATTER.format(localTime);
     }
 }

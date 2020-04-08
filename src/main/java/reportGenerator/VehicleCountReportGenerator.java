@@ -43,6 +43,13 @@ public class VehicleCountReportGenerator {
                 System.out.println("  \t\tFrom HOUR " + helper.getFormattedTime(hour) + " to " + helper.getFormattedTime(hour + 1));
                 formatReport(helper.getVehiclesByTimePeriod(vehicles, hour));
             }
+        } else if (timePeriod.equals(TimePeriod.PER_HALF_AN_HOUR)) {
+            for (int hour = 0; hour < 24; hour++) {
+                for (int half_part = 0; half_part < 2; half_part++) {
+                    System.out.println("  \t\tHalf AN HOUR " + helper.getFormattedTime(hour, (half_part * 30)) + " to " + helper.getFormattedTime(hour, ((half_part * 30) + 30)));
+                    formatReport(helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 30));
+                }
+            }
         }
     }
 
@@ -50,5 +57,18 @@ public class VehicleCountReportGenerator {
         output.print("\t\t\tTotal vehicle count: " + vehicles.size());
         output.print("\t\t\ttotal vehicle count moving in North direction: " + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
         output.print("\t\t\ttotal vehicle count moving in South direction: " + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
+    }
+
+    private String getFormattedTime(int hour, int part) {
+        if (part == 0) {
+            if (hour % 2 == 0)
+                return helper.getFormattedTime(hour, 0);
+            else
+                return helper.getFormattedTime(hour, 30);
+        }
+        if (hour % 2 == 0)
+            return helper.getFormattedTime(hour, 30);
+        else
+            return helper.getFormattedTime(hour, 0);
     }
 }
