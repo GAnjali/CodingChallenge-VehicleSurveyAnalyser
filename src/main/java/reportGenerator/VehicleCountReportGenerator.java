@@ -58,17 +58,4 @@ public class VehicleCountReportGenerator {
         output.print("\t\t\ttotal vehicle count moving in North direction: " + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
         output.print("\t\t\ttotal vehicle count moving in South direction: " + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
     }
-
-    private String getFormattedTime(int hour, int part) {
-        if (part == 0) {
-            if (hour % 2 == 0)
-                return helper.getFormattedTime(hour, 0);
-            else
-                return helper.getFormattedTime(hour, 30);
-        }
-        if (hour % 2 == 0)
-            return helper.getFormattedTime(hour, 30);
-        else
-            return helper.getFormattedTime(hour, 0);
-    }
 }
