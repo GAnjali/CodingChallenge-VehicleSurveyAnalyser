@@ -7,7 +7,7 @@ import reportGenerator.timeperiod.TimePeriod;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PeakVolumeTimesReportGenerator implements ReportGenerator {
+public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
 
     @Override
     public void generate(List<Vehicle> vehicles) {

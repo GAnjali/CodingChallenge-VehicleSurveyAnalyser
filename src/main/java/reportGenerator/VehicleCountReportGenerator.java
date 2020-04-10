@@ -6,7 +6,7 @@ import reportGenerator.timeperiod.TimePeriod;
 
 import java.util.List;
 
-public class VehicleCountReportGenerator implements ReportGenerator {
+public class VehicleCountReportGenerator implements DayWiseReportGenerator {
 
     @Override
     public void generate(List<Vehicle> vehicles) {
