@@ -1,20 +1,17 @@
 package reportGenerator;
 
-import IO.output.Output;
-import helper.Helper;
 import model.Direction;
 import model.Vehicle;
 import reportGenerator.timeperiod.TimePeriod;
 
 import java.util.List;
 
-public class VehicleCountReportGenerator implements ReportGenerator{
-    private Helper helper;
-    private Output output;
+public class VehicleCountReportGenerator implements ReportGenerator {
 
-    public VehicleCountReportGenerator() {
-        helper = new Helper();
-        output = new Output();
+    @Override
+    public void generate(List<Vehicle> vehicles) {
+        output.print("***************Vehicle Count Report***************");
+        getReport(vehicles);
     }
 
     public void generateFullDayReport(long day, List<Vehicle> vehicles) {
