@@ -103,4 +103,8 @@ public class Helper {
         LocalTime localTime = LocalTime.of(hour, min, 0);
         return DATE_TIME_FORMATTER.format(localTime);
     }
+
+    public List<Vehicle> getVehiclesOnCurrentSpeed(List<Vehicle> vehicles, float speed) {
+        return vehicles.stream().filter(vehicle -> vehicle.getSpeed() > speed - 5 && vehicle.getSpeed() <= speed).collect(Collectors.toList());
+    }
 }
