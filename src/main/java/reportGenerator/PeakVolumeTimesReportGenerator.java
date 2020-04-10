@@ -46,6 +46,12 @@ public class PeakVolumeTimesReportGenerator {
             } else if (time.equals("PER_HALF_AN_HOUR")) {
                 output.print("\n\t\tPer Half an Hour:");
                 getReport(TimePeriod.PER_HALF_AN_HOUR, vehicles);
+            } else if (time.equals("PER_20_MINUTES")) {
+                output.print("\n\t\tPer 20 Minutes:");
+                getReport(TimePeriod.PER_20_MINUTES, vehicles);
+            } else if (time.equals("PER_15_MINUTES")) {
+                output.print("\n\t\tPer 15 Minutes:");
+                getReport(TimePeriod.PER_15_MINUTES, vehicles);
             }
         }
     }
@@ -89,6 +95,42 @@ public class PeakVolumeTimesReportGenerator {
             }
             System.out.println("  \t\tFrom " + helper.getFormattedTime(peakVolumeHour, (peakVolumeHalfAnHour)) + " to " + helper.getFormattedTime(peakVolumeHour, (peakVolumeHalfAnHour + 30)));
             formatReport(vehiclesOnPeakVolumeHalfAnHour);
+        } else if (timePeriod.equals(TimePeriod.PER_20_MINUTES)) {
+            int peakVolumeHour = 0;
+            int peakVolumeMin = 0;
+            int peakVolume = 0;
+            List<Vehicle> vehiclesOnPeakVolumePer20Min = new ArrayList<>();
+            for (int hour = 0; hour < 24; hour++) {
+                for (int half_part = 0; half_part < 3; half_part++) {
+                    List<Vehicle> vehiclesOnCurrentHour = helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 20);
+                    if (vehiclesOnCurrentHour.size() > peakVolume) {
+                        peakVolumeHour = hour;
+                        peakVolumeMin = half_part * 20;
+                        peakVolume = vehiclesOnCurrentHour.size();
+                        vehiclesOnPeakVolumePer20Min = vehiclesOnCurrentHour;
+                    }
+                }
+            }
+            System.out.println("  \t\tFrom " + helper.getFormattedTime(peakVolumeHour, peakVolumeMin) + " to " + helper.getFormattedTime(peakVolumeHour, (peakVolumeMin + 20)));
+            formatReport(vehiclesOnPeakVolumePer20Min);
+        } else if (timePeriod.equals(TimePeriod.PER_15_MINUTES)) {
+            int peakVolumeHour = 0;
+            int peakVolumeMin = 0;
+            int peakVolume = 0;
+            List<Vehicle> vehiclesOnPeakVolumePer15Min = new ArrayList<>();
+            for (int hour = 0; hour < 24; hour++) {
+                for (int half_part = 0; half_part < 4; half_part++) {
+                    List<Vehicle> vehiclesOnCurrentHour = helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 15);
+                    if (vehiclesOnCurrentHour.size() > peakVolume) {
+                        peakVolumeHour = hour;
+                        peakVolumeMin = half_part * 15;
+                        peakVolume = vehiclesOnCurrentHour.size();
+                        vehiclesOnPeakVolumePer15Min = vehiclesOnCurrentHour;
+                    }
+                }
+            }
+            System.out.println("  \t\tFrom " + helper.getFormattedTime(peakVolumeHour, peakVolumeMin) + " to " + helper.getFormattedTime(peakVolumeHour, (peakVolumeMin + 15)));
+            formatReport(vehiclesOnPeakVolumePer15Min);
         }
     }
 
