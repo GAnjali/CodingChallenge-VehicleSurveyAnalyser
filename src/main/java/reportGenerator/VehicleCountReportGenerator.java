@@ -8,21 +8,13 @@ import reportGenerator.timeperiod.TimePeriod;
 
 import java.util.List;
 
-public class VehicleCountReportGenerator {
+public class VehicleCountReportGenerator implements ReportGenerator{
     private Helper helper;
     private Output output;
 
     public VehicleCountReportGenerator() {
         helper = new Helper();
         output = new Output();
-    }
-
-    public void generateReport(List<Vehicle> vehicles) {
-        output.print("***************Day wise Vehicle count report***************");
-        for (long day = 0; day < helper.getTotalDays(vehicles); day++) {
-            List<Vehicle> vehiclesOnDay = helper.getVehiclesByDay(day, vehicles);
-            generateFullDayReport(day, vehiclesOnDay);
-        }
     }
 
     public void generateFullDayReport(long day, List<Vehicle> vehicles) {

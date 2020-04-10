@@ -10,21 +10,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class PeakVolumeTimesReportGenerator {
+public class PeakVolumeTimesReportGenerator implements ReportGenerator{
     private Helper helper;
     private Output output;
 
     public PeakVolumeTimesReportGenerator() {
         helper = new Helper();
         output = new Output();
-    }
-
-    public void generateReport(List<Vehicle> vehicles) {
-        output.print("***************Peak Volume Times report***************");
-        for (long day = 0; day < helper.getTotalDays(vehicles); day++) {
-            List<Vehicle> vehiclesOnDay = helper.getVehiclesByDay(day, vehicles);
-            generateFullDayReport(day, vehiclesOnDay);
-        }
     }
 
     public void generateFullDayReport(long day, List<Vehicle> vehicles) {
