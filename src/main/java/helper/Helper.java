@@ -53,17 +53,17 @@ public class Helper {
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour, int minutes) {
-        int fromMinutes = hour * 60 + minutes;
-        int toMinutes = (hour + 1) * 60;
-        return vehicles.stream().filter(vehicle -> getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && getMinutes(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
+        int toMinutes = hour * 60 + minutes;
+        int fromMinutes = toMinutes - 30;
+        return vehicles.stream().filter(vehicle -> (getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && (getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + getMinutes(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
     }
 
     private long getHours(int passingTimeInMilliSeconds) {
         return TimeUnit.MILLISECONDS.toHours(passingTimeInMilliSeconds) % 24;
     }
 
-    public long getMinutes(int passingTimeInMilliSeconds) {
-        return TimeUnit.MILLISECONDS.toMinutes(passingTimeInMilliSeconds);
+    private long getMinutes(int passingTimeInMilliSeconds) {
+        return TimeUnit.MILLISECONDS.toMinutes(passingTimeInMilliSeconds) % 60;
     }
 
     private boolean isVehicleMovingInEvening(Vehicle vehicle) {
