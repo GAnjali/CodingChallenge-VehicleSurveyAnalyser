@@ -47,7 +47,8 @@ public class VehicleCounter {
 
     private void handleVehicleMovingInNorthDirection(List<String> records, int recordIndex, List<Vehicle> vehicles) throws InvalidTimeException {
         int frontAxleTime = helper.getTime(records.get(recordIndex));
-        vehicles.add(new Vehicle(Direction.NORTH, frontAxleTime, helper.getSpeed(frontAxleTime)));
+        int rearAxleTime = helper.getTime(records.get(recordIndex) + 1);
+        vehicles.add(new Vehicle(Direction.NORTH, frontAxleTime, Double.parseDouble(helper.getSpeed(rearAxleTime - frontAxleTime))));
     }
 
     private void handleVehicleMovingInSouthDirection(List<String> records, int recordIndex, List<Vehicle> vehicles) throws InvalidDataException, InvalidTimeException {
@@ -55,7 +56,8 @@ public class VehicleCounter {
             throw new InvalidDataException();
         }
         int frontAxleTime = helper.getTime(records.get(recordIndex));
-        vehicles.add(new Vehicle(Direction.SOUTH, frontAxleTime, helper.getSpeed(frontAxleTime)));
+        int rearAxleTime = helper.getTime(records.get(recordIndex) + 1);
+        vehicles.add(new Vehicle(Direction.SOUTH, frontAxleTime, Double.parseDouble(helper.getSpeed(rearAxleTime - frontAxleTime))));
     }
 
     private boolean isValidRecords(List<String> records, int recordIndex) {

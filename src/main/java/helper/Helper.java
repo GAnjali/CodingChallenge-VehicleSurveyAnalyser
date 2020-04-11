@@ -26,10 +26,9 @@ public class Helper {
         }
     }
 
-    public float getSpeed(int timeInMilliSeconds) {
-        long timeInSeconds = TimeUnit.MILLISECONDS.toSeconds(timeInMilliSeconds);
-        float speed = (Float.parseFloat(AVERAGE_WHEEL_BASE) / timeInSeconds) * 3600;
-        return Float.parseFloat(String.format("%.2f", speed));
+    public String getSpeed(int timeInMilliSeconds) {
+        float speed = (Float.parseFloat(AVERAGE_WHEEL_BASE) / timeInMilliSeconds)*1000;
+        return String.format("%.02f", speed);
     }
 
     public long getTotalDays(List<Vehicle> vehicles) {

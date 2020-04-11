@@ -14,7 +14,7 @@ public class SpeedDistributionReportGenerator implements DistributionReportGener
     @Override
     public void generate(List<Vehicle> vehicles) {
         output.print("***************Speed Distribution Report***************");
-        float highestSpeedOfVehicle = getHighestSpeed(vehicles);
+        Double highestSpeedOfVehicle = getHighestSpeed(vehicles);
         for (float speed = 5; speed <= highestSpeedOfVehicle; speed = speed + 5) {
             List<Vehicle> vehiclesOnCurrentSpeed = helper.getVehiclesOnCurrentSpeed(vehicles, speed);
             float countOnSpeed = vehiclesOnCurrentSpeed.size();
@@ -28,7 +28,7 @@ public class SpeedDistributionReportGenerator implements DistributionReportGener
         return String.format("%.2f", speed);
     }
 
-    private float getHighestSpeed(List<Vehicle> vehicles) {
+    private Double getHighestSpeed(List<Vehicle> vehicles) {
         return vehicles.stream().max(Comparator.comparingDouble(Vehicle::getSpeed)).get().getSpeed();
     }
 }
