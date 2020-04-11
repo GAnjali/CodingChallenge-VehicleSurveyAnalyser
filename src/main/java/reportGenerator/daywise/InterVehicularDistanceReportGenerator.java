@@ -1,4 +1,4 @@
-package reportGenerator;
+package reportGenerator.daywise;
 
 import model.Direction;
 import model.Vehicle;

@@ -1,8 +1,9 @@
-package reportGenerator;
+package reportGenerator.distribution;
 
 import IO.output.Output;
 import helper.Helper;
 import model.Vehicle;
+import reportGenerator.distribution.DistributionReportGenerator;
 
 import java.util.Comparator;
 import java.util.List;

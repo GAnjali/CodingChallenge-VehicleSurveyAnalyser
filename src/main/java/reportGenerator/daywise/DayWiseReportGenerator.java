@@ -1,9 +1,10 @@
-package reportGenerator;
+package reportGenerator.daywise;
 
 import IO.output.Output;
 import helper.Helper;
 import model.Vehicle;
-import reportGenerator.timeperiod.TimePeriod;
+import reportGenerator.ReportGenerator;
+import reportGenerator.TimePeriod;
 
 import java.util.List;
 

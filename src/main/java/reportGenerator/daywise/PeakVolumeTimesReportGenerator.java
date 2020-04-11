@@ -1,8 +1,8 @@
-package reportGenerator;
+package reportGenerator.daywise;
 
 import model.Direction;
 import model.Vehicle;
-import reportGenerator.timeperiod.TimePeriod;
+import reportGenerator.TimePeriod;
 
 import java.util.List;
 

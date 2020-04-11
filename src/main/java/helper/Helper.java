@@ -3,7 +3,7 @@ package helper;
 import exceptions.InvalidTimeException;
 import model.Direction;
 import model.Vehicle;
-import reportGenerator.timeperiod.TimePeriod;
+import reportGenerator.TimePeriod;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;

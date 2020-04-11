@@ -6,7 +6,7 @@ import model.Vehicle;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import reportGenerator.timeperiod.TimePeriod;
+import reportGenerator.TimePeriod;
 
 import java.util.ArrayList;
 import java.util.List;
