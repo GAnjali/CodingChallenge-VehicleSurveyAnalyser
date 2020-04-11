@@ -8,6 +8,7 @@ import reportGenerator.timeperiod.TimePeriod;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.OptionalDouble;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -105,5 +106,19 @@ public class Helper {
 
     public List<Vehicle> getVehiclesOnCurrentSpeed(List<Vehicle> vehicles, float speed) {
         return vehicles.stream().filter(vehicle -> vehicle.getSpeed() > speed - 5 && vehicle.getSpeed() <= speed).collect(Collectors.toList());
+    }
+
+    public List<Vehicle> getVehiclesByDirection(List<Vehicle> vehicles, Direction direction) {
+        return vehicles.stream().filter(vehicle -> vehicle.getDirection().equals(direction)).collect(Collectors.toList());
+    }
+
+    public double getAverage(List<Double> interVehicularDistance) {
+        OptionalDouble average = interVehicularDistance.stream().mapToDouble(a -> a).average();
+        return average.isPresent() ? average.getAsDouble() : 0;
+    }
+
+    public double getTimeGapAmongVehiclesInSeconds(int firstVehiclePassingTime, int secondVehiclePassingTime) {
+        int gapInMilliseconds = firstVehiclePassingTime > secondVehiclePassingTime ? firstVehiclePassingTime - secondVehiclePassingTime : secondVehiclePassingTime - firstVehiclePassingTime;
+        return gapInMilliseconds / 1000;
     }
 }
