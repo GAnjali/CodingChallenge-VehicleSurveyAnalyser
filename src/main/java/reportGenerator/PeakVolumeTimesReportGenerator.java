@@ -6,18 +6,20 @@ import reportGenerator.timeperiod.TimePeriod;
 
 import java.util.List;
 
+import static constants.VehicleSurveyAnalyserConstants.*;
+
 public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
 
     @Override
     public void generate(List<Vehicle> vehicles) {
-        output.print("***************Peak Volume Times Report***************");
+        output.print(PEAK_VOLUME_TIMES_REPORT_GENERATOR);
         getReport(vehicles);
     }
 
     @Override
     public void getReportForMorningOrEvening(List<Vehicle> vehicles, TimePeriod timePeriod) {
         if (timePeriod.equals(TimePeriod.MORNING)) {
-            output.print("\n\t\tMorning Vs Evening:");
+            output.print(MORNING_VS_EVENING_MESSAGE);
             TimePeriod peakTimePeriod = getPeakTimePeriodMorningVsEvening(vehicles);
             if (peakTimePeriod.equals(TimePeriod.MORNING))
                 System.out.println("  \t\tFrom HOUR " + helper.getFormattedTime(0) + " to " + helper.getFormattedTime(12));
@@ -33,6 +35,7 @@ public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
         return countOfVehiclesInMorning > countOfVehiclesInEvening ? TimePeriod.MORNING : TimePeriod.EVENING;
     }
 
+    @Override
     public void getReportPerHour(List<Vehicle> vehicles) {
         output.print("\t\t" + TimePeriod.PER_HOUR);
         PeakVolumeTime peakVolumeTime = getPeakVolumeHour(vehicles);
@@ -54,7 +57,7 @@ public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
         return new PeakVolumeTime(peakVolumeHour, 0);
     }
 
-
+    @Override
     public void getReportPerHalfAnHour(List<Vehicle> vehicles) {
         output.print("\t\t" + TimePeriod.PER_HALF_AN_HOUR);
         PeakVolumeTime peakVolumeTime = getPeakVolumeHalfAnHour(vehicles, 2);
@@ -62,6 +65,7 @@ public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
         formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour(), peakVolumeTime.getMinutes()));
     }
 
+    @Override
     public void getReportPer20Minutes(List<Vehicle> vehicles) {
         output.print("\t\t" + TimePeriod.PER_20_MINUTES);
         PeakVolumeTime peakVolumeTime = getPeakVolumeHalfAnHour(vehicles, 3);
@@ -69,6 +73,7 @@ public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
         formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour(), peakVolumeTime.getMinutes()));
     }
 
+    @Override
     public void getReportPer15Minutes(List<Vehicle> vehicles) {
         output.print("\t\t" + TimePeriod.PER_15_MINUTES);
         PeakVolumeTime peakVolumeTime = getPeakVolumeHalfAnHour(vehicles, 4);
@@ -93,9 +98,10 @@ public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
         return new PeakVolumeTime(peakVolumeHour, peakVolumeHalfAnHour);
     }
 
+    @Override
     public void formatReport(List<Vehicle> vehicles) {
-        output.print("\t\t\tTotal vehicles in Peak volume time: " + vehicles.size());
-        output.print("\t\t\ttotal vehicles in peak volume time moving in North direction: " + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
-        output.print("\t\t\ttotal vehicles in peak volume time moving in South direction: " + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
+        output.print(TOTAL_PEAK_VOLUME_TIMES_MESSAGE + vehicles.size());
+        output.print(NORTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
+        output.print(SOUTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
     }
 }
