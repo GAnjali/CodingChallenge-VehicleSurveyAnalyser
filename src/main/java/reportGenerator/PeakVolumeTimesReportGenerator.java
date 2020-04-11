@@ -17,7 +17,7 @@ public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
 
     @Override
     public void getReportForMorningOrEvening(List<Vehicle> vehicles, TimePeriod timePeriod) {
-        if(timePeriod.equals(TimePeriod.MORNING)){
+        if (timePeriod.equals(TimePeriod.MORNING)) {
             output.print("\n\t\tMorning Vs Evening:");
             int countOfVehiclesInMorning = helper.getVehiclesByTimePeriod(vehicles, TimePeriod.MORNING).size();
             int countOfVehiclesInEvening = helper.getVehiclesByTimePeriod(vehicles, TimePeriod.EVENING).size();
@@ -111,7 +111,7 @@ public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
         formatReport(vehiclesOnPeakVolumeHour);
     }
 
-    private void formatReport(List<Vehicle> vehicles) {
+    public void formatReport(List<Vehicle> vehicles) {
         output.print("\t\t\tTotal vehicles in Peak volume time: " + vehicles.size());
         output.print("\t\t\ttotal vehicles in peak volume time moving in North direction: " + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
         output.print("\t\t\ttotal vehicles in peak volume time moving in South direction: " + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
