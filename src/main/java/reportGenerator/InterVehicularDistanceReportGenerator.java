@@ -6,11 +6,13 @@ import model.Vehicle;
 import java.util.ArrayList;
 import java.util.List;
 
+import static constants.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING;
+
 public class InterVehicularDistanceReportGenerator implements DayWiseReportGenerator {
 
     @Override
     public void generate(List<Vehicle> vehicles) {
-        output.print("***************Inter Vehicular Distance Report***************");
+        output.print(INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING);
         getReport(vehicles);
     }
 
@@ -28,13 +30,22 @@ public class InterVehicularDistanceReportGenerator implements DayWiseReportGener
         List<Double> interVehicularDistances = new ArrayList<>();
         final Vehicle previousVehicle = new Vehicle(null, 0, 0.00);
         vehicles.forEach(currentVehicle -> {
-            double timeGapAmongVehiclesInSeconds = helper.getTimeGapAmongVehiclesInSeconds(previousVehicle.getPassingTimeInMilliSeconds(), currentVehicle.getPassingTimeInMilliSeconds());
-            double speedGapAmongVehicles = Math.abs(previousVehicle.getSpeed() - currentVehicle.getSpeed());
-            interVehicularDistances.add(Double.parseDouble(String.format("%.2f", timeGapAmongVehiclesInSeconds * speedGapAmongVehicles / 1000)));
-            previousVehicle.setDirection(currentVehicle.getDirection());
-            previousVehicle.setPassingTimeInMilliSeconds(currentVehicle.getPassingTimeInMilliSeconds());
-            previousVehicle.setSpeed(currentVehicle.getSpeed());
+            Double interVehicularDistance = getInterVehicularDistance(previousVehicle, currentVehicle);
+            interVehicularDistances.add(interVehicularDistance);
+            updatePreviousVehicle(previousVehicle, currentVehicle);
         });
         return interVehicularDistances;
+    }
+
+    private void updatePreviousVehicle(Vehicle previousVehicle, Vehicle currentVehicle) {
+        previousVehicle.setDirection(currentVehicle.getDirection());
+        previousVehicle.setPassingTimeInMilliSeconds(currentVehicle.getPassingTimeInMilliSeconds());
+        previousVehicle.setSpeed(currentVehicle.getSpeed());
+    }
+
+    private Double getInterVehicularDistance(Vehicle previousVehicle, Vehicle currentVehicle) {
+        double timeGapAmongVehiclesInSeconds = helper.getTimeGapAmongVehiclesInSeconds(previousVehicle.getPassingTimeInMilliSeconds(), currentVehicle.getPassingTimeInMilliSeconds());
+        double speedGapAmongVehicles = Math.abs(previousVehicle.getSpeed() - currentVehicle.getSpeed());
+        return Double.parseDouble(String.format("%.2f", timeGapAmongVehiclesInSeconds * speedGapAmongVehicles / 1000));
     }
 }

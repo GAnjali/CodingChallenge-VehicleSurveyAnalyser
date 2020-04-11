@@ -17,4 +17,5 @@ public class VehicleSurveyAnalyserConstants {
     public static final String TOTAL_PEAK_VOLUME_TIMES_MESSAGE = "\t\t\tTotal vehicles in Peak volume time: ";
     public static final String NORTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE = "\t\t\ttotal vehicles in peak volume time moving in North direction: ";
     public static final String SOUTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE = "\t\t\ttotal vehicles in peak volume time moving in South direction: ";
+    public static final String INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING = "***************Inter Vehicular Distance Report***************";
 }
