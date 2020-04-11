@@ -7,13 +7,15 @@ import model.Vehicle;
 import java.util.Comparator;
 import java.util.List;
 
+import static constants.VehicleSurveyAnalyserConstants.SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING;
+
 public class SpeedDistributionReportGenerator implements DistributionReportGenerator {
     Output output = new Output();
     Helper helper = new Helper();
 
     @Override
     public void generate(List<Vehicle> vehicles) {
-        output.print("***************Speed Distribution Report***************");
+        output.print(SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING);
         Double highestSpeedOfVehicle = getHighestSpeed(vehicles);
         for (float speed = 5; speed <= highestSpeedOfVehicle; speed = speed + 5) {
             List<Vehicle> vehiclesOnCurrentSpeed = helper.getVehiclesOnCurrentSpeed(vehicles, speed);
