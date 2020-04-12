@@ -1,10 +1,11 @@
 package reportGenerator.daywise;
 
-import exceptions.InvalidFileCreationException;
+import exceptions.UnableToCreateFileException;
 import model.Direction;
 import model.Vehicle;
 import reportGenerator.TimePeriod;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
 import static helper.VehicleSurveyAnalyserConstants.*;
@@ -17,7 +18,7 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
     }
 
     @Override
-    public void generate(List<Vehicle> vehicles) throws InvalidFileCreationException {
+    public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
         writeToFile(PEAK_VOLUME_TIMES_REPORT_FILE_NAME);
         printStream.print(PEAK_VOLUME_TIMES_REPORT_GENERATOR);
         getReport(vehicles);
@@ -77,8 +78,8 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
 
     @Override
     public void formatReport(List<Vehicle> vehicles) {
-        printStream.print("\n"+TOTAL_PEAK_VOLUME_TIMES_MESSAGE + vehicles.size());
-        printStream.print("\n"+NORTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
-        printStream.print("\n"+SOUTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
+        printStream.print("\n" + TOTAL_PEAK_VOLUME_TIMES_MESSAGE + vehicles.size());
+        printStream.print("\n" + NORTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
+        printStream.print("\n" + SOUTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
     }
 }

@@ -8,7 +8,7 @@ public class VehicleSurveyAnalyserConstants {
     public static final String NO_FILE_FOUND_MESSAGE = "No Such File found, Please provide data file";
     public static final String INVALID_DATA_MESSAGE = "Invalid Data found, Please provide proper data";
     public static final String INVALID_TIME_MESSAGE = "Invalid Time found, Please provide proper data";
-    public static final String INVALID_FILE_CREATION_MESSAGE = "Unable to create file";
+    public static final String UNABLE_TO_CREATE_FILE_MESSAGE = "Unable to create file";
     public static final String AVERAGE_WHEEL_BASE = "2.5f";
     public static final String VEHICLE_COUNT_REPORT_FILE_NAME = "VehicleCountReport.txt";
     public static final String PEAK_VOLUME_TIMES_REPORT_FILE_NAME = "PeakVolumeTimesReport.txt";

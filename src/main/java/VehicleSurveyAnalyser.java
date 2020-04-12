@@ -1,9 +1,9 @@
 import IO.input.Input;
 import counter.DataParser;
 import exceptions.InvalidDataException;
-import exceptions.InvalidFileCreationException;
 import exceptions.InvalidTimeException;
 import exceptions.NoSuchFileFoundException;
+import exceptions.UnableToCreateFileException;
 import model.Vehicle;
 import reportGenerator.ReportGenerator;
 import reportGenerator.daywise.InterVehicularDistanceReportGenerator;
@@ -17,7 +17,7 @@ import java.util.List;
 public class VehicleSurveyAnalyser {
     static List<String> records;
 
-    public static void main(String[] args) throws IOException, NoSuchFileFoundException, InvalidDataException, InvalidTimeException, InvalidFileCreationException {
+    public static void main(String[] args) throws IOException, NoSuchFileFoundException, InvalidDataException, InvalidTimeException, UnableToCreateFileException {
         initialize();
         DataParser dataParser = new DataParser();
         List<Vehicle> vehicles = dataParser.getVehicles(records);

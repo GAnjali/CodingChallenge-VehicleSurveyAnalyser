@@ -1,29 +1,17 @@
 package reportGenerator;
 
-import exceptions.InvalidFileCreationException;
+import IO.input.Output;
+import exceptions.UnableToCreateFileException;
 import model.Vehicle;
 
 import java.io.*;
-import java.nio.file.Paths;
 import java.util.List;
 
-import static helper.VehicleSurveyAnalyserConstants.REPORT_FOLDER;
-
 public interface ReportGenerator {
-    default PrintStream getPrintStream(String reportFileName) throws InvalidFileCreationException {
-        PrintStream printStream = null;
-        try {
-            File dir = new File(REPORT_FOLDER);
-            dir.mkdirs();
-            File tmp = new File(dir, reportFileName);
-            tmp.createNewFile();
-            OutputStream os = new FileOutputStream(Paths.get(tmp.getPath()).toFile());
-            printStream = new PrintStream(os);
-        } catch (IOException e) {
-            throw new InvalidFileCreationException();
-        }
-        return printStream;
+    default PrintStream getOutputStream(String reportFileName) throws UnableToCreateFileException, FileNotFoundException {
+        Output output = new Output();
+        return output.getPrintStream(reportFileName);
     }
 
-    void generate(List<Vehicle> vehicles) throws FileNotFoundException, InvalidFileCreationException;
+    void generate(List<Vehicle> vehicles) throws FileNotFoundException, UnableToCreateFileException;
 }

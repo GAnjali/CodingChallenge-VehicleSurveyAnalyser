@@ -1,9 +1,10 @@
 package reportGenerator.daywise;
 
-import exceptions.InvalidFileCreationException;
+import exceptions.UnableToCreateFileException;
 import model.Direction;
 import model.Vehicle;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ import static helper.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_REP
 public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerator {
 
     @Override
-    public void generate(List<Vehicle> vehicles) throws InvalidFileCreationException {
+    public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
         writeToFile(INTER_VEHICULAR_DISTANCE_REPORT_FILE_NAME);
         printStream.print(INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING);
         getReport(vehicles);

@@ -1,9 +1,10 @@
 package reportGenerator.daywise;
 
-import exceptions.InvalidFileCreationException;
+import exceptions.UnableToCreateFileException;
 import model.Direction;
 import model.Vehicle;
 
+import java.io.FileNotFoundException;
 import java.util.List;
 
 import static helper.VehicleSurveyAnalyserConstants.*;
@@ -11,7 +12,7 @@ import static helper.VehicleSurveyAnalyserConstants.*;
 public class VehicleCountReportGenerator extends DayWiseReportGenerator {
 
     @Override
-    public void generate(List<Vehicle> vehicles) throws InvalidFileCreationException {
+    public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
         writeToFile(VEHICLE_COUNT_REPORT_FILE_NAME);
         printStream.print(VEHICLE_COUNT_REPORT_GENERATOR_HEADING);
         getReport(vehicles);
