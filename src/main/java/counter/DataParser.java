@@ -11,11 +11,11 @@ import java.util.List;
 
 import static constants.VehicleSurveyAnalyserConstants.*;
 
-public class VehicleCounter {
+public class DataParser {
     private List<Vehicle> vehicles;
     private Helper helper;
 
-    public VehicleCounter() {
+    public DataParser() {
         vehicles = new ArrayList<>();
         helper = new Helper();
     }

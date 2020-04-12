@@ -1,5 +1,5 @@
 import IO.input.Input;
-import counter.VehicleCounter;
+import counter.DataParser;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
 import exceptions.NoSuchFileFoundException;
@@ -18,8 +18,8 @@ public class VehicleSurveyAnalyser {
 
     public static void main(String[] args) throws IOException, NoSuchFileFoundException, InvalidDataException, InvalidTimeException {
         initialize();
-        VehicleCounter vehicleCounter = new VehicleCounter();
-        List<Vehicle> vehicles = vehicleCounter.getVehicles(records);
+        DataParser dataParser = new DataParser();
+        List<Vehicle> vehicles = dataParser.getVehicles(records);
         ReportGenerator[] reportGenerator = {new VehicleCountReportGenerator(), new PeakVolumeTimesReportGenerator(), new SpeedDistributionReportGenerator(), new InterVehicularDistanceReportGenerator()};
         for (ReportGenerator generator : reportGenerator) {
             generator.generate(vehicles);
