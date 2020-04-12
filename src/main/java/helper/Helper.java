@@ -9,14 +9,15 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.OptionalDouble;
-import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
 import static helper.VehicleSurveyAnalyserConstants.AVERAGE_WHEEL_BASE;
 
 public class Helper {
-    public long getDay(int milliseconds) {
-        return TimeUnit.MILLISECONDS.toDays(milliseconds);
+    TimeUtil timeUtil;
+
+    public Helper() {
+        timeUtil = new TimeUtil();
     }
 
     public int getTime(String record) throws InvalidTimeException {
@@ -28,17 +29,17 @@ public class Helper {
     }
 
     public String getSpeed(int timeInMilliSeconds) {
-        float speed = (Float.parseFloat(AVERAGE_WHEEL_BASE) / timeInMilliSeconds)*1000;
+        float speed = (Float.parseFloat(AVERAGE_WHEEL_BASE) / timeInMilliSeconds) * 1000;
         return String.format("%.02f", speed);
     }
 
     public long getTotalDays(List<Vehicle> vehicles) {
         Vehicle lastVehicle = vehicles.get(vehicles.size() - 1);
-        return getDay(lastVehicle.getPassingTimeInMilliSeconds()) + 1;
+        return timeUtil.getDay(lastVehicle.getPassingTimeInMilliSeconds()) + 1;
     }
 
     public List<Vehicle> getVehiclesByDay(long day, List<Vehicle> vehicles) {
-        return vehicles.stream().filter(vehicle -> getDay(vehicle.getPassingTimeInMilliSeconds()) == day).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> timeUtil.getDay(vehicle.getPassingTimeInMilliSeconds()) == day).collect(Collectors.toList());
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {
@@ -49,21 +50,13 @@ public class Helper {
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour) {
-        return vehicles.stream().filter(vehicle -> getHours(vehicle.getPassingTimeInMilliSeconds()) == hour).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) == hour).collect(Collectors.toList());
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour, int minutes) {
         int toMinutes = hour * 60 + minutes;
         int fromMinutes = toMinutes - 30;
-        return vehicles.stream().filter(vehicle -> (getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && (getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + getMinutes(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
-    }
-
-    private long getHours(int passingTimeInMilliSeconds) {
-        return TimeUnit.MILLISECONDS.toHours(passingTimeInMilliSeconds) % 24;
-    }
-
-    private long getMinutes(int passingTimeInMilliSeconds) {
-        return TimeUnit.MILLISECONDS.toMinutes(passingTimeInMilliSeconds) % 60;
+        return vehicles.stream().filter(vehicle -> (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
     }
 
     private boolean isVehicleMovingInEvening(Vehicle vehicle) {
@@ -77,7 +70,7 @@ public class Helper {
     }
 
     private long getVehiclePassingHourInDay(Vehicle vehicle) {
-        return TimeUnit.MILLISECONDS.toHours(vehicle.getPassingTimeInMilliSeconds()) % 24;
+        return timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds());
     }
 
     public int getVehicleCountByDirection(List<Vehicle> vehicles, Direction direction) {

@@ -22,22 +22,6 @@ public class HelperTest {
     }
 
     @Test
-    public void shouldReturnDay1ForGivenMilliseconds98186() {
-        Assert.assertEquals(1, helper.getDay(90060911));
-    }
-
-    @Test
-    public void shouldReturnDay2ForGivenMilliseconds5060911() {
-        Assert.assertEquals(2, helper.getDay(180060911));
-    }
-
-    @Test
-    public void shouldReturnDayForGivenMilliseconds499718() {
-        Assert.assertEquals(7, helper.getDay(646356956));
-    }
-
-
-    @Test
     public void shouldReturnTimeForGivenRecordA98186() throws InvalidTimeException {
         Assert.assertEquals(98186, helper.getTime("A98186"));
     }
