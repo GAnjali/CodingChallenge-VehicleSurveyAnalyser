@@ -12,6 +12,7 @@ public class VehicleSurveyAnalyserConstants {
     public static final String VEHICLE_COUNT_REPORT_FILE_NAME = "VehicleCountReport.txt";
     public static final String PEAK_VOLUME_TIMES_REPORT_FILE_NAME = "PeakVolumeTimesReport.txt";
     public static final String INTER_VEHICULAR_DISTANCE_REPORT_FILE_NAME = "InterVehicularDistanceReport.txt";
+    public static final String SPEED_DISTRIBUTION_REPORT_FILE_NAME = "SpeedDistributionReport.txt";
     public static final String VEHICLE_COUNT_REPORT_GENERATOR_HEADING = "***************Vehicle Count Report***************";
     public static final String TOTAL_VEHICLE_COUNT = "\n\t\t\tTotal vehicle count: ";
     public static final String NORTH_VEHICLES_COUNT = "\n\t\t\ttotal vehicle count moving in North direction: ";
