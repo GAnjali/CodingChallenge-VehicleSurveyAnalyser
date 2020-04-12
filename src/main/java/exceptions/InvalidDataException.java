@@ -1,6 +1,6 @@
 package exceptions;
 
-import static constants.VehicleSurveyAnalyserConstants.INVALID_DATA_MESSAGE;
+import static helper.VehicleSurveyAnalyserConstants.INVALID_DATA_MESSAGE;
 
 public class InvalidDataException extends Exception {
     private final String message;

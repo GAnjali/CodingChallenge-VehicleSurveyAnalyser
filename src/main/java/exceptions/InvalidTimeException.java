@@ -1,6 +1,6 @@
 package exceptions;
 
-import static constants.VehicleSurveyAnalyserConstants.INVALID_TIME_MESSAGE;
+import static helper.VehicleSurveyAnalyserConstants.INVALID_TIME_MESSAGE;
 
 public class InvalidTimeException extends Exception{
     private final String message;

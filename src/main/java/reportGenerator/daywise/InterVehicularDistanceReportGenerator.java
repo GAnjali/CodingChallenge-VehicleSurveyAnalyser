@@ -7,8 +7,8 @@ import model.Vehicle;
 import java.util.ArrayList;
 import java.util.List;
 
-import static constants.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_REPORT_FILE_NAME;
-import static constants.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING;
+import static helper.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_REPORT_FILE_NAME;
+import static helper.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING;
 
 public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerator {
 

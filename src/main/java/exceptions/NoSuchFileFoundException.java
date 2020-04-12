@@ -1,6 +1,6 @@
 package exceptions;
 
-import static constants.VehicleSurveyAnalyserConstants.NO_FILE_FOUND_MESSAGE;
+import static helper.VehicleSurveyAnalyserConstants.NO_FILE_FOUND_MESSAGE;
 
 public class NoSuchFileFoundException extends Exception {
     private final String message;

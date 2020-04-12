@@ -1,6 +1,6 @@
 package exceptions;
 
-import static constants.VehicleSurveyAnalyserConstants.INVALID_FILE_CREATION_MESSAGE;
+import static helper.VehicleSurveyAnalyserConstants.INVALID_FILE_CREATION_MESSAGE;
 
 public class InvalidFileCreationException extends Exception {
     private final String message;

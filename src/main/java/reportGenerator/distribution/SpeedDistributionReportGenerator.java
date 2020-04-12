@@ -8,8 +8,8 @@ import java.io.PrintStream;
 import java.util.Comparator;
 import java.util.List;
 
-import static constants.VehicleSurveyAnalyserConstants.SPEED_DISTRIBUTION_REPORT_FILE_NAME;
-import static constants.VehicleSurveyAnalyserConstants.SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING;
+import static helper.VehicleSurveyAnalyserConstants.SPEED_DISTRIBUTION_REPORT_FILE_NAME;
+import static helper.VehicleSurveyAnalyserConstants.SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING;
 
 public class SpeedDistributionReportGenerator implements ReportGenerator {
     Helper helper = new Helper();

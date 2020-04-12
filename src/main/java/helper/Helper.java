@@ -12,7 +12,7 @@ import java.util.OptionalDouble;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
-import static constants.VehicleSurveyAnalyserConstants.AVERAGE_WHEEL_BASE;
+import static helper.VehicleSurveyAnalyserConstants.AVERAGE_WHEEL_BASE;
 
 public class Helper {
     public long getDay(int milliseconds) {

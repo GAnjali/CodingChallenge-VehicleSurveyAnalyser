@@ -7,7 +7,7 @@ import reportGenerator.TimePeriod;
 
 import java.util.List;
 
-import static constants.VehicleSurveyAnalyserConstants.*;
+import static helper.VehicleSurveyAnalyserConstants.*;
 
 public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
     private PeakVolumeTime peakVolumeTime;

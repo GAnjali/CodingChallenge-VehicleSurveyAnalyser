@@ -9,7 +9,7 @@ import helper.Helper;
 import java.util.ArrayList;
 import java.util.List;
 
-import static constants.VehicleSurveyAnalyserConstants.*;
+import static helper.VehicleSurveyAnalyserConstants.*;
 
 public class DataParser {
     private List<Vehicle> vehicles;

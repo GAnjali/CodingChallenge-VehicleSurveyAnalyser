@@ -1,6 +1,7 @@
 package IO.input;
 
 import exceptions.NoSuchFileFoundException;
+import helper.VehicleSurveyAnalyserConstants;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -22,6 +23,6 @@ public class Input {
     }
 
     private Path getPath() {
-        return Paths.get(constants.VehicleSurveyAnalyserConstants.DATA_FILE);
+        return Paths.get(VehicleSurveyAnalyserConstants.DATA_FILE);
     }
 }

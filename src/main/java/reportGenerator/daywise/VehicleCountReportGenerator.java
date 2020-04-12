@@ -6,7 +6,7 @@ import model.Vehicle;
 
 import java.util.List;
 
-import static constants.VehicleSurveyAnalyserConstants.*;
+import static helper.VehicleSurveyAnalyserConstants.*;
 
 public class VehicleCountReportGenerator extends DayWiseReportGenerator {
 

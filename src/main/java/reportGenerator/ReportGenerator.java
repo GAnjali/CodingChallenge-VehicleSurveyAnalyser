@@ -7,7 +7,7 @@ import java.io.*;
 import java.nio.file.Paths;
 import java.util.List;
 
-import static constants.VehicleSurveyAnalyserConstants.REPORT_FOLDER;
+import static helper.VehicleSurveyAnalyserConstants.REPORT_FOLDER;
 
 public interface ReportGenerator {
     default PrintStream getPrintStream(String reportFileName) throws InvalidFileCreationException {
