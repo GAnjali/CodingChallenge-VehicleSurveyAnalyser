@@ -11,6 +11,7 @@ import reportGenerator.daywise.PeakVolumeTimesReportGenerator;
 import reportGenerator.daywise.VehicleCountReportGenerator;
 import reportGenerator.distribution.SpeedDistributionReportGenerator;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
@@ -19,6 +20,10 @@ public class VehicleSurveyAnalyser {
 
     public static void main(String[] args) throws IOException, NoSuchFileFoundException, InvalidDataException, InvalidTimeException, UnableToCreateFileException {
         initialize();
+        generateReports();
+    }
+
+    private static void generateReports() throws InvalidDataException, InvalidTimeException, FileNotFoundException, UnableToCreateFileException {
         DataParser dataParser = new DataParser();
         List<Vehicle> vehicles = dataParser.getVehicles(records);
         ReportGenerator[] reportGenerator = {new VehicleCountReportGenerator(), new PeakVolumeTimesReportGenerator(), new SpeedDistributionReportGenerator(), new InterVehicularDistanceReportGenerator()};
