@@ -1,4 +1,4 @@
-package counter;
+package parser;
 
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;

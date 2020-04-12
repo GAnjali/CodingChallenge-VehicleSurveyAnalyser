@@ -1,5 +1,5 @@
 import IO.input.Input;
-import counter.DataParser;
+import parser.DataParser;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
 import exceptions.NoSuchFileFoundException;
