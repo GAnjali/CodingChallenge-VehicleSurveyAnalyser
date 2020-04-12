@@ -1,6 +1,6 @@
 package reportGenerator;
 
-import IO.input.Output;
+import IO.Output;
 import exceptions.UnableToCreateFileException;
 import model.Vehicle;
 

@@ -1,4 +1,4 @@
-package IO.input;
+package IO;
 
 import exceptions.NoSuchFileFoundException;
 import helper.VehicleSurveyAnalyserConstants;

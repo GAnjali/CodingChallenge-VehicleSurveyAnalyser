@@ -1,6 +1,5 @@
 package IO;
 
-import IO.input.Input;
 import exceptions.NoSuchFileFoundException;
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-import IO.input.Input;
+import IO.Input;
 import parser.DataParser;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
