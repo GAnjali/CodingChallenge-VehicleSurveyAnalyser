@@ -1,6 +1,7 @@
 import IO.input.Input;
 import counter.DataParser;
 import exceptions.InvalidDataException;
+import exceptions.InvalidFileCreationException;
 import exceptions.InvalidTimeException;
 import exceptions.NoSuchFileFoundException;
 import model.Vehicle;
@@ -16,7 +17,7 @@ import java.util.List;
 public class VehicleSurveyAnalyser {
     static List<String> records;
 
-    public static void main(String[] args) throws IOException, NoSuchFileFoundException, InvalidDataException, InvalidTimeException {
+    public static void main(String[] args) throws IOException, NoSuchFileFoundException, InvalidDataException, InvalidTimeException, InvalidFileCreationException {
         initialize();
         DataParser dataParser = new DataParser();
         List<Vehicle> vehicles = dataParser.getVehicles(records);

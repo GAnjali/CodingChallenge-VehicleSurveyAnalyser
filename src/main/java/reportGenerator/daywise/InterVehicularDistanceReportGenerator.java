@@ -1,5 +1,6 @@
 package reportGenerator.daywise;
 
+import exceptions.InvalidFileCreationException;
 import model.Direction;
 import model.Vehicle;
 
@@ -12,7 +13,7 @@ import static constants.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_
 public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerator {
 
     @Override
-    public void generate(List<Vehicle> vehicles) {
+    public void generate(List<Vehicle> vehicles) throws InvalidFileCreationException {
         writeToFile(INTER_VEHICULAR_DISTANCE_REPORT_FILE_NAME);
         printStream.print(INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING);
         getReport(vehicles);

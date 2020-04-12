@@ -1,5 +1,6 @@
 package reportGenerator.daywise;
 
+import exceptions.InvalidFileCreationException;
 import model.Direction;
 import model.Vehicle;
 
@@ -10,7 +11,7 @@ import static constants.VehicleSurveyAnalyserConstants.*;
 public class VehicleCountReportGenerator extends DayWiseReportGenerator {
 
     @Override
-    public void generate(List<Vehicle> vehicles) {
+    public void generate(List<Vehicle> vehicles) throws InvalidFileCreationException {
         writeToFile(VEHICLE_COUNT_REPORT_FILE_NAME);
         printStream.print(VEHICLE_COUNT_REPORT_GENERATOR_HEADING);
         getReport(vehicles);

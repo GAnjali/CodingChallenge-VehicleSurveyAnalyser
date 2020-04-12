@@ -1,4 +1,5 @@
 package reportGenerator.distribution;
+import exceptions.InvalidFileCreationException;
 import helper.Helper;
 import model.Vehicle;
 import reportGenerator.ReportGenerator;
@@ -14,12 +15,12 @@ public class SpeedDistributionReportGenerator implements ReportGenerator {
     Helper helper = new Helper();
     PrintStream printStream = null;
 
-    public void writeToFile(String file) {
+    public void writeToFile(String file) throws InvalidFileCreationException {
         printStream = getPrintStream(file);
     }
     
     @Override
-    public void generate(List<Vehicle> vehicles) {
+    public void generate(List<Vehicle> vehicles) throws InvalidFileCreationException {
         writeToFile(SPEED_DISTRIBUTION_REPORT_FILE_NAME);
         printStream.print("\n"+SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING);
         Double highestSpeedOfVehicle = getHighestSpeed(vehicles);

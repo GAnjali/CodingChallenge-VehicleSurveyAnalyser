@@ -1,6 +1,6 @@
 package reportGenerator.daywise;
 
-import IO.output.Output;
+import exceptions.InvalidFileCreationException;
 import helper.Helper;
 import model.Vehicle;
 import reportGenerator.ReportGenerator;
@@ -10,11 +10,10 @@ import java.io.PrintStream;
 import java.util.List;
 
 public abstract class DayWiseReportGenerator implements ReportGenerator {
-    Output output = new Output();
     Helper helper = new Helper();
     PrintStream printStream = null;
 
-    public void writeToFile(String file) {
+    public void writeToFile(String file) throws InvalidFileCreationException {
         printStream = getPrintStream(file);
     }
 

@@ -1,5 +1,6 @@
 package reportGenerator.daywise;
 
+import exceptions.InvalidFileCreationException;
 import model.Direction;
 import model.Vehicle;
 import reportGenerator.TimePeriod;
@@ -16,7 +17,7 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
     }
 
     @Override
-    public void generate(List<Vehicle> vehicles) {
+    public void generate(List<Vehicle> vehicles) throws InvalidFileCreationException {
         writeToFile(PEAK_VOLUME_TIMES_REPORT_FILE_NAME);
         printStream.print(PEAK_VOLUME_TIMES_REPORT_GENERATOR);
         getReport(vehicles);
