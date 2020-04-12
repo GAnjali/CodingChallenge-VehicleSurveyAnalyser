@@ -8,7 +8,7 @@ import java.util.List;
 
 import static constants.VehicleSurveyAnalyserConstants.*;
 
-public class PeakVolumeTimesReportGenerator implements DayWiseReportGenerator {
+public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
     private PeakVolumeTime peakVolumeTime;
 
     public PeakVolumeTimesReportGenerator() {

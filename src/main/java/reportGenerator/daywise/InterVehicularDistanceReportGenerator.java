@@ -8,7 +8,7 @@ import java.util.List;
 
 import static constants.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING;
 
-public class InterVehicularDistanceReportGenerator implements DayWiseReportGenerator {
+public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerator {
 
     @Override
     public void generate(List<Vehicle> vehicles) {
