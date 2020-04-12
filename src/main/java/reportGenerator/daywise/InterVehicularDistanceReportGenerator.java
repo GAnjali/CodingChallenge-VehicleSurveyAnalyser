@@ -6,24 +6,26 @@ import model.Vehicle;
 import java.util.ArrayList;
 import java.util.List;
 
+import static constants.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_REPORT_FILE_NAME;
 import static constants.VehicleSurveyAnalyserConstants.INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING;
 
 public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerator {
 
     @Override
     public void generate(List<Vehicle> vehicles) {
-        output.print(INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING);
+        writeToFile(INTER_VEHICULAR_DISTANCE_REPORT_FILE_NAME);
+        printStream.print(INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING);
         getReport(vehicles);
     }
 
     public void formatReport(List<Vehicle> vehicles) {
         List<Vehicle> northBoundVehicles = helper.getVehiclesByDirection(vehicles, Direction.NORTH);
         List<Double> interVehicularDistance = calculateDistance(northBoundVehicles);
-        output.print("\t\t\t\t North bound vehicles     = " + String.format("%.2f", helper.getAverage(interVehicularDistance)));
+        printStream.print("\n\t\t\t\t North bound vehicles     = " + String.format("%.2f", helper.getAverage(interVehicularDistance)));
 
         List<Vehicle> southBoundVehicles = helper.getVehiclesByDirection(vehicles, Direction.SOUTH);
         interVehicularDistance = calculateDistance(southBoundVehicles);
-        output.print("\t\t\t\t South bound vehicles     = " + String.format("%.2f", helper.getAverage(interVehicularDistance)));
+        printStream.print("\n\t\t\t\t South bound vehicles     = " + String.format("%.2f", helper.getAverage(interVehicularDistance)));
     }
 
     public List<Double> calculateDistance(List<Vehicle> vehicles) {
