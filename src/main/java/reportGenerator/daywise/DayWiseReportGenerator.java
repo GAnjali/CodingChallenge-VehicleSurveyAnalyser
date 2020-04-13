@@ -29,7 +29,7 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
         printStream.print("\n\tFull day report on Day " + (day + 1));
         for (TimePeriod timePeriod : TimePeriod.values()) {
             if (timePeriod.equals(TimePeriod.MORNING) || timePeriod.equals(TimePeriod.EVENING))
-                getReportForMorningOrEvening(vehicles, timePeriod);
+                getReportForMorningOrEvening(helper.getVehiclesByTimePeriod(vehicles,timePeriod), timePeriod);
             else if (timePeriod.equals(TimePeriod.PER_HOUR)) {
                 getReportPerHour(vehicles);
             } else if (timePeriod.equals(TimePeriod.PER_HALF_AN_HOUR)) {
