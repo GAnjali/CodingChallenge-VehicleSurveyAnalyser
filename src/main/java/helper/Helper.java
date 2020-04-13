@@ -22,6 +22,8 @@ public class Helper {
 
     public int getTime(String record) throws InvalidTimeException {
         try {
+            if (record == null)
+                return 0;
             return Integer.parseInt(record.substring(1));
         } catch (Exception exception) {
             throw new InvalidTimeException();
