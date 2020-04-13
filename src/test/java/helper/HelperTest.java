@@ -137,9 +137,4 @@ public class HelperTest {
         Assert.assertTrue(vehiclesByTimePeriod.contains(vehicles.get(0)));
     }
 
-    @Test
-    public void shouldReturnSpeedForGivenTime() {
-        Assert.assertEquals("17.01", helper.getSpeed(147));
-    }
-
 }

@@ -25,7 +25,7 @@ public class VehicleSurveyAnalyser {
 
     private static void generateReports() throws InvalidDataException, InvalidTimeException, FileNotFoundException, UnableToCreateFileException {
         DataParser dataParser = new DataParser();
-        List<Vehicle> vehicles = dataParser.getVehicles(records);
+        List<Vehicle> vehicles = dataParser.parse(records);
         ReportGenerator[] reportGenerator = {new VehicleCountReportGenerator(), new PeakVolumeTimesReportGenerator(), new SpeedDistributionReportGenerator(), new InterVehicularDistanceReportGenerator()};
         for (ReportGenerator generator : reportGenerator) {
             generator.generate(vehicles);

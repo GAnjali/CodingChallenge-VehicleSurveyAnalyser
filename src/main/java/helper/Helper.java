@@ -30,18 +30,18 @@ public class Helper {
         }
     }
 
-    public String getSpeed(int timeInMilliSeconds) {
-        float speed = (Float.parseFloat(AVERAGE_WHEEL_BASE) / timeInMilliSeconds) * 1000;
-        return String.format("%.02f", speed);
+    public Double getSpeed(int timeInMilliSeconds) {
+        double speed = (Double.parseDouble(AVERAGE_WHEEL_BASE) / timeInMilliSeconds) * 1000;
+        return Double.parseDouble(String.format("%.02f", speed));
     }
 
     public long getTotalDays(List<Vehicle> vehicles) {
         Vehicle lastVehicle = vehicles.get(vehicles.size() - 1);
-        return timeUtil.getDay(lastVehicle.getPassingTimeInMilliSeconds()) + 1;
+        return lastVehicle.getDay() + 1;
     }
 
     public List<Vehicle> getVehiclesByDay(long day, List<Vehicle> vehicles) {
-        return vehicles.stream().filter(vehicle -> timeUtil.getDay(vehicle.getPassingTimeInMilliSeconds()) == day).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> vehicle.getDay() == day).collect(Collectors.toList());
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {

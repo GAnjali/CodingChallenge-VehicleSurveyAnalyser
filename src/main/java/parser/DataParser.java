@@ -20,11 +20,7 @@ public class DataParser {
         helper = new Helper();
     }
 
-    public int getVehiclesCount(List<String> records) throws InvalidDataException, InvalidTimeException {
-        return getVehicles(records).size();
-    }
-
-    public List<Vehicle> getVehicles(List<String> records) throws InvalidDataException, InvalidTimeException {
+    public List<Vehicle> parse(List<String> records) throws InvalidDataException, InvalidTimeException {
         int day = 0;
         String oldRecord = null;
         for (int recordIndex = 0; recordIndex < records.size() - 1; recordIndex++) {
@@ -49,7 +45,7 @@ public class DataParser {
         }
         int frontAxleTime = helper.getTime(records.get(recordIndex));
         int rearAxleTime = helper.getTime(records.get(recordIndex) + 1);
-        vehicles.add(new Vehicle(direction, frontAxleTime, Double.parseDouble(helper.getSpeed(rearAxleTime - frontAxleTime)), day));
+        vehicles.add(new Vehicle(direction, frontAxleTime, helper.getSpeed(rearAxleTime - frontAxleTime), day));
     }
 
     private boolean isValidRecords(List<String> records, int recordIndex, Direction direction) {

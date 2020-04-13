@@ -13,21 +13,6 @@ public class TimeUtilTest {
     }
 
     @Test
-    public void shouldReturnDay1ForGivenMilliseconds98186() {
-        Assert.assertEquals(1, timeUtil.getDay(90060911));
-    }
-
-    @Test
-    public void shouldReturnDay2ForGivenMilliseconds5060911() {
-        Assert.assertEquals(2, timeUtil.getDay(180060911));
-    }
-
-    @Test
-    public void shouldReturnDay7ForGivenMilliseconds499718() {
-        Assert.assertEquals(7, timeUtil.getDay(646356956));
-    }
-
-    @Test
     public void shouldReturnHoursForGivenMilliseconds98186() {
         Assert.assertEquals(1, timeUtil.getHours(90060911));
     }
