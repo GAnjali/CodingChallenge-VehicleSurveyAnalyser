@@ -35,7 +35,7 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
 
     public List<Double> calculateDistance(List<Vehicle> vehicles) {
         List<Double> interVehicularDistance = new ArrayList<>();
-        Vehicle previousVehicle = new Vehicle(null, 0, 0.00);
+        Vehicle previousVehicle = new Vehicle(null, 0, 0.00, 0);
         for (Vehicle currentVehicle : vehicles) {
             interVehicularDistance.add(getInterVehicularDistance(previousVehicle, currentVehicle));
             previousVehicle = currentVehicle;
