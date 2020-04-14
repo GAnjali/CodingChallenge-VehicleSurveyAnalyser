@@ -27,16 +27,20 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
     }
 
     void generateFullDayReport(long day, List<Vehicle> vehicles) {
-        printStream.print(String.format(FULL_DAY_REPORT_MESSAGE_TEMPLATE, (day + 1)));
+        printStream.print(String.format(FULL_DAY_REPORT_MESSAGE_TEMPLATE, (day + 1), vehicles.size()));
         for (TimePeriod timePeriod : TimePeriod.values()) {
-            if (timePeriod.equals(TimePeriod.MORNING) || timePeriod.equals(TimePeriod.EVENING))
-                getReportForMorningOrEvening(helper.getVehiclesByTimePeriod(vehicles, timePeriod), timePeriod);
-            else
-                calculate(vehicles, timePeriod);
+            reportByTimePeriod(vehicles, timePeriod);
         }
     }
 
-    void getReportForMorningOrEvening(List<Vehicle> vehicles, TimePeriod timePeriod) {
+    private void reportByTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {
+        if (timePeriod.equals(TimePeriod.MORNING) || timePeriod.equals(TimePeriod.EVENING))
+            reportForMorningOrEvening(helper.getVehiclesByTimePeriod(vehicles, timePeriod), timePeriod);
+        else
+            reportByPartsOfTimePeriod(vehicles, timePeriod);
+    }
+
+    void reportForMorningOrEvening(List<Vehicle> vehicles, TimePeriod timePeriod) {
         printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, timePeriod));
         if (timePeriod.equals(TimePeriod.MORNING))
             printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(0), helper.getFormattedTime(12)));
@@ -45,11 +49,11 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
         formatReport(vehicles);
     }
 
-    void calculate(List<Vehicle> vehicles, TimePeriod timePeriod) {
+    void reportByPartsOfTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {
         printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, timePeriod));
         int minutesOfTimePeriod = getMinutesOfTimePeriod(timePeriod);
-        for (int hour = 0; hour < 24; hour++) {
-            for (int half_part = 0; half_part < 60 / minutesOfTimePeriod; half_part++) {
+        for (int hour = 0; hour < TOTAL_HOURS_PER_DAY; hour++) {
+            for (int half_part = 0; half_part < TOTAL_MINUTES_PER_HOUR / minutesOfTimePeriod; half_part++) {
                 printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(hour, (half_part * minutesOfTimePeriod)), helper.getFormattedTime(hour, ((half_part * minutesOfTimePeriod) + minutesOfTimePeriod))));
                 formatReport(getCurrentVehicles(vehicles, hour, half_part, minutesOfTimePeriod));
             }
@@ -57,7 +61,7 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
     }
 
     private List<Vehicle> getCurrentVehicles(List<Vehicle> vehicles, int hour, int half_part, int minutesOfTimePeriod) {
-        if (minutesOfTimePeriod == 60)
+        if (minutesOfTimePeriod == TOTAL_MINUTES_PER_HOUR)
             return helper.getVehiclesByTimePeriod(vehicles, hour);
         return helper.getVehiclesByTimePeriod(vehicles, hour, half_part * minutesOfTimePeriod);
     }
