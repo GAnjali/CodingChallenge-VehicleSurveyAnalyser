@@ -19,12 +19,17 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
         getReport(vehicles);
     }
 
-    public void formatReport(List<Vehicle> vehicles) {
-        report(vehicles, Direction.NORTH);
-        report(vehicles, Direction.SOUTH);
+    public void getReportDayWise(List<Vehicle> vehicles, long day){
+        printStream.print(String.format(INTER_VEHICULAR_DISTANCE_REPORT_PER_DAY_MESSAGE_TEMPLATE, day));
+        generateFullDayReport(vehicles);
     }
 
-    private void report(List<Vehicle> vehicles, Direction direction) {
+    public void formatReport(List<Vehicle> vehicles) {
+        formatReportByDirection(vehicles, Direction.NORTH);
+        formatReportByDirection(vehicles, Direction.SOUTH);
+    }
+
+    private void formatReportByDirection(List<Vehicle> vehicles, Direction direction) {
         List<Double> interVehicularDistance = calculateDistance(helper.getVehiclesByDirection(vehicles, direction));
         printStream.print(getBoundedVehiclesMessage(direction) + String.format("%.2f", helper.getAverage(interVehicularDistance)));
     }
@@ -33,7 +38,7 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
         return direction.equals(Direction.NORTH) ? NORTH_BOUND_VEHICLES_MESSAGE : SOUTH_BOUND_VEHICLES_MESSAGE;
     }
 
-    public List<Double> calculateDistance(List<Vehicle> vehicles) {
+    private List<Double> calculateDistance(List<Vehicle> vehicles) {
         List<Double> interVehicularDistance = new ArrayList<>();
         Vehicle previousVehicle = new Vehicle(null, 0, 0.00, 0);
         for (Vehicle currentVehicle : vehicles) {

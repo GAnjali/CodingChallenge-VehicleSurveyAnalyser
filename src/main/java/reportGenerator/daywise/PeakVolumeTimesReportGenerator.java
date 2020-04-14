@@ -25,7 +25,12 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
     }
 
     @Override
-    public void getReportForMorningOrEvening(List<Vehicle> vehicles, TimePeriod timePeriod) {
+    public void getReportDayWise(List<Vehicle> vehicles, long day) {
+        generateFullDayReport(vehicles);
+    }
+
+    @Override
+    public void reportForMorningOrEvening(List<Vehicle> vehicles, TimePeriod timePeriod) {
         if (timePeriod.equals(TimePeriod.MORNING)) {
             printStream.print(MORNING_VS_EVENING_MESSAGE);
             TimePeriod peakTimePeriod = getPeakTimePeriodMorningVsEvening(vehicles);
@@ -43,7 +48,7 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
         return countOfVehiclesInMorning > countOfVehiclesInEvening ? TimePeriod.MORNING : TimePeriod.EVENING;
     }
 
-    @Override
+    //    @Override
     public void getReportPerHour(List<Vehicle> vehicles) {
         printStream.print("\n\t\t" + TimePeriod.PER_HOUR);
         peakVolumeTime.calculate(vehicles, 1);
@@ -52,7 +57,7 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
         formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeHour));
     }
 
-    @Override
+    //    @Override
     public void getReportPerHalfAnHour(List<Vehicle> vehicles) {
         printStream.print("\n\t\t" + TimePeriod.PER_HALF_AN_HOUR);
         peakVolumeTime.calculate(vehicles, 2);
@@ -60,7 +65,7 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
         formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour(), peakVolumeTime.getMinutes()));
     }
 
-    @Override
+    //    @Override
     public void getReportPer20Minutes(List<Vehicle> vehicles) {
         printStream.print("\n\t\t" + TimePeriod.PER_20_MINUTES);
         peakVolumeTime.calculate(vehicles, 3);
@@ -68,7 +73,7 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
         formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour(), peakVolumeTime.getMinutes()));
     }
 
-    @Override
+    //    @Override
     public void getReportPer15Minutes(List<Vehicle> vehicles) {
         printStream.print("\n\t\t" + TimePeriod.PER_15_MINUTES);
         peakVolumeTime.calculate(vehicles, 4);

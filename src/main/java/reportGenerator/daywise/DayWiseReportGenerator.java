@@ -22,12 +22,15 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
 
     void getReport(List<Vehicle> vehicles) {
         for (long day = 0; day < helper.getTotalDays(vehicles); day++) {
-            generateFullDayReport(day, helper.getVehiclesByDay(day, vehicles));
+            List<Vehicle> vehiclesOnDay = helper.getVehiclesByDay(day, vehicles);
+            printStream.print(String.format(FULL_DAY_REPORT_MESSAGE_TEMPLATE, (day + 1)));
+            getReportDayWise(vehiclesOnDay, day);
         }
     }
 
-    void generateFullDayReport(long day, List<Vehicle> vehicles) {
-        printStream.print(String.format(FULL_DAY_REPORT_MESSAGE_TEMPLATE, (day + 1), vehicles.size()));
+    public abstract void getReportDayWise(List<Vehicle> vehicles, long day);
+
+    void generateFullDayReport(List<Vehicle> vehicles) {
         for (TimePeriod timePeriod : TimePeriod.values()) {
             reportByTimePeriod(vehicles, timePeriod);
         }

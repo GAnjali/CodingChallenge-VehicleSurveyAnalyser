@@ -27,7 +27,9 @@ public class VehicleSurveyAnalyserConstants {
     public static final String SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING = "***************Speed Distribution Report***************";
     public static final String NORTH_BOUND_VEHICLES_MESSAGE = "\n\t\t\t\t North bound vehicles     = ";
     public static final String SOUTH_BOUND_VEHICLES_MESSAGE = "\n\t\t\t\t South bound vehicles     = ";
-    public static final String FULL_DAY_REPORT_MESSAGE_TEMPLATE = "\n\tTotal Vehicle count on Day %s = %d";
+    public static final String FULL_DAY_REPORT_MESSAGE_TEMPLATE = "\n\tReport on Day - %d";
+    public static final String VEHICLE_COUNT_REPORT_PER_DAY_MESSAGE_TEMPLATE = "\n\tTotal vehicle count on day %d = %d";
+    public static final String INTER_VEHICULAR_DISTANCE_REPORT_PER_DAY_MESSAGE_TEMPLATE = "\n\tRough distance between vehicles on day %d";
     public static final String TIME_PERIOD_MESSAGE_TEMPLATE = "\n\t\t %s";
     public static final String FROM_TIME_TO_TIME_TEMPLATE = "\n\t\t  From %s to %s";
     public static final int TOTAL_HOURS_PER_DAY = 24;
