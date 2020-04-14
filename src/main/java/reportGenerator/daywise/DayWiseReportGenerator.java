@@ -22,8 +22,7 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
 
     void getReport(List<Vehicle> vehicles) {
         for (long day = 0; day < helper.getTotalDays(vehicles); day++) {
-            List<Vehicle> vehiclesOnDay = helper.getVehiclesByDay(day, vehicles);
-            generateFullDayReport(day, vehiclesOnDay);
+            generateFullDayReport(day, helper.getVehiclesByDay(day, vehicles));
         }
     }
 
@@ -32,15 +31,8 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
         for (TimePeriod timePeriod : TimePeriod.values()) {
             if (timePeriod.equals(TimePeriod.MORNING) || timePeriod.equals(TimePeriod.EVENING))
                 getReportForMorningOrEvening(helper.getVehiclesByTimePeriod(vehicles, timePeriod), timePeriod);
-            else if (timePeriod.equals(TimePeriod.PER_HOUR)) {
-                getReportPerHour(vehicles);
-            } else if (timePeriod.equals(TimePeriod.PER_HALF_AN_HOUR)) {
-                getReportPerHalfAnHour(vehicles);
-            } else if (timePeriod.equals(TimePeriod.PER_20_MINUTES)) {
-                getReportPer20Minutes(vehicles);
-            } else if (timePeriod.equals(TimePeriod.PER_15_MINUTES)) {
-                getReportPer15Minutes(vehicles);
-            }
+            else
+                calculate(vehicles, timePeriod);
         }
     }
 
@@ -53,42 +45,32 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
         formatReport(vehicles);
     }
 
-    void getReportPerHour(List<Vehicle> vehicles) {
-        printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, TimePeriod.PER_HOUR));
+    void calculate(List<Vehicle> vehicles, TimePeriod timePeriod) {
+        printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, timePeriod));
+        int minutesOfTimePeriod = getMinutesOfTimePeriod(timePeriod);
         for (int hour = 0; hour < 24; hour++) {
-            printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(hour), helper.getFormattedTime(hour + 1)));
-            formatReport(helper.getVehiclesByTimePeriod(vehicles, hour));
-        }
-    }
-
-    void getReportPer15Minutes(List<Vehicle> vehicles) {
-        printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, TimePeriod.PER_15_MINUTES));
-        for (int hour = 0; hour < 24; hour++) {
-            for (int half_part = 0; half_part < 4; half_part++) {
-                printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(hour, (half_part * 15)), helper.getFormattedTime(hour, ((half_part * 15) + 15))));
-                formatReport(helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 15));
+            for (int half_part = 0; half_part < 60 / minutesOfTimePeriod; half_part++) {
+                printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(hour, (half_part * minutesOfTimePeriod)), helper.getFormattedTime(hour, ((half_part * minutesOfTimePeriod) + minutesOfTimePeriod))));
+                formatReport(getCurrentVehicles(vehicles, hour, half_part, minutesOfTimePeriod));
             }
         }
     }
 
-    void getReportPerHalfAnHour(List<Vehicle> vehicles) {
-        printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, TimePeriod.PER_HALF_AN_HOUR));
-        for (int hour = 0; hour < 24; hour++) {
-            for (int half_part = 0; half_part < 2; half_part++) {
-                printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(hour, (half_part * 30)), helper.getFormattedTime(hour, ((half_part * 30) + 30))));
-                formatReport(helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 30));
-            }
-        }
+    private List<Vehicle> getCurrentVehicles(List<Vehicle> vehicles, int hour, int half_part, int minutesOfTimePeriod) {
+        if (minutesOfTimePeriod == 60)
+            return helper.getVehiclesByTimePeriod(vehicles, hour);
+        return helper.getVehiclesByTimePeriod(vehicles, hour, half_part * minutesOfTimePeriod);
     }
 
-    void getReportPer20Minutes(List<Vehicle> vehicles) {
-        printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, TimePeriod.PER_20_MINUTES));
-        for (int hour = 0; hour < 24; hour++) {
-            for (int half_part = 0; half_part < 3; half_part++) {
-                printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(hour, (half_part * 20)), helper.getFormattedTime(hour, ((half_part * 20) + 20))));
-                formatReport(helper.getVehiclesByTimePeriod(vehicles, hour, half_part * 20));
-            }
-        }
+    int getMinutesOfTimePeriod(TimePeriod timePeriod) {
+        if (timePeriod.equals(TimePeriod.PER_HOUR))
+            return 60;
+        else if (timePeriod.equals(TimePeriod.PER_HALF_AN_HOUR))
+            return 30;
+        else if (timePeriod.equals(TimePeriod.PER_20_MINUTES))
+            return 20;
+        else
+            return 15;
     }
 
     abstract void formatReport(List<Vehicle> vehiclesByTimePeriod);
