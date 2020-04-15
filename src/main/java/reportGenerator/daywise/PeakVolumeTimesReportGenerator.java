@@ -35,9 +35,9 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
             printStream.print(MORNING_VS_EVENING_MESSAGE);
             TimePeriod peakTimePeriod = getPeakTimePeriodMorningVsEvening(vehicles);
             if (peakTimePeriod.equals(TimePeriod.MORNING))
-                printStream.print("\n\t\tFrom HOUR " + helper.getFormattedTime(0) + " to " + helper.getFormattedTime(12));
+                printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(0), helper.getFormattedTime(12)));
             else
-                printStream.print("\n\t\tFrom HOUR " + helper.getFormattedTime(18) + " to " + helper.getFormattedTime(24));
+                printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(18), helper.getFormattedTime(24)));
             formatReport(helper.getVehiclesByTimePeriod(vehicles, peakTimePeriod));
         }
     }
@@ -48,37 +48,17 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
         return countOfVehiclesInMorning > countOfVehiclesInEvening ? TimePeriod.MORNING : TimePeriod.EVENING;
     }
 
-    //    @Override
-    public void getReportPerHour(List<Vehicle> vehicles) {
-        printStream.print("\n\t\t" + TimePeriod.PER_HOUR);
-        peakVolumeTime.calculate(vehicles, 1);
-        int peakVolumeHour = peakVolumeTime.getHour();
-        printStream.print("\n\t\tFrom HOUR " + helper.getFormattedTime(peakVolumeHour) + " to " + helper.getFormattedTime(peakVolumeHour + 1));
-        formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeHour));
-    }
-
-    //    @Override
-    public void getReportPerHalfAnHour(List<Vehicle> vehicles) {
-        printStream.print("\n\t\t" + TimePeriod.PER_HALF_AN_HOUR);
-        peakVolumeTime.calculate(vehicles, 2);
-        printStream.print("\n\t\tFrom " + helper.getFormattedTime(peakVolumeTime.getHour(), (peakVolumeTime.getMinutes())) + " to " + helper.getFormattedTime(peakVolumeTime.getHour(), (peakVolumeTime.getMinutes() + 30)));
-        formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour(), peakVolumeTime.getMinutes()));
-    }
-
-    //    @Override
-    public void getReportPer20Minutes(List<Vehicle> vehicles) {
-        printStream.print("\n\t\t" + TimePeriod.PER_20_MINUTES);
-        peakVolumeTime.calculate(vehicles, 3);
-        printStream.print("\n\t\tFrom " + helper.getFormattedTime(peakVolumeTime.getHour(), peakVolumeTime.getMinutes()) + " to " + helper.getFormattedTime(peakVolumeTime.getHour(), (peakVolumeTime.getMinutes() + 20)));
-        formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour(), peakVolumeTime.getMinutes()));
-    }
-
-    //    @Override
-    public void getReportPer15Minutes(List<Vehicle> vehicles) {
-        printStream.print("\n\t\t" + TimePeriod.PER_15_MINUTES);
-        peakVolumeTime.calculate(vehicles, 4);
-        printStream.print("\n\t\tFrom " + helper.getFormattedTime(peakVolumeTime.getHour(), peakVolumeTime.getMinutes()) + " to " + helper.getFormattedTime(peakVolumeTime.getHour(), (peakVolumeTime.getMinutes() + 15)));
-        formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour(), peakVolumeTime.getMinutes()));
+    public void reportByPartsOfTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {
+        printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, timePeriod));
+        int minutesOfTimePeriod = getMinutesOfTimePeriod(timePeriod);
+        peakVolumeTime.calculate(vehicles, TOTAL_MINUTES_PER_HOUR / minutesOfTimePeriod);
+        if (timePeriod.equals(TimePeriod.PER_HOUR)) {
+            printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(peakVolumeTime.getHour()), helper.getFormattedTime(peakVolumeTime.getHour() + 1)));
+            formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour()));
+        } else {
+            printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(peakVolumeTime.getHour(), peakVolumeTime.getMinutes()), helper.getFormattedTime(peakVolumeTime.getHour(), (peakVolumeTime.getMinutes() + minutesOfTimePeriod))));
+            formatReport(helper.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour(), peakVolumeTime.getMinutes()));
+        }
     }
 
     @Override

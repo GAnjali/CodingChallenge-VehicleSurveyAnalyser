@@ -44,7 +44,7 @@ public class DataParser {
             throw new InvalidDataException();
         }
         int frontAxleTime = helper.getTime(records.get(recordIndex));
-        int rearAxleTime = helper.getTime(records.get(recordIndex) + 1);
+        int rearAxleTime = helper.getTime(records.get(recordIndex + 1));
         vehicles.add(new Vehicle(direction, frontAxleTime, helper.getSpeed(rearAxleTime - frontAxleTime), day));
     }
 

@@ -9,6 +9,7 @@ import org.junit.Test;
 import reportGenerator.TimePeriod;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class HelperTest {
@@ -137,4 +138,8 @@ public class HelperTest {
         Assert.assertTrue(vehiclesByTimePeriod.contains(vehicles.get(0)));
     }
 
+    @Test
+    public void shouldReturnAverageForGivenListWHenCalledGetAverage(){
+        System.out.println(helper.getAverage(Arrays.asList(1.0, 2.0, 2.0, 6.0)));
+    }
 }
