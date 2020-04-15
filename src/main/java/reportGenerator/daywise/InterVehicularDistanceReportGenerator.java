@@ -19,11 +19,13 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
         getReport(vehicles);
     }
 
-    public void getReportDayWise(List<Vehicle> vehicles, long day){
+    @Override
+    public void getReportDayWise(List<Vehicle> vehicles, long day) {
         printStream.print(String.format(INTER_VEHICULAR_DISTANCE_REPORT_PER_DAY_MESSAGE_TEMPLATE, day));
         generateFullDayReport(vehicles);
     }
 
+    @Override
     public void formatReport(List<Vehicle> vehicles) {
         formatReportByDirection(vehicles, Direction.NORTH);
         formatReportByDirection(vehicles, Direction.SOUTH);

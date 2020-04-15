@@ -27,7 +27,9 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
         }
     }
 
-    public abstract void getReportDayWise(List<Vehicle> vehicles, long day);
+    public void getReportDayWise(List<Vehicle> vehicles, long day) {
+        generateFullDayReport(vehicles);
+    }
 
     void generateFullDayReport(List<Vehicle> vehicles) {
         for (TimePeriod timePeriod : TimePeriod.values()) {
