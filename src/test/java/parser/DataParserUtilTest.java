@@ -14,6 +14,16 @@ public class DataParserUtilTest {
     }
 
     @Test
+    public void shouldReturnSpeedForGivenMilliSeconds(){
+        Assert.assertEquals((0.03), (dataParserUtil.calculateSpeed(98186)), 0.0);
+    }
+
+    @Test
+    public void shouldReturnSpeedForGivenMilliSeconds19401611(){
+        Assert.assertEquals((0.13), (dataParserUtil.calculateSpeed(19401611)), 0.00);
+    }
+
+    @Test
     public void shouldReturnTimeForGivenRecordA98186() throws InvalidTimeException {
         Assert.assertEquals(98186, dataParserUtil.getExtractedTime("A98186"));
     }
