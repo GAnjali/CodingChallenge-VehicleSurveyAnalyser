@@ -20,21 +20,6 @@ public class Helper {
         timeUtil = new TimeUtil();
     }
 
-    public int getTime(String record) throws InvalidTimeException {
-        try {
-            if (record == null)
-                return 0;
-            return Integer.parseInt(record.substring(1));
-        } catch (Exception exception) {
-            throw new InvalidTimeException();
-        }
-    }
-
-    public Double getSpeed(int timeInMilliSeconds) {
-        double speed = (Double.parseDouble(AVERAGE_WHEEL_BASE) / timeInMilliSeconds) * 1000;
-        return Double.parseDouble(String.format("%.02f", speed));
-    }
-
     public long getTotalDays(List<Vehicle> vehicles) {
         Vehicle lastVehicle = vehicles.get(vehicles.size() - 1);
         return lastVehicle.getDay() + 1;

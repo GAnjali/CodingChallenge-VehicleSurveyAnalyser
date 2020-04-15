@@ -23,21 +23,6 @@ public class HelperTest {
     }
 
     @Test
-    public void shouldReturnTimeForGivenRecordA98186() throws InvalidTimeException {
-        Assert.assertEquals(98186, helper.getTime("A98186"));
-    }
-
-    @Test
-    public void shouldReturnTimeForGivenRecordA5060911() throws InvalidTimeException {
-        Assert.assertEquals(5060911, helper.getTime("A5060911"));
-    }
-
-    @Test(expected = InvalidTimeException.class)
-    public void shouldReturnInvalidTimeExceptionForGivenRecord() throws InvalidTimeException {
-        helper.getTime("A50.60911");
-    }
-
-    @Test
     public void shouldReturnDays1ForGivenVehicleDataWith56060186MilliSeconds() {
         vehicles.add(new Vehicle(Direction.NORTH, 180060911, 5.00, 0));
         Assert.assertEquals(3, helper.getTotalDays(vehicles));

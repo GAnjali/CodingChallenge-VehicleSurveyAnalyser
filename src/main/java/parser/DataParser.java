@@ -4,7 +4,6 @@ import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
 import model.Direction;
 import model.Vehicle;
-import helper.Helper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +12,11 @@ import static helper.VehicleSurveyAnalyserConstants.*;
 
 public class DataParser {
     private List<Vehicle> vehicles;
-    private Helper helper;
+    private DataParserUtil dataParserUtil;
 
     public DataParser() {
         vehicles = new ArrayList<>();
-        helper = new Helper();
+        dataParserUtil = new DataParserUtil();
     }
 
     public List<Vehicle> parse(List<String> records) throws InvalidDataException, InvalidTimeException {
@@ -45,16 +44,16 @@ public class DataParser {
     }
 
     private boolean isNextDay(String previousRecord, String currentRecord) throws InvalidTimeException {
-        return helper.getTime(currentRecord) < helper.getTime(previousRecord);
+        return dataParserUtil.getExtractedTime(currentRecord) < dataParserUtil.getExtractedTime(previousRecord);
     }
 
     private void addVehicle(List<String> records, int recordIndex, List<Vehicle> vehicles, int day, Direction direction) throws InvalidDataException, InvalidTimeException {
         if (!isValidRecords(records, recordIndex, direction)) {
             throw new InvalidDataException();
         }
-        int frontAxleTime = helper.getTime(records.get(recordIndex));
-        int rearAxleTime = helper.getTime(records.get(recordIndex + 1));
-        vehicles.add(new Vehicle(direction, frontAxleTime, helper.getSpeed(rearAxleTime - frontAxleTime), day));
+        int frontAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex));
+        int rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 1));
+        vehicles.add(new Vehicle(direction, frontAxleTime, dataParserUtil.calculateSpeed(rearAxleTime - frontAxleTime), day));
     }
 
     private boolean isValidRecords(List<String> records, int recordIndex, Direction direction) {
