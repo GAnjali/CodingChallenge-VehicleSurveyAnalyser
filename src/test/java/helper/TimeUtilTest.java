@@ -3,6 +3,7 @@ package helper;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import reportGenerator.daywise.TimeUtil;
 
 public class TimeUtilTest {
     TimeUtil timeUtil;

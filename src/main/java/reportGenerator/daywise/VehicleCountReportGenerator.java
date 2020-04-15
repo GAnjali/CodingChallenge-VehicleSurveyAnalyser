@@ -27,7 +27,7 @@ public class VehicleCountReportGenerator extends DayWiseReportGenerator {
     @Override
     public void formatReport(List<Vehicle> vehicles) {
         printStream.print(TOTAL_VEHICLE_COUNT_MESSAGE_TEMPLATE + vehicles.size());
-        printStream.print(NORTH_VEHICLES_COUNT_MESSAGE_TEMPLATE + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
-        printStream.print(SOUTH_VEHICLES_COUNT_MESSAGE_TEMPLATE + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
+        printStream.print(NORTH_VEHICLES_COUNT_MESSAGE_TEMPLATE + util.getVehicleCountByDirection(vehicles, Direction.NORTH));
+        printStream.print(SOUTH_VEHICLES_COUNT_MESSAGE_TEMPLATE + util.getVehicleCountByDirection(vehicles, Direction.SOUTH));
     }
 }

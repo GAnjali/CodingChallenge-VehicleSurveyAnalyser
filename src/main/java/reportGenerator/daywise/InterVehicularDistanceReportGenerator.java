@@ -11,6 +11,11 @@ import java.util.List;
 import static helper.VehicleSurveyAnalyserConstants.*;
 
 public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerator {
+    private InterVehicularDistanceReportGeneratorUtil util;
+
+    public InterVehicularDistanceReportGenerator() {
+        util = new InterVehicularDistanceReportGeneratorUtil();
+    }
 
     @Override
     public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
@@ -32,8 +37,8 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
     }
 
     private void formatReportByDirection(List<Vehicle> vehicles, Direction direction) {
-        List<Double> interVehicularDistance = calculateDistance(helper.getVehiclesByDirection(vehicles, direction));
-        printStream.print(getBoundedVehiclesMessage(direction) + String.format("%.2f", helper.getAverage(interVehicularDistance)));
+        List<Double> interVehicularDistance = calculateDistance(util.getVehiclesByDirection(vehicles, direction));
+        printStream.print(getBoundedVehiclesMessage(direction) + String.format("%.2f", util.getAverage(interVehicularDistance)));
     }
 
     private String getBoundedVehiclesMessage(Direction direction) {
@@ -51,7 +56,7 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
     }
 
     private Double getInterVehicularDistance(Vehicle previousVehicle, Vehicle currentVehicle) {
-        double timeGapAmongVehiclesInSeconds = helper.getTimeGapAmongVehiclesInSeconds(previousVehicle.getPassingTimeInMilliSeconds(), currentVehicle.getPassingTimeInMilliSeconds());
+        double timeGapAmongVehiclesInSeconds = util.getTimeGapAmongVehiclesInSeconds(previousVehicle.getPassingTimeInMilliSeconds(), currentVehicle.getPassingTimeInMilliSeconds());
         double speedGapAmongVehicles = Math.abs(previousVehicle.getSpeed() - currentVehicle.getSpeed());
         return Double.parseDouble(String.format("%.2f", timeGapAmongVehiclesInSeconds * speedGapAmongVehicles / 1000));
     }

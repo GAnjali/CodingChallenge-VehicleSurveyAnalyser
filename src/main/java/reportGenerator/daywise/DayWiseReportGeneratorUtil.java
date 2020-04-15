@@ -1,6 +1,5 @@
-package helper;
+package reportGenerator.daywise;
 
-import exceptions.InvalidTimeException;
 import model.Direction;
 import model.Vehicle;
 import reportGenerator.TimePeriod;
@@ -8,15 +7,12 @@ import reportGenerator.TimePeriod;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 
-import static helper.VehicleSurveyAnalyserConstants.AVERAGE_WHEEL_BASE;
+public class DayWiseReportGeneratorUtil {
+    private TimeUtil timeUtil;
 
-public class Helper {
-    TimeUtil timeUtil;
-
-    public Helper() {
+    public DayWiseReportGeneratorUtil(){
         timeUtil = new TimeUtil();
     }
 
@@ -36,16 +32,6 @@ public class Helper {
             return vehicles.stream().filter(this::isVehicleMovingInEvening).collect(Collectors.toList());
     }
 
-    public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour) {
-        return vehicles.stream().filter(vehicle -> timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) == hour).collect(Collectors.toList());
-    }
-
-    public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour, int minutes) {
-        int toMinutes = hour * 60 + minutes;
-        int fromMinutes = toMinutes - 30;
-        return vehicles.stream().filter(vehicle -> (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
-    }
-
     private boolean isVehicleMovingInEvening(Vehicle vehicle) {
         long vehiclePassingHour = getVehiclePassingHourInDay(vehicle);
         return vehiclePassingHour > 18 && vehiclePassingHour <= 24;
@@ -58,6 +44,16 @@ public class Helper {
 
     private long getVehiclePassingHourInDay(Vehicle vehicle) {
         return timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds());
+    }
+
+    public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour) {
+        return vehicles.stream().filter(vehicle -> timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) == hour).collect(Collectors.toList());
+    }
+
+    public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour, int minutes) {
+        int toMinutes = hour * 60 + minutes;
+        int fromMinutes = toMinutes - 30;
+        return vehicles.stream().filter(vehicle -> (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
     }
 
     public int getVehicleCountByDirection(List<Vehicle> vehicles, Direction direction) {
@@ -82,23 +78,5 @@ public class Helper {
         DateTimeFormatter DATE_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
         LocalTime localTime = LocalTime.of(hour, min, 0);
         return DATE_TIME_FORMATTER.format(localTime);
-    }
-
-    public List<Vehicle> getVehiclesOnCurrentSpeed(List<Vehicle> vehicles, float speed) {
-        return vehicles.stream().filter(vehicle -> vehicle.getSpeed() > speed - 5 && vehicle.getSpeed() <= speed).collect(Collectors.toList());
-    }
-
-    public List<Vehicle> getVehiclesByDirection(List<Vehicle> vehicles, Direction direction) {
-        return vehicles.stream().filter(vehicle -> vehicle.getDirection().equals(direction)).collect(Collectors.toList());
-    }
-
-    public double getAverage(List<Double> interVehicularDistance) {
-        OptionalDouble average = interVehicularDistance.stream().mapToDouble(a -> a).average();
-        return average.isPresent() ? average.getAsDouble() : 0;
-    }
-
-    public double getTimeGapAmongVehiclesInSeconds(int firstVehiclePassingTime, int secondVehiclePassingTime) {
-        int gapInMilliseconds = firstVehiclePassingTime > secondVehiclePassingTime ? firstVehiclePassingTime - secondVehiclePassingTime : secondVehiclePassingTime - firstVehiclePassingTime;
-        return gapInMilliseconds / 1000;
     }
 }

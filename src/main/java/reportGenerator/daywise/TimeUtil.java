@@ -1,4 +1,4 @@
-package helper;
+package reportGenerator.daywise;
 
 import java.util.concurrent.TimeUnit;
 

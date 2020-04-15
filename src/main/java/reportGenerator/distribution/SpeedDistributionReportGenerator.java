@@ -10,6 +10,11 @@ import java.util.List;
 import static helper.VehicleSurveyAnalyserConstants.*;
 
 public class SpeedDistributionReportGenerator extends DistributionReportGenerator {
+    private SpeedDistributionReportGeneratorUtil util;
+
+    public SpeedDistributionReportGenerator(){
+        util = new SpeedDistributionReportGeneratorUtil();
+    }
     @Override
     public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
         writeToFile(SPEED_DISTRIBUTION_REPORT_FILE_NAME);
@@ -20,7 +25,7 @@ public class SpeedDistributionReportGenerator extends DistributionReportGenerato
     private void getReport(List<Vehicle> vehicles) {
         Double highestSpeedOfVehicle = getHighestSpeed(vehicles);
         for (float speed = DISTRIBUTION_GAP; speed <= highestSpeedOfVehicle; speed = speed + DISTRIBUTION_GAP) {
-            List<Vehicle> vehiclesOnCurrentSpeed = helper.getVehiclesOnCurrentSpeed(vehicles, speed);
+            List<Vehicle> vehiclesOnCurrentSpeed = util.getVehiclesOnCurrentSpeed(vehicles, speed);
             String percentageOfVehiclesOnCurrentSpeed = getPercentageOfVehiclesOnCurrentSpeed(vehiclesOnCurrentSpeed, vehicles);
             printStream.print(String.format(FROM_SPEED_TO_SPEED_TEMPLATE, formatSpeed(speed - DISTRIBUTION_GAP), formatSpeed(speed), percentageOfVehiclesOnCurrentSpeed));
         }
