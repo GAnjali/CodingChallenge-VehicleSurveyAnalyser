@@ -32,6 +32,8 @@ public class VehicleSurveyAnalyserConstants {
     public static final String INTER_VEHICULAR_DISTANCE_REPORT_PER_DAY_MESSAGE_TEMPLATE = "\n\tRough distance between vehicles on day %d";
     public static final String TIME_PERIOD_MESSAGE_TEMPLATE = "\n\t\t %s";
     public static final String FROM_TIME_TO_TIME_TEMPLATE = "\n\t\t  From %s to %s";
+    public static final String FROM_SPEED_TO_SPEED_TEMPLATE = "\n\t\t  Speed From %s to %s = %s%%";
     public static final int TOTAL_HOURS_PER_DAY = 24;
     public static final int TOTAL_MINUTES_PER_HOUR = 60;
+    public static final int DISTRIBUTION_GAP = 5;
 }

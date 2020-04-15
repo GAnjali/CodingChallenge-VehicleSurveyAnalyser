@@ -1,38 +1,35 @@
 package reportGenerator.distribution;
 
 import exceptions.UnableToCreateFileException;
-import helper.Helper;
 import model.Vehicle;
-import reportGenerator.ReportGenerator;
 
 import java.io.FileNotFoundException;
-import java.io.PrintStream;
 import java.util.Comparator;
 import java.util.List;
 
-import static helper.VehicleSurveyAnalyserConstants.SPEED_DISTRIBUTION_REPORT_FILE_NAME;
-import static helper.VehicleSurveyAnalyserConstants.SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING;
+import static helper.VehicleSurveyAnalyserConstants.*;
 
-public class SpeedDistributionReportGenerator implements ReportGenerator {
-    Helper helper = new Helper();
-    PrintStream printStream = null;
-
-    public void writeToFile(String file) throws UnableToCreateFileException, FileNotFoundException {
-        printStream = getOutputStream(file);
-    }
-
+public class SpeedDistributionReportGenerator extends DistributionReportGenerator {
     @Override
     public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
         writeToFile(SPEED_DISTRIBUTION_REPORT_FILE_NAME);
-        printStream.print("\n" + SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING);
+        printStream.print(SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING);
+        getReport(vehicles);
+    }
+
+    private void getReport(List<Vehicle> vehicles) {
         Double highestSpeedOfVehicle = getHighestSpeed(vehicles);
-        for (float speed = 5; speed <= highestSpeedOfVehicle; speed = speed + 5) {
+        for (float speed = DISTRIBUTION_GAP; speed <= highestSpeedOfVehicle; speed = speed + DISTRIBUTION_GAP) {
             List<Vehicle> vehiclesOnCurrentSpeed = helper.getVehiclesOnCurrentSpeed(vehicles, speed);
-            float countOnSpeed = vehiclesOnCurrentSpeed.size();
-            float totalCount = vehicles.size();
-            String percentage = String.format("%.2f", countOnSpeed / totalCount * 100);
-            printStream.print("\n\tSpeed from " + formatSpeed(speed - 5) + " to " + formatSpeed(speed) + " = " + percentage + "%");
+            String percentageOfVehiclesOnCurrentSpeed = getPercentageOfVehiclesOnCurrentSpeed(vehiclesOnCurrentSpeed, vehicles);
+            printStream.print(String.format(FROM_SPEED_TO_SPEED_TEMPLATE, formatSpeed(speed - DISTRIBUTION_GAP), formatSpeed(speed), percentageOfVehiclesOnCurrentSpeed));
         }
+    }
+
+    private String getPercentageOfVehiclesOnCurrentSpeed(List<Vehicle> vehiclesOnCurrentSpeed, List<Vehicle> vehicles) {
+        float countOfVehiclesOnCurrentSpeed = vehiclesOnCurrentSpeed.size();
+        float totalCountOfVehicles = vehicles.size();
+        return String.format("%.2f", countOfVehiclesOnCurrentSpeed / totalCountOfVehicles * 100);
     }
 
     private String formatSpeed(float speed) {
