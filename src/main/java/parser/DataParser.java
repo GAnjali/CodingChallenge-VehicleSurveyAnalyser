@@ -22,14 +22,13 @@ public class DataParser {
 
     public List<Vehicle> parse(List<String> records) throws InvalidDataException, InvalidTimeException {
         int day = 0;
-        String oldRecord = null;
+        String previousRecord = null;
         for (int recordIndex = 0; recordIndex < records.size() - 1; recordIndex++) {
             String currentRecord = records.get(recordIndex);
             Direction directionOfVehicle = getDirectionOfVehicle(records.get(recordIndex), records.get(recordIndex + 1));
+            day = calculateDay(previousRecord, currentRecord, day);
             addVehicle(records, recordIndex, vehicles, day, directionOfVehicle);
-            if (isNextDay(oldRecord, currentRecord))
-                day++;
-            oldRecord = currentRecord;
+            previousRecord = currentRecord;
             recordIndex = getNextRecordIndex(recordIndex, directionOfVehicle);
         }
         return vehicles;
@@ -37,6 +36,16 @@ public class DataParser {
 
     private Direction getDirectionOfVehicle(String record1, String record2) {
         return record1.startsWith(SENSOR1_NAME) & record2.startsWith(SENSOR1_NAME) ? Direction.NORTH : Direction.SOUTH;
+    }
+
+    private int calculateDay(String previousRecord, String currentRecord, int day) throws InvalidTimeException {
+        if (isNextDay(previousRecord, currentRecord))
+            day++;
+        return day;
+    }
+
+    private boolean isNextDay(String previousRecord, String currentRecord) throws InvalidTimeException {
+        return helper.getTime(currentRecord) < helper.getTime(previousRecord);
     }
 
     private void addVehicle(List<String> records, int recordIndex, List<Vehicle> vehicles, int day, Direction direction) throws InvalidDataException, InvalidTimeException {
@@ -59,10 +68,6 @@ public class DataParser {
         String frontAxleSensor1Record = records.get(recordIndex);
         String rearAxleSensor1Record = records.get(recordIndex + 1);
         return frontAxleSensor1Record.startsWith(SENSOR1_NAME) && rearAxleSensor1Record.startsWith(SENSOR1_NAME);
-    }
-
-    private boolean isNextDay(String previous, String current) throws InvalidTimeException {
-        return helper.getTime(current) < helper.getTime(previous);
     }
 
     private int getNextRecordIndex(int currentRecordIndex, Direction directionOfVehicle) {
