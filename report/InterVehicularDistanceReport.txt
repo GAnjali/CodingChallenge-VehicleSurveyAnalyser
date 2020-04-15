@@ -1,783 +1,3671 @@
 ***************Inter Vehicular Distance Report***************
-	Full day report on Day 1
-		MORNING	From 00:00:00 to 12:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 122.23
-		EVENING	From 18:00:00 to 00:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 122.23
-		PER_HOUR
-		From HOUR 00:00:00 to 01:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 01:00:00 to 02:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 02:00:00 to 03:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 03:00:00 to 04:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 04:00:00 to 05:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 05:00:00 to 06:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 133.97
-		From HOUR 06:00:00 to 07:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 07:00:00 to 08:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 08:00:00 to 09:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 09:00:00 to 10:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 10:00:00 to 11:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 11:00:00 to 12:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 12:00:00 to 13:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 13:00:00 to 14:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 14:00:00 to 15:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 15:00:00 to 16:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 16:00:00 to 17:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 17:00:00 to 18:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 1098.80
-		From HOUR 18:00:00 to 19:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 19:00:00 to 20:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 20:00:00 to 21:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 21:00:00 to 22:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 22:00:00 to 23:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 23:00:00 to 00:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		PER_HALF_AN_HOUR
-		From 00:00:00 to 00:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:30:00 to 01:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:00:00 to 01:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:30:00 to 02:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:00:00 to 02:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:30:00 to 03:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:00:00 to 03:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:30:00 to 04:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:00:00 to 04:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:30:00 to 05:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:00:00 to 05:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:30:00 to 06:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 133.97
-		From 06:00:00 to 06:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:30:00 to 07:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:00:00 to 07:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:30:00 to 08:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:00:00 to 08:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:30:00 to 09:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:00:00 to 09:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:30:00 to 10:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:00:00 to 10:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:30:00 to 11:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:00:00 to 11:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:30:00 to 12:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:00:00 to 12:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:30:00 to 13:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:00:00 to 13:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:30:00 to 14:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:00:00 to 14:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:30:00 to 15:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:00:00 to 15:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:30:00 to 16:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:00:00 to 16:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:30:00 to 17:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:00:00 to 17:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:30:00 to 18:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:00:00 to 18:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 1098.80
-		From 18:30:00 to 19:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:00:00 to 19:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:30:00 to 20:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:00:00 to 20:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:30:00 to 21:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:00:00 to 21:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:30:00 to 22:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:00:00 to 22:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:30:00 to 23:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:00:00 to 23:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:30:00 to 00:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		PER_20_MINUTES
-		From 00:00:00 to 00:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:20:00 to 00:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:40:00 to 01:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:00:00 to 01:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:20:00 to 01:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:40:00 to 02:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:00:00 to 02:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:20:00 to 02:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:40:00 to 03:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:00:00 to 03:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:20:00 to 03:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:40:00 to 04:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:00:00 to 04:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:20:00 to 04:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:40:00 to 05:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:00:00 to 05:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:20:00 to 05:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 133.97
-		From 05:40:00 to 06:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:00:00 to 06:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:20:00 to 06:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:40:00 to 07:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:00:00 to 07:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:20:00 to 07:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:40:00 to 08:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:00:00 to 08:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:20:00 to 08:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:40:00 to 09:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:00:00 to 09:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:20:00 to 09:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:40:00 to 10:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:00:00 to 10:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:20:00 to 10:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:40:00 to 11:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:00:00 to 11:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:20:00 to 11:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:40:00 to 12:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:00:00 to 12:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:20:00 to 12:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:40:00 to 13:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:00:00 to 13:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:20:00 to 13:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:40:00 to 14:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:00:00 to 14:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:20:00 to 14:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:40:00 to 15:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:00:00 to 15:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:20:00 to 15:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:40:00 to 16:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:00:00 to 16:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:20:00 to 16:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:40:00 to 17:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:00:00 to 17:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:20:00 to 17:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:40:00 to 18:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:00:00 to 18:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 1098.80
-		From 18:20:00 to 18:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 1098.80
-		From 18:40:00 to 19:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:00:00 to 19:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:20:00 to 19:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:40:00 to 20:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:00:00 to 20:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:20:00 to 20:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:40:00 to 21:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:00:00 to 21:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:20:00 to 21:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:40:00 to 22:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:00:00 to 22:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:20:00 to 22:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:40:00 to 23:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:00:00 to 23:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:20:00 to 23:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:40:00 to 00:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		PER_15_MINUTES
-		From 00:00:00 to 00:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:15:00 to 00:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:30:00 to 00:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:45:00 to 01:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:00:00 to 01:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:15:00 to 01:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:30:00 to 01:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:45:00 to 02:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:00:00 to 02:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:15:00 to 02:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:30:00 to 02:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:45:00 to 03:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:00:00 to 03:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:15:00 to 03:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:30:00 to 03:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:45:00 to 04:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:00:00 to 04:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:15:00 to 04:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:30:00 to 04:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:45:00 to 05:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:00:00 to 05:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:15:00 to 05:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 133.97
-		From 05:30:00 to 05:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 133.97
-		From 05:45:00 to 06:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:00:00 to 06:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:15:00 to 06:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:30:00 to 06:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:45:00 to 07:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:00:00 to 07:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:15:00 to 07:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:30:00 to 07:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:45:00 to 08:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:00:00 to 08:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:15:00 to 08:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:30:00 to 08:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:45:00 to 09:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:00:00 to 09:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:15:00 to 09:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:30:00 to 09:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:45:00 to 10:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:00:00 to 10:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:15:00 to 10:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:30:00 to 10:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:45:00 to 11:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:00:00 to 11:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:15:00 to 11:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:30:00 to 11:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:45:00 to 12:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:00:00 to 12:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:15:00 to 12:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:30:00 to 12:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:45:00 to 13:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:00:00 to 13:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:15:00 to 13:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:30:00 to 13:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:45:00 to 14:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:00:00 to 14:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:15:00 to 14:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:30:00 to 14:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:45:00 to 15:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:00:00 to 15:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:15:00 to 15:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:30:00 to 15:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:45:00 to 16:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:00:00 to 16:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:15:00 to 16:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:30:00 to 16:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:45:00 to 17:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:00:00 to 17:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:15:00 to 17:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:30:00 to 17:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:45:00 to 18:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:00:00 to 18:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 1098.80
-		From 18:15:00 to 18:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 1098.80
-		From 18:30:00 to 18:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:45:00 to 19:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:00:00 to 19:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:15:00 to 19:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:30:00 to 19:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:45:00 to 20:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:00:00 to 20:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:15:00 to 20:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:30:00 to 20:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:45:00 to 21:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:00:00 to 21:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:15:00 to 21:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:30:00 to 21:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:45:00 to 22:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:00:00 to 22:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:15:00 to 22:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:30:00 to 22:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:45:00 to 23:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:00:00 to 23:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:15:00 to 23:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:30:00 to 23:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:45:00 to 00:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-	Full day report on Day 2
-		MORNING	From 00:00:00 to 12:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 2701.80
-		EVENING	From 18:00:00 to 00:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 2701.80
-		PER_HOUR
-		From HOUR 00:00:00 to 01:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 01:00:00 to 02:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 2701.80
-		From HOUR 02:00:00 to 03:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 03:00:00 to 04:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 04:00:00 to 05:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 05:00:00 to 06:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 06:00:00 to 07:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 07:00:00 to 08:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 08:00:00 to 09:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 09:00:00 to 10:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 10:00:00 to 11:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 11:00:00 to 12:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 12:00:00 to 13:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 13:00:00 to 14:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 14:00:00 to 15:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 15:00:00 to 16:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 16:00:00 to 17:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 17:00:00 to 18:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 18:00:00 to 19:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 19:00:00 to 20:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 20:00:00 to 21:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 21:00:00 to 22:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 22:00:00 to 23:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From HOUR 23:00:00 to 00:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		PER_HALF_AN_HOUR
-		From 00:00:00 to 00:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:30:00 to 01:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:00:00 to 01:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:30:00 to 02:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 2701.80
-		From 02:00:00 to 02:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:30:00 to 03:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:00:00 to 03:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:30:00 to 04:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:00:00 to 04:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:30:00 to 05:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:00:00 to 05:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:30:00 to 06:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:00:00 to 06:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:30:00 to 07:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:00:00 to 07:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:30:00 to 08:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:00:00 to 08:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:30:00 to 09:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:00:00 to 09:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:30:00 to 10:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:00:00 to 10:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:30:00 to 11:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:00:00 to 11:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:30:00 to 12:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:00:00 to 12:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:30:00 to 13:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:00:00 to 13:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:30:00 to 14:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:00:00 to 14:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:30:00 to 15:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:00:00 to 15:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:30:00 to 16:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:00:00 to 16:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:30:00 to 17:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:00:00 to 17:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:30:00 to 18:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:00:00 to 18:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:30:00 to 19:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:00:00 to 19:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:30:00 to 20:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:00:00 to 20:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:30:00 to 21:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:00:00 to 21:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:30:00 to 22:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:00:00 to 22:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:30:00 to 23:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:00:00 to 23:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:30:00 to 00:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		PER_20_MINUTES
-		From 00:00:00 to 00:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:20:00 to 00:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:40:00 to 01:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:00:00 to 01:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:20:00 to 01:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 2701.80
-		From 01:40:00 to 02:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:00:00 to 02:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:20:00 to 02:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:40:00 to 03:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:00:00 to 03:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:20:00 to 03:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:40:00 to 04:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:00:00 to 04:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:20:00 to 04:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:40:00 to 05:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:00:00 to 05:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:20:00 to 05:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:40:00 to 06:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:00:00 to 06:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:20:00 to 06:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:40:00 to 07:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:00:00 to 07:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:20:00 to 07:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:40:00 to 08:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:00:00 to 08:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:20:00 to 08:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:40:00 to 09:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:00:00 to 09:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:20:00 to 09:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:40:00 to 10:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:00:00 to 10:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:20:00 to 10:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:40:00 to 11:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:00:00 to 11:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:20:00 to 11:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:40:00 to 12:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:00:00 to 12:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:20:00 to 12:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:40:00 to 13:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:00:00 to 13:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:20:00 to 13:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:40:00 to 14:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:00:00 to 14:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:20:00 to 14:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:40:00 to 15:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:00:00 to 15:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:20:00 to 15:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:40:00 to 16:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:00:00 to 16:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:20:00 to 16:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:40:00 to 17:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:00:00 to 17:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:20:00 to 17:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:40:00 to 18:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:00:00 to 18:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:20:00 to 18:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:40:00 to 19:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:00:00 to 19:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:20:00 to 19:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:40:00 to 20:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:00:00 to 20:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:20:00 to 20:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:40:00 to 21:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:00:00 to 21:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:20:00 to 21:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:40:00 to 22:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:00:00 to 22:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:20:00 to 22:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:40:00 to 23:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:00:00 to 23:20:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:20:00 to 23:40:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:40:00 to 00:00:00				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		PER_15_MINUTES
-		From 00:00:00 to 00:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:15:00 to 00:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:30:00 to 00:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 00:45:00 to 01:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:00:00 to 01:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 01:15:00 to 01:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 2701.80
-		From 01:30:00 to 01:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 2701.80
-		From 01:45:00 to 02:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:00:00 to 02:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:15:00 to 02:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:30:00 to 02:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 02:45:00 to 03:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:00:00 to 03:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:15:00 to 03:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:30:00 to 03:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 03:45:00 to 04:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:00:00 to 04:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:15:00 to 04:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:30:00 to 04:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 04:45:00 to 05:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:00:00 to 05:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:15:00 to 05:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:30:00 to 05:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 05:45:00 to 06:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:00:00 to 06:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:15:00 to 06:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:30:00 to 06:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 06:45:00 to 07:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:00:00 to 07:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:15:00 to 07:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:30:00 to 07:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 07:45:00 to 08:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:00:00 to 08:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:15:00 to 08:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:30:00 to 08:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 08:45:00 to 09:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:00:00 to 09:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:15:00 to 09:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:30:00 to 09:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 09:45:00 to 10:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:00:00 to 10:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:15:00 to 10:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:30:00 to 10:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 10:45:00 to 11:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:00:00 to 11:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:15:00 to 11:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:30:00 to 11:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 11:45:00 to 12:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:00:00 to 12:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:15:00 to 12:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:30:00 to 12:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 12:45:00 to 13:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:00:00 to 13:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:15:00 to 13:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:30:00 to 13:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 13:45:00 to 14:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:00:00 to 14:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:15:00 to 14:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:30:00 to 14:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 14:45:00 to 15:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:00:00 to 15:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:15:00 to 15:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:30:00 to 15:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 15:45:00 to 16:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:00:00 to 16:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:15:00 to 16:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:30:00 to 16:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 16:45:00 to 17:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:00:00 to 17:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:15:00 to 17:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:30:00 to 17:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 17:45:00 to 18:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:00:00 to 18:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:15:00 to 18:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:30:00 to 18:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 18:45:00 to 19:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:00:00 to 19:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:15:00 to 19:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:30:00 to 19:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 19:45:00 to 20:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:00:00 to 20:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:15:00 to 20:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:30:00 to 20:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 20:45:00 to 21:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:00:00 to 21:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:15:00 to 21:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:30:00 to 21:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 21:45:00 to 22:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:00:00 to 22:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:15:00 to 22:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:30:00 to 22:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 22:45:00 to 23:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:00:00 to 23:15:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:15:00 to 23:30:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:30:00 to 23:45:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
-		From 23:45:00 to 00:00:00
-				 North bound vehicles     = 0.00				 South bound vehicles     = 0.00
+	Report on Day - 1
+	Rough distance between vehicles on day 0
+		 MORNING
+		  From 00:00:00 to 12:00:00
+				 North bound vehicles     = 0.19
+				 South bound vehicles     = 0.13
+		 EVENING
+		  From 18:00:00 to 00:00:00
+				 North bound vehicles     = 7.95
+				 South bound vehicles     = 8.33
+		 PER_HOUR
+		  From 00:00:00 to 01:00:00
+				 North bound vehicles     = 1.25
+				 South bound vehicles     = 2.65
+		  From 01:00:00 to 02:00:00
+				 North bound vehicles     = 134.53
+				 South bound vehicles     = 10.98
+		  From 02:00:00 to 03:00:00
+				 North bound vehicles     = 72.78
+				 South bound vehicles     = 26.98
+		  From 03:00:00 to 04:00:00
+				 North bound vehicles     = 139.96
+				 South bound vehicles     = 33.25
+		  From 04:00:00 to 05:00:00
+				 North bound vehicles     = 149.59
+				 South bound vehicles     = 57.95
+		  From 05:00:00 to 06:00:00
+				 North bound vehicles     = 102.47
+				 South bound vehicles     = 7.94
+		  From 06:00:00 to 07:00:00
+				 North bound vehicles     = 6.34
+				 South bound vehicles     = 11.67
+		  From 07:00:00 to 08:00:00
+				 North bound vehicles     = 3.82
+				 South bound vehicles     = 1.60
+		  From 08:00:00 to 09:00:00
+				 North bound vehicles     = 2.24
+				 South bound vehicles     = 1.15
+		  From 09:00:00 to 10:00:00
+				 North bound vehicles     = 5.11
+				 South bound vehicles     = 9.87
+		  From 10:00:00 to 11:00:00
+				 North bound vehicles     = 6.33
+				 South bound vehicles     = 14.16
+		  From 11:00:00 to 12:00:00
+				 North bound vehicles     = 5.55
+				 South bound vehicles     = 5.39
+		  From 12:00:00 to 13:00:00
+				 North bound vehicles     = 6.62
+				 South bound vehicles     = 7.81
+		  From 13:00:00 to 14:00:00
+				 North bound vehicles     = 7.17
+				 South bound vehicles     = 7.08
+		  From 14:00:00 to 15:00:00
+				 North bound vehicles     = 6.30
+				 South bound vehicles     = 4.85
+		  From 15:00:00 to 16:00:00
+				 North bound vehicles     = 5.68
+				 South bound vehicles     = 5.24
+		  From 16:00:00 to 17:00:00
+				 North bound vehicles     = 3.43
+				 South bound vehicles     = 4.45
+		  From 17:00:00 to 18:00:00
+				 North bound vehicles     = 2.72
+				 South bound vehicles     = 7.48
+		  From 18:00:00 to 19:00:00
+				 North bound vehicles     = 12.17
+				 South bound vehicles     = 39.51
+		  From 19:00:00 to 20:00:00
+				 North bound vehicles     = 39.39
+				 South bound vehicles     = 30.07
+		  From 20:00:00 to 21:00:00
+				 North bound vehicles     = 40.04
+				 South bound vehicles     = 33.12
+		  From 21:00:00 to 22:00:00
+				 North bound vehicles     = 27.66
+				 South bound vehicles     = 27.06
+		  From 22:00:00 to 23:00:00
+				 North bound vehicles     = 29.53
+				 South bound vehicles     = 74.52
+		  From 23:00:00 to 00:00:00
+				 North bound vehicles     = 56.81
+				 South bound vehicles     = 65.26
+		 PER_HALF_AN_HOUR
+		  From 00:00:00 to 00:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:30:00 to 01:00:00
+				 North bound vehicles     = 0.97
+				 South bound vehicles     = 2.77
+		  From 01:00:00 to 01:30:00
+				 North bound vehicles     = 10.54
+				 South bound vehicles     = 16.96
+		  From 01:30:00 to 02:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 24.22
+		  From 02:00:00 to 02:30:00
+				 North bound vehicles     = 134.53
+				 South bound vehicles     = 21.58
+		  From 02:30:00 to 03:00:00
+				 North bound vehicles     = 142.34
+				 South bound vehicles     = 52.35
+		  From 03:00:00 to 03:30:00
+				 North bound vehicles     = 191.10
+				 South bound vehicles     = 56.39
+		  From 03:30:00 to 04:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 45.86
+		  From 04:00:00 to 04:30:00
+				 North bound vehicles     = 139.96
+				 South bound vehicles     = 121.89
+		  From 04:30:00 to 05:00:00
+				 North bound vehicles     = 285.13
+				 South bound vehicles     = 70.76
+		  From 05:00:00 to 05:30:00
+				 North bound vehicles     = 425.89
+				 South bound vehicles     = 316.66
+		  From 05:30:00 to 06:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 12.51
+		  From 06:00:00 to 06:30:00
+				 North bound vehicles     = 102.47
+				 South bound vehicles     = 35.09
+		  From 06:30:00 to 07:00:00
+				 North bound vehicles     = 10.48
+				 South bound vehicles     = 20.91
+		  From 07:00:00 to 07:30:00
+				 North bound vehicles     = 17.36
+				 South bound vehicles     = 30.78
+		  From 07:30:00 to 08:00:00
+				 North bound vehicles     = 13.56
+				 South bound vehicles     = 3.22
+		  From 08:00:00 to 08:30:00
+				 North bound vehicles     = 6.10
+				 South bound vehicles     = 2.84
+		  From 08:30:00 to 09:00:00
+				 North bound vehicles     = 4.32
+				 South bound vehicles     = 3.87
+		  From 09:00:00 to 09:30:00
+				 North bound vehicles     = 6.55
+				 South bound vehicles     = 2.15
+		  From 09:30:00 to 10:00:00
+				 North bound vehicles     = 8.77
+				 South bound vehicles     = 17.32
+		  From 10:00:00 to 10:30:00
+				 North bound vehicles     = 10.38
+				 South bound vehicles     = 21.50
+		  From 10:30:00 to 11:00:00
+				 North bound vehicles     = 11.16
+				 South bound vehicles     = 25.91
+		  From 11:00:00 to 11:30:00
+				 North bound vehicles     = 11.21
+				 South bound vehicles     = 27.48
+		  From 11:30:00 to 12:00:00
+				 North bound vehicles     = 13.50
+				 South bound vehicles     = 9.33
+		  From 12:00:00 to 12:30:00
+				 North bound vehicles     = 12.93
+				 South bound vehicles     = 15.64
+		  From 12:30:00 to 13:00:00
+				 North bound vehicles     = 13.47
+				 South bound vehicles     = 13.68
+		  From 13:00:00 to 13:30:00
+				 North bound vehicles     = 13.00
+				 South bound vehicles     = 12.65
+		  From 13:30:00 to 14:00:00
+				 North bound vehicles     = 14.10
+				 South bound vehicles     = 13.11
+		  From 14:00:00 to 14:30:00
+				 North bound vehicles     = 14.28
+				 South bound vehicles     = 11.63
+		  From 14:30:00 to 15:00:00
+				 North bound vehicles     = 12.53
+				 South bound vehicles     = 10.22
+		  From 15:00:00 to 15:30:00
+				 North bound vehicles     = 20.41
+				 South bound vehicles     = 10.87
+		  From 15:30:00 to 16:00:00
+				 North bound vehicles     = 10.66
+				 South bound vehicles     = 10.93
+		  From 16:00:00 to 16:30:00
+				 North bound vehicles     = 9.61
+				 South bound vehicles     = 9.33
+		  From 16:30:00 to 17:00:00
+				 North bound vehicles     = 10.15
+				 South bound vehicles     = 8.03
+		  From 17:00:00 to 17:30:00
+				 North bound vehicles     = 6.88
+				 South bound vehicles     = 15.17
+		  From 17:30:00 to 18:00:00
+				 North bound vehicles     = 5.83
+				 South bound vehicles     = 13.62
+		  From 18:00:00 to 18:30:00
+				 North bound vehicles     = 4.76
+				 South bound vehicles     = 10.70
+		  From 18:30:00 to 19:00:00
+				 North bound vehicles     = 27.85
+				 South bound vehicles     = 69.44
+		  From 19:00:00 to 19:30:00
+				 North bound vehicles     = 18.00
+				 South bound vehicles     = 73.64
+		  From 19:30:00 to 20:00:00
+				 North bound vehicles     = 65.40
+				 South bound vehicles     = 82.42
+		  From 20:00:00 to 20:30:00
+				 North bound vehicles     = 76.43
+				 South bound vehicles     = 50.33
+		  From 20:30:00 to 21:00:00
+				 North bound vehicles     = 89.77
+				 South bound vehicles     = 53.14
+		  From 21:00:00 to 21:30:00
+				 North bound vehicles     = 64.76
+				 South bound vehicles     = 91.25
+		  From 21:30:00 to 22:00:00
+				 North bound vehicles     = 60.66
+				 South bound vehicles     = 78.80
+		  From 22:00:00 to 22:30:00
+				 North bound vehicles     = 76.40
+				 South bound vehicles     = 47.35
+		  From 22:30:00 to 23:00:00
+				 North bound vehicles     = 54.54
+				 South bound vehicles     = 148.58
+		  From 23:00:00 to 23:30:00
+				 North bound vehicles     = 65.98
+				 South bound vehicles     = 134.70
+		  From 23:30:00 to 00:00:00
+				 North bound vehicles     = 104.41
+				 South bound vehicles     = 227.35
+		 PER_20_MINUTES
+		  From 00:00:00 to 00:20:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:20:00 to 00:40:00
+				 North bound vehicles     = 0.97
+				 South bound vehicles     = 6.17
+		  From 00:40:00 to 01:00:00
+				 North bound vehicles     = 6.36
+				 South bound vehicles     = 2.77
+		  From 01:00:00 to 01:20:00
+				 North bound vehicles     = 10.54
+				 South bound vehicles     = 16.96
+		  From 01:20:00 to 01:40:00
+				 North bound vehicles     = 49.97
+				 South bound vehicles     = 24.22
+		  From 01:40:00 to 02:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 17.54
+		  From 02:00:00 to 02:20:00
+				 North bound vehicles     = 134.53
+				 South bound vehicles     = 21.58
+		  From 02:20:00 to 02:40:00
+				 North bound vehicles     = 68.63
+				 South bound vehicles     = 152.92
+		  From 02:40:00 to 03:00:00
+				 North bound vehicles     = 142.34
+				 South bound vehicles     = 39.03
+		  From 03:00:00 to 03:20:00
+				 North bound vehicles     = 191.10
+				 South bound vehicles     = 56.39
+		  From 03:20:00 to 03:40:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 57.19
+		  From 03:40:00 to 04:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 58.04
+		  From 04:00:00 to 04:20:00
+				 North bound vehicles     = 139.96
+				 South bound vehicles     = 121.89
+		  From 04:20:00 to 04:40:00
+				 North bound vehicles     = 110.73
+				 South bound vehicles     = 70.76
+		  From 04:40:00 to 05:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 109.76
+		  From 05:00:00 to 05:20:00
+				 North bound vehicles     = 425.89
+				 South bound vehicles     = 316.66
+		  From 05:20:00 to 05:40:00
+				 North bound vehicles     = 425.89
+				 South bound vehicles     = 31.03
+		  From 05:40:00 to 06:00:00
+				 North bound vehicles     = 300.97
+				 South bound vehicles     = 13.20
+		  From 06:00:00 to 06:20:00
+				 North bound vehicles     = 102.47
+				 South bound vehicles     = 35.09
+		  From 06:20:00 to 06:40:00
+				 North bound vehicles     = 17.78
+				 South bound vehicles     = 21.41
+		  From 06:40:00 to 07:00:00
+				 North bound vehicles     = 14.21
+				 South bound vehicles     = 19.32
+		  From 07:00:00 to 07:20:00
+				 North bound vehicles     = 17.36
+				 South bound vehicles     = 30.78
+		  From 07:20:00 to 07:40:00
+				 North bound vehicles     = 19.94
+				 South bound vehicles     = 5.67
+		  From 07:40:00 to 08:00:00
+				 North bound vehicles     = 7.99
+				 South bound vehicles     = 3.77
+		  From 08:00:00 to 08:20:00
+				 North bound vehicles     = 6.10
+				 South bound vehicles     = 2.84
+		  From 08:20:00 to 08:40:00
+				 North bound vehicles     = 6.39
+				 South bound vehicles     = 4.25
+		  From 08:40:00 to 09:00:00
+				 North bound vehicles     = 6.23
+				 South bound vehicles     = 2.12
+		  From 09:00:00 to 09:20:00
+				 North bound vehicles     = 6.55
+				 South bound vehicles     = 2.15
+		  From 09:20:00 to 09:40:00
+				 North bound vehicles     = 9.03
+				 South bound vehicles     = 3.35
+		  From 09:40:00 to 10:00:00
+				 North bound vehicles     = 11.84
+				 South bound vehicles     = 13.64
+		  From 10:00:00 to 10:20:00
+				 North bound vehicles     = 10.38
+				 South bound vehicles     = 21.50
+		  From 10:20:00 to 10:40:00
+				 North bound vehicles     = 10.51
+				 South bound vehicles     = 18.51
+		  From 10:40:00 to 11:00:00
+				 North bound vehicles     = 8.97
+				 South bound vehicles     = 35.55
+		  From 11:00:00 to 11:20:00
+				 North bound vehicles     = 11.21
+				 South bound vehicles     = 27.48
+		  From 11:20:00 to 11:40:00
+				 North bound vehicles     = 17.57
+				 South bound vehicles     = 12.36
+		  From 11:40:00 to 12:00:00
+				 North bound vehicles     = 18.08
+				 South bound vehicles     = 11.15
+		  From 12:00:00 to 12:20:00
+				 North bound vehicles     = 12.93
+				 South bound vehicles     = 15.64
+		  From 12:20:00 to 12:40:00
+				 North bound vehicles     = 13.81
+				 South bound vehicles     = 16.64
+		  From 12:40:00 to 13:00:00
+				 North bound vehicles     = 11.74
+				 South bound vehicles     = 9.70
+		  From 13:00:00 to 13:20:00
+				 North bound vehicles     = 13.00
+				 South bound vehicles     = 12.65
+		  From 13:20:00 to 13:40:00
+				 North bound vehicles     = 16.13
+				 South bound vehicles     = 12.39
+		  From 13:40:00 to 14:00:00
+				 North bound vehicles     = 12.99
+				 South bound vehicles     = 11.92
+		  From 14:00:00 to 14:20:00
+				 North bound vehicles     = 14.28
+				 South bound vehicles     = 11.63
+		  From 14:20:00 to 14:40:00
+				 North bound vehicles     = 17.41
+				 South bound vehicles     = 11.61
+		  From 14:40:00 to 15:00:00
+				 North bound vehicles     = 17.36
+				 South bound vehicles     = 10.34
+		  From 15:00:00 to 15:20:00
+				 North bound vehicles     = 20.41
+				 South bound vehicles     = 10.87
+		  From 15:20:00 to 15:40:00
+				 North bound vehicles     = 14.21
+				 South bound vehicles     = 9.31
+		  From 15:40:00 to 16:00:00
+				 North bound vehicles     = 11.04
+				 South bound vehicles     = 7.84
+		  From 16:00:00 to 16:20:00
+				 North bound vehicles     = 9.61
+				 South bound vehicles     = 9.33
+		  From 16:20:00 to 16:40:00
+				 North bound vehicles     = 9.80
+				 South bound vehicles     = 12.94
+		  From 16:40:00 to 17:00:00
+				 North bound vehicles     = 8.21
+				 South bound vehicles     = 10.99
+		  From 17:00:00 to 17:20:00
+				 North bound vehicles     = 6.88
+				 South bound vehicles     = 15.17
+		  From 17:20:00 to 17:40:00
+				 North bound vehicles     = 4.98
+				 South bound vehicles     = 13.64
+		  From 17:40:00 to 18:00:00
+				 North bound vehicles     = 4.68
+				 South bound vehicles     = 10.26
+		  From 18:00:00 to 18:20:00
+				 North bound vehicles     = 4.76
+				 South bound vehicles     = 10.70
+		  From 18:20:00 to 18:40:00
+				 North bound vehicles     = 9.26
+				 South bound vehicles     = 29.35
+		  From 18:40:00 to 19:00:00
+				 North bound vehicles     = 27.90
+				 South bound vehicles     = 82.35
+		  From 19:00:00 to 19:20:00
+				 North bound vehicles     = 18.00
+				 South bound vehicles     = 73.64
+		  From 19:20:00 to 19:40:00
+				 North bound vehicles     = 39.25
+				 South bound vehicles     = 52.29
+		  From 19:40:00 to 20:00:00
+				 North bound vehicles     = 62.46
+				 South bound vehicles     = 60.19
+		  From 20:00:00 to 20:20:00
+				 North bound vehicles     = 76.43
+				 South bound vehicles     = 50.33
+		  From 20:20:00 to 20:40:00
+				 North bound vehicles     = 103.50
+				 South bound vehicles     = 48.18
+		  From 20:40:00 to 21:00:00
+				 North bound vehicles     = 82.36
+				 South bound vehicles     = 58.11
+		  From 21:00:00 to 21:20:00
+				 North bound vehicles     = 64.76
+				 South bound vehicles     = 91.25
+		  From 21:20:00 to 21:40:00
+				 North bound vehicles     = 71.51
+				 South bound vehicles     = 73.63
+		  From 21:40:00 to 22:00:00
+				 North bound vehicles     = 93.35
+				 South bound vehicles     = 103.04
+		  From 22:00:00 to 22:20:00
+				 North bound vehicles     = 76.40
+				 South bound vehicles     = 47.35
+		  From 22:20:00 to 22:40:00
+				 North bound vehicles     = 69.47
+				 South bound vehicles     = 79.14
+		  From 22:40:00 to 23:00:00
+				 North bound vehicles     = 60.09
+				 South bound vehicles     = 97.77
+		  From 23:00:00 to 23:20:00
+				 North bound vehicles     = 65.98
+				 South bound vehicles     = 134.70
+		  From 23:20:00 to 23:40:00
+				 North bound vehicles     = 84.51
+				 South bound vehicles     = 371.56
+		  From 23:40:00 to 00:00:00
+				 North bound vehicles     = 186.41
+				 South bound vehicles     = 129.58
+		 PER_15_MINUTES
+		  From 00:00:00 to 00:15:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:15:00 to 00:30:00
+				 North bound vehicles     = 1.26
+				 South bound vehicles     = 11.31
+		  From 00:30:00 to 00:45:00
+				 North bound vehicles     = 0.97
+				 South bound vehicles     = 2.77
+		  From 00:45:00 to 01:00:00
+				 North bound vehicles     = 5.27
+				 South bound vehicles     = 4.48
+		  From 01:00:00 to 01:15:00
+				 North bound vehicles     = 10.54
+				 South bound vehicles     = 16.96
+		  From 01:15:00 to 01:30:00
+				 North bound vehicles     = 49.97
+				 South bound vehicles     = 24.22
+		  From 01:30:00 to 01:45:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 24.22
+		  From 01:45:00 to 02:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 27.23
+		  From 02:00:00 to 02:15:00
+				 North bound vehicles     = 134.53
+				 South bound vehicles     = 21.58
+		  From 02:15:00 to 02:30:00
+				 North bound vehicles     = 134.53
+				 South bound vehicles     = 45.38
+		  From 02:30:00 to 02:45:00
+				 North bound vehicles     = 142.34
+				 South bound vehicles     = 52.35
+		  From 02:45:00 to 03:00:00
+				 North bound vehicles     = 142.34
+				 South bound vehicles     = 39.03
+		  From 03:00:00 to 03:15:00
+				 North bound vehicles     = 191.10
+				 South bound vehicles     = 56.39
+		  From 03:15:00 to 03:30:00
+				 North bound vehicles     = 191.10
+				 South bound vehicles     = 48.10
+		  From 03:30:00 to 03:45:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 45.86
+		  From 03:45:00 to 04:00:00
+				 North bound vehicles     = 276.41
+				 South bound vehicles     = 73.19
+		  From 04:00:00 to 04:15:00
+				 North bound vehicles     = 139.96
+				 South bound vehicles     = 121.89
+		  From 04:15:00 to 04:30:00
+				 North bound vehicles     = 110.73
+				 South bound vehicles     = 74.83
+		  From 04:30:00 to 04:45:00
+				 North bound vehicles     = 285.13
+				 South bound vehicles     = 70.76
+		  From 04:45:00 to 05:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 109.76
+		  From 05:00:00 to 05:15:00
+				 North bound vehicles     = 425.89
+				 South bound vehicles     = 316.66
+		  From 05:15:00 to 05:30:00
+				 North bound vehicles     = 425.89
+				 South bound vehicles     = 49.52
+		  From 05:30:00 to 05:45:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 12.51
+		  From 05:45:00 to 06:00:00
+				 North bound vehicles     = 300.97
+				 South bound vehicles     = 20.03
+		  From 06:00:00 to 06:15:00
+				 North bound vehicles     = 102.47
+				 South bound vehicles     = 35.09
+		  From 06:15:00 to 06:30:00
+				 North bound vehicles     = 29.11
+				 South bound vehicles     = 23.25
+		  From 06:30:00 to 06:45:00
+				 North bound vehicles     = 10.48
+				 South bound vehicles     = 20.91
+		  From 06:45:00 to 07:00:00
+				 North bound vehicles     = 12.60
+				 South bound vehicles     = 14.33
+		  From 07:00:00 to 07:15:00
+				 North bound vehicles     = 17.36
+				 South bound vehicles     = 30.78
+		  From 07:15:00 to 07:30:00
+				 North bound vehicles     = 14.83
+				 South bound vehicles     = 8.01
+		  From 07:30:00 to 07:45:00
+				 North bound vehicles     = 13.56
+				 South bound vehicles     = 3.22
+		  From 07:45:00 to 08:00:00
+				 North bound vehicles     = 8.49
+				 South bound vehicles     = 4.02
+		  From 08:00:00 to 08:15:00
+				 North bound vehicles     = 6.10
+				 South bound vehicles     = 2.84
+		  From 08:15:00 to 08:30:00
+				 North bound vehicles     = 5.17
+				 South bound vehicles     = 4.36
+		  From 08:30:00 to 08:45:00
+				 North bound vehicles     = 4.32
+				 South bound vehicles     = 3.87
+		  From 08:45:00 to 09:00:00
+				 North bound vehicles     = 6.70
+				 South bound vehicles     = 2.59
+		  From 09:00:00 to 09:15:00
+				 North bound vehicles     = 6.55
+				 South bound vehicles     = 2.15
+		  From 09:15:00 to 09:30:00
+				 North bound vehicles     = 9.21
+				 South bound vehicles     = 3.20
+		  From 09:30:00 to 09:45:00
+				 North bound vehicles     = 8.77
+				 South bound vehicles     = 17.32
+		  From 09:45:00 to 10:00:00
+				 North bound vehicles     = 10.67
+				 South bound vehicles     = 19.76
+		  From 10:00:00 to 10:15:00
+				 North bound vehicles     = 10.38
+				 South bound vehicles     = 21.50
+		  From 10:15:00 to 10:30:00
+				 North bound vehicles     = 13.38
+				 South bound vehicles     = 25.05
+		  From 10:30:00 to 10:45:00
+				 North bound vehicles     = 11.16
+				 South bound vehicles     = 25.91
+		  From 10:45:00 to 11:00:00
+				 North bound vehicles     = 8.78
+				 South bound vehicles     = 19.76
+		  From 11:00:00 to 11:15:00
+				 North bound vehicles     = 11.21
+				 South bound vehicles     = 27.48
+		  From 11:15:00 to 11:30:00
+				 North bound vehicles     = 12.83
+				 South bound vehicles     = 13.85
+		  From 11:30:00 to 11:45:00
+				 North bound vehicles     = 13.50
+				 South bound vehicles     = 9.33
+		  From 11:45:00 to 12:00:00
+				 North bound vehicles     = 13.96
+				 South bound vehicles     = 8.64
+		  From 12:00:00 to 12:15:00
+				 North bound vehicles     = 12.93
+				 South bound vehicles     = 15.64
+		  From 12:15:00 to 12:30:00
+				 North bound vehicles     = 13.65
+				 South bound vehicles     = 12.57
+		  From 12:30:00 to 12:45:00
+				 North bound vehicles     = 13.47
+				 South bound vehicles     = 13.68
+		  From 12:45:00 to 13:00:00
+				 North bound vehicles     = 14.74
+				 South bound vehicles     = 8.40
+		  From 13:00:00 to 13:15:00
+				 North bound vehicles     = 13.00
+				 South bound vehicles     = 12.65
+		  From 13:15:00 to 13:30:00
+				 North bound vehicles     = 13.83
+				 South bound vehicles     = 14.02
+		  From 13:30:00 to 13:45:00
+				 North bound vehicles     = 14.10
+				 South bound vehicles     = 13.11
+		  From 13:45:00 to 14:00:00
+				 North bound vehicles     = 14.81
+				 South bound vehicles     = 10.93
+		  From 14:00:00 to 14:15:00
+				 North bound vehicles     = 14.28
+				 South bound vehicles     = 11.63
+		  From 14:15:00 to 14:30:00
+				 North bound vehicles     = 12.86
+				 South bound vehicles     = 14.28
+		  From 14:30:00 to 14:45:00
+				 North bound vehicles     = 12.53
+				 South bound vehicles     = 10.22
+		  From 14:45:00 to 15:00:00
+				 North bound vehicles     = 12.54
+				 South bound vehicles     = 7.98
+		  From 15:00:00 to 15:15:00
+				 North bound vehicles     = 20.41
+				 South bound vehicles     = 10.87
+		  From 15:15:00 to 15:30:00
+				 North bound vehicles     = 10.01
+				 South bound vehicles     = 11.35
+		  From 15:30:00 to 15:45:00
+				 North bound vehicles     = 10.66
+				 South bound vehicles     = 10.93
+		  From 15:45:00 to 16:00:00
+				 North bound vehicles     = 8.45
+				 South bound vehicles     = 11.09
+		  From 16:00:00 to 16:15:00
+				 North bound vehicles     = 9.61
+				 South bound vehicles     = 9.33
+		  From 16:15:00 to 16:30:00
+				 North bound vehicles     = 14.29
+				 South bound vehicles     = 10.22
+		  From 16:30:00 to 16:45:00
+				 North bound vehicles     = 10.15
+				 South bound vehicles     = 8.03
+		  From 16:45:00 to 17:00:00
+				 North bound vehicles     = 7.72
+				 South bound vehicles     = 13.24
+		  From 17:00:00 to 17:15:00
+				 North bound vehicles     = 6.88
+				 South bound vehicles     = 15.17
+		  From 17:15:00 to 17:30:00
+				 North bound vehicles     = 6.03
+				 South bound vehicles     = 12.30
+		  From 17:30:00 to 17:45:00
+				 North bound vehicles     = 5.83
+				 South bound vehicles     = 13.62
+		  From 17:45:00 to 18:00:00
+				 North bound vehicles     = 5.77
+				 South bound vehicles     = 9.71
+		  From 18:00:00 to 18:15:00
+				 North bound vehicles     = 4.76
+				 South bound vehicles     = 10.70
+		  From 18:15:00 to 18:30:00
+				 North bound vehicles     = 12.81
+				 South bound vehicles     = 22.31
+		  From 18:30:00 to 18:45:00
+				 North bound vehicles     = 27.85
+				 South bound vehicles     = 69.44
+		  From 18:45:00 to 19:00:00
+				 North bound vehicles     = 20.85
+				 South bound vehicles     = 56.95
+		  From 19:00:00 to 19:15:00
+				 North bound vehicles     = 18.00
+				 South bound vehicles     = 73.64
+		  From 19:15:00 to 19:30:00
+				 North bound vehicles     = 43.73
+				 South bound vehicles     = 96.68
+		  From 19:30:00 to 19:45:00
+				 North bound vehicles     = 65.40
+				 South bound vehicles     = 82.42
+		  From 19:45:00 to 20:00:00
+				 North bound vehicles     = 52.15
+				 South bound vehicles     = 50.11
+		  From 20:00:00 to 20:15:00
+				 North bound vehicles     = 76.43
+				 South bound vehicles     = 50.33
+		  From 20:15:00 to 20:30:00
+				 North bound vehicles     = 133.11
+				 South bound vehicles     = 59.40
+		  From 20:30:00 to 20:45:00
+				 North bound vehicles     = 89.77
+				 South bound vehicles     = 53.14
+		  From 20:45:00 to 21:00:00
+				 North bound vehicles     = 78.13
+				 South bound vehicles     = 85.30
+		  From 21:00:00 to 21:15:00
+				 North bound vehicles     = 64.76
+				 South bound vehicles     = 91.25
+		  From 21:15:00 to 21:30:00
+				 North bound vehicles     = 69.63
+				 South bound vehicles     = 77.65
+		  From 21:30:00 to 21:45:00
+				 North bound vehicles     = 60.66
+				 South bound vehicles     = 78.80
+		  From 21:45:00 to 22:00:00
+				 North bound vehicles     = 73.27
+				 South bound vehicles     = 111.58
+		  From 22:00:00 to 22:15:00
+				 North bound vehicles     = 76.40
+				 South bound vehicles     = 47.35
+		  From 22:15:00 to 22:30:00
+				 North bound vehicles     = 78.75
+				 South bound vehicles     = 70.46
+		  From 22:30:00 to 22:45:00
+				 North bound vehicles     = 54.54
+				 South bound vehicles     = 148.58
+		  From 22:45:00 to 23:00:00
+				 North bound vehicles     = 66.92
+				 South bound vehicles     = 99.37
+		  From 23:00:00 to 23:15:00
+				 North bound vehicles     = 65.98
+				 South bound vehicles     = 134.70
+		  From 23:15:00 to 23:30:00
+				 North bound vehicles     = 59.08
+				 South bound vehicles     = 371.56
+		  From 23:30:00 to 23:45:00
+				 North bound vehicles     = 104.41
+				 South bound vehicles     = 227.35
+		  From 23:45:00 to 00:00:00
+				 North bound vehicles     = 180.14
+				 South bound vehicles     = 148.23
+	Report on Day - 2
+	Rough distance between vehicles on day 1
+		 MORNING
+		  From 00:00:00 to 12:00:00
+				 North bound vehicles     = 0.17
+				 South bound vehicles     = 0.11
+		 EVENING
+		  From 18:00:00 to 00:00:00
+				 North bound vehicles     = 8.10
+				 South bound vehicles     = 6.02
+		 PER_HOUR
+		  From 00:00:00 to 01:00:00
+				 North bound vehicles     = 5.64
+				 South bound vehicles     = 5.10
+		  From 01:00:00 to 02:00:00
+				 North bound vehicles     = 76.89
+				 South bound vehicles     = 7.25
+		  From 02:00:00 to 03:00:00
+				 North bound vehicles     = 37.99
+				 South bound vehicles     = 12.48
+		  From 03:00:00 to 04:00:00
+				 North bound vehicles     = 86.36
+				 South bound vehicles     = 18.21
+		  From 04:00:00 to 05:00:00
+				 North bound vehicles     = 43.10
+				 South bound vehicles     = 83.37
+		  From 05:00:00 to 06:00:00
+				 North bound vehicles     = 84.63
+				 South bound vehicles     = 9.68
+		  From 06:00:00 to 07:00:00
+				 North bound vehicles     = 6.09
+				 South bound vehicles     = 12.95
+		  From 07:00:00 to 08:00:00
+				 North bound vehicles     = 4.00
+				 South bound vehicles     = 1.67
+		  From 08:00:00 to 09:00:00
+				 North bound vehicles     = 2.99
+				 South bound vehicles     = 1.20
+		  From 09:00:00 to 10:00:00
+				 North bound vehicles     = 3.85
+				 South bound vehicles     = 8.06
+		  From 10:00:00 to 11:00:00
+				 North bound vehicles     = 5.75
+				 South bound vehicles     = 5.77
+		  From 11:00:00 to 12:00:00
+				 North bound vehicles     = 6.97
+				 South bound vehicles     = 4.45
+		  From 12:00:00 to 13:00:00
+				 North bound vehicles     = 6.99
+				 South bound vehicles     = 5.36
+		  From 13:00:00 to 14:00:00
+				 North bound vehicles     = 8.39
+				 South bound vehicles     = 5.96
+		  From 14:00:00 to 15:00:00
+				 North bound vehicles     = 10.51
+				 South bound vehicles     = 3.77
+		  From 15:00:00 to 16:00:00
+				 North bound vehicles     = 5.08
+				 South bound vehicles     = 4.63
+		  From 16:00:00 to 17:00:00
+				 North bound vehicles     = 2.92
+				 South bound vehicles     = 5.73
+		  From 17:00:00 to 18:00:00
+				 North bound vehicles     = 3.31
+				 South bound vehicles     = 7.64
+		  From 18:00:00 to 19:00:00
+				 North bound vehicles     = 8.49
+				 South bound vehicles     = 39.55
+		  From 19:00:00 to 20:00:00
+				 North bound vehicles     = 36.73
+				 South bound vehicles     = 26.06
+		  From 20:00:00 to 21:00:00
+				 North bound vehicles     = 51.87
+				 South bound vehicles     = 26.81
+		  From 21:00:00 to 22:00:00
+				 North bound vehicles     = 19.90
+				 South bound vehicles     = 32.35
+		  From 22:00:00 to 23:00:00
+				 North bound vehicles     = 39.98
+				 South bound vehicles     = 47.82
+		  From 23:00:00 to 00:00:00
+				 North bound vehicles     = 54.38
+				 South bound vehicles     = 58.50
+		 PER_HALF_AN_HOUR
+		  From 00:00:00 to 00:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:30:00 to 01:00:00
+				 North bound vehicles     = 6.53
+				 South bound vehicles     = 2.45
+		  From 01:00:00 to 01:30:00
+				 North bound vehicles     = 35.31
+				 South bound vehicles     = 33.64
+		  From 01:30:00 to 02:00:00
+				 North bound vehicles     = 76.89
+				 South bound vehicles     = 33.63
+		  From 02:00:00 to 02:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 12.43
+		  From 02:30:00 to 03:00:00
+				 North bound vehicles     = 142.56
+				 South bound vehicles     = 23.38
+		  From 03:00:00 to 03:30:00
+				 North bound vehicles     = 76.27
+				 South bound vehicles     = 36.09
+		  From 03:30:00 to 04:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 37.99
+		  From 04:00:00 to 04:30:00
+				 North bound vehicles     = 86.36
+				 South bound vehicles     = 53.33
+		  From 04:30:00 to 05:00:00
+				 North bound vehicles     = 51.69
+				 South bound vehicles     = 123.60
+		  From 05:00:00 to 05:30:00
+				 North bound vehicles     = 276.07
+				 South bound vehicles     = 278.18
+		  From 05:30:00 to 06:00:00
+				 North bound vehicles     = 208.79
+				 South bound vehicles     = 17.68
+		  From 06:00:00 to 06:30:00
+				 North bound vehicles     = 108.27
+				 South bound vehicles     = 17.82
+		  From 06:30:00 to 07:00:00
+				 North bound vehicles     = 11.14
+				 South bound vehicles     = 25.51
+		  From 07:00:00 to 07:30:00
+				 North bound vehicles     = 15.01
+				 South bound vehicles     = 22.72
+		  From 07:30:00 to 08:00:00
+				 North bound vehicles     = 17.44
+				 South bound vehicles     = 3.15
+		  From 08:00:00 to 08:30:00
+				 North bound vehicles     = 4.72
+				 South bound vehicles     = 3.61
+		  From 08:30:00 to 09:00:00
+				 North bound vehicles     = 5.64
+				 South bound vehicles     = 4.41
+		  From 09:00:00 to 09:30:00
+				 North bound vehicles     = 5.76
+				 South bound vehicles     = 1.82
+		  From 09:30:00 to 10:00:00
+				 North bound vehicles     = 6.85
+				 South bound vehicles     = 16.36
+		  From 10:00:00 to 10:30:00
+				 North bound vehicles     = 11.39
+				 South bound vehicles     = 10.23
+		  From 10:30:00 to 11:00:00
+				 North bound vehicles     = 9.74
+				 South bound vehicles     = 12.55
+		  From 11:00:00 to 11:30:00
+				 North bound vehicles     = 19.67
+				 South bound vehicles     = 13.27
+		  From 11:30:00 to 12:00:00
+				 North bound vehicles     = 17.02
+				 South bound vehicles     = 9.90
+		  From 12:00:00 to 12:30:00
+				 North bound vehicles     = 11.61
+				 South bound vehicles     = 11.39
+		  From 12:30:00 to 13:00:00
+				 North bound vehicles     = 13.25
+				 South bound vehicles     = 10.87
+		  From 13:00:00 to 13:30:00
+				 North bound vehicles     = 15.10
+				 South bound vehicles     = 12.39
+		  From 13:30:00 to 14:00:00
+				 North bound vehicles     = 18.09
+				 South bound vehicles     = 11.74
+		  From 14:00:00 to 14:30:00
+				 North bound vehicles     = 19.61
+				 South bound vehicles     = 11.51
+		  From 14:30:00 to 15:00:00
+				 North bound vehicles     = 22.56
+				 South bound vehicles     = 7.46
+		  From 15:00:00 to 15:30:00
+				 North bound vehicles     = 18.05
+				 South bound vehicles     = 9.26
+		  From 15:30:00 to 16:00:00
+				 North bound vehicles     = 9.24
+				 South bound vehicles     = 9.51
+		  From 16:00:00 to 16:30:00
+				 North bound vehicles     = 13.76
+				 South bound vehicles     = 12.12
+		  From 16:30:00 to 17:00:00
+				 North bound vehicles     = 9.85
+				 South bound vehicles     = 10.99
+		  From 17:00:00 to 17:30:00
+				 North bound vehicles     = 5.88
+				 South bound vehicles     = 12.12
+		  From 17:30:00 to 18:00:00
+				 North bound vehicles     = 6.44
+				 South bound vehicles     = 14.39
+		  From 18:00:00 to 18:30:00
+				 North bound vehicles     = 6.59
+				 South bound vehicles     = 11.22
+		  From 18:30:00 to 19:00:00
+				 North bound vehicles     = 18.83
+				 South bound vehicles     = 66.37
+		  From 19:00:00 to 19:30:00
+				 North bound vehicles     = 22.02
+				 South bound vehicles     = 109.18
+		  From 19:30:00 to 20:00:00
+				 North bound vehicles     = 64.93
+				 South bound vehicles     = 37.99
+		  From 20:00:00 to 20:30:00
+				 North bound vehicles     = 78.46
+				 South bound vehicles     = 104.03
+		  From 20:30:00 to 21:00:00
+				 North bound vehicles     = 131.47
+				 South bound vehicles     = 59.20
+		  From 21:00:00 to 21:30:00
+				 North bound vehicles     = 100.94
+				 South bound vehicles     = 59.06
+		  From 21:30:00 to 22:00:00
+				 North bound vehicles     = 37.33
+				 South bound vehicles     = 67.49
+		  From 22:00:00 to 22:30:00
+				 North bound vehicles     = 52.12
+				 South bound vehicles     = 43.40
+		  From 22:30:00 to 23:00:00
+				 North bound vehicles     = 74.51
+				 South bound vehicles     = 109.84
+		  From 23:00:00 to 23:30:00
+				 North bound vehicles     = 71.61
+				 South bound vehicles     = 81.95
+		  From 23:30:00 to 00:00:00
+				 North bound vehicles     = 138.39
+				 South bound vehicles     = 135.37
+		 PER_20_MINUTES
+		  From 00:00:00 to 00:20:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:20:00 to 00:40:00
+				 North bound vehicles     = 8.93
+				 South bound vehicles     = 2.45
+		  From 00:40:00 to 01:00:00
+				 North bound vehicles     = 22.62
+				 South bound vehicles     = 15.98
+		  From 01:00:00 to 01:20:00
+				 North bound vehicles     = 35.31
+				 South bound vehicles     = 33.64
+		  From 01:20:00 to 01:40:00
+				 North bound vehicles     = 23.71
+				 South bound vehicles     = 21.51
+		  From 01:40:00 to 02:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 52.74
+		  From 02:00:00 to 02:20:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 12.43
+		  From 02:20:00 to 02:40:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 16.90
+		  From 02:40:00 to 03:00:00
+				 North bound vehicles     = 142.56
+				 South bound vehicles     = 31.71
+		  From 03:00:00 to 03:20:00
+				 North bound vehicles     = 76.27
+				 South bound vehicles     = 36.09
+		  From 03:20:00 to 03:40:00
+				 North bound vehicles     = 109.78
+				 South bound vehicles     = 45.17
+		  From 03:40:00 to 04:00:00
+				 North bound vehicles     = 255.31
+				 South bound vehicles     = 96.66
+		  From 04:00:00 to 04:20:00
+				 North bound vehicles     = 86.36
+				 South bound vehicles     = 53.33
+		  From 04:20:00 to 04:40:00
+				 North bound vehicles     = 71.55
+				 South bound vehicles     = 99.66
+		  From 04:40:00 to 05:00:00
+				 North bound vehicles     = 43.10
+				 South bound vehicles     = 262.57
+		  From 05:00:00 to 05:20:00
+				 North bound vehicles     = 276.07
+				 South bound vehicles     = 278.18
+		  From 05:20:00 to 05:40:00
+				 North bound vehicles     = 208.79
+				 South bound vehicles     = 16.62
+		  From 05:40:00 to 06:00:00
+				 North bound vehicles     = 321.81
+				 South bound vehicles     = 24.06
+		  From 06:00:00 to 06:20:00
+				 North bound vehicles     = 108.27
+				 South bound vehicles     = 17.82
+		  From 06:20:00 to 06:40:00
+				 North bound vehicles     = 16.23
+				 South bound vehicles     = 20.06
+		  From 06:40:00 to 07:00:00
+				 North bound vehicles     = 8.91
+				 South bound vehicles     = 19.91
+		  From 07:00:00 to 07:20:00
+				 North bound vehicles     = 15.01
+				 South bound vehicles     = 22.72
+		  From 07:20:00 to 07:40:00
+				 North bound vehicles     = 16.26
+				 South bound vehicles     = 5.07
+		  From 07:40:00 to 08:00:00
+				 North bound vehicles     = 7.36
+				 South bound vehicles     = 3.95
+		  From 08:00:00 to 08:20:00
+				 North bound vehicles     = 4.72
+				 South bound vehicles     = 3.61
+		  From 08:20:00 to 08:40:00
+				 North bound vehicles     = 4.59
+				 South bound vehicles     = 4.31
+		  From 08:40:00 to 09:00:00
+				 North bound vehicles     = 7.68
+				 South bound vehicles     = 2.39
+		  From 09:00:00 to 09:20:00
+				 North bound vehicles     = 5.76
+				 South bound vehicles     = 1.82
+		  From 09:20:00 to 09:40:00
+				 North bound vehicles     = 7.57
+				 South bound vehicles     = 3.62
+		  From 09:40:00 to 10:00:00
+				 North bound vehicles     = 9.70
+				 South bound vehicles     = 17.10
+		  From 10:00:00 to 10:20:00
+				 North bound vehicles     = 11.39
+				 South bound vehicles     = 10.23
+		  From 10:20:00 to 10:40:00
+				 North bound vehicles     = 10.56
+				 South bound vehicles     = 16.91
+		  From 10:40:00 to 11:00:00
+				 North bound vehicles     = 11.77
+				 South bound vehicles     = 15.55
+		  From 11:00:00 to 11:20:00
+				 North bound vehicles     = 19.67
+				 South bound vehicles     = 13.27
+		  From 11:20:00 to 11:40:00
+				 North bound vehicles     = 14.52
+				 South bound vehicles     = 11.75
+		  From 11:40:00 to 12:00:00
+				 North bound vehicles     = 16.61
+				 South bound vehicles     = 10.57
+		  From 12:00:00 to 12:20:00
+				 North bound vehicles     = 11.61
+				 South bound vehicles     = 11.39
+		  From 12:20:00 to 12:40:00
+				 North bound vehicles     = 11.37
+				 South bound vehicles     = 8.64
+		  From 12:40:00 to 13:00:00
+				 North bound vehicles     = 16.15
+				 South bound vehicles     = 11.33
+		  From 13:00:00 to 13:20:00
+				 North bound vehicles     = 15.10
+				 South bound vehicles     = 12.39
+		  From 13:20:00 to 13:40:00
+				 North bound vehicles     = 19.00
+				 South bound vehicles     = 10.93
+		  From 13:40:00 to 14:00:00
+				 North bound vehicles     = 17.42
+				 South bound vehicles     = 14.75
+		  From 14:00:00 to 14:20:00
+				 North bound vehicles     = 19.61
+				 South bound vehicles     = 11.51
+		  From 14:20:00 to 14:40:00
+				 North bound vehicles     = 17.22
+				 South bound vehicles     = 12.21
+		  From 14:40:00 to 15:00:00
+				 North bound vehicles     = 16.17
+				 South bound vehicles     = 8.68
+		  From 15:00:00 to 15:20:00
+				 North bound vehicles     = 18.05
+				 South bound vehicles     = 9.26
+		  From 15:20:00 to 15:40:00
+				 North bound vehicles     = 10.29
+				 South bound vehicles     = 8.86
+		  From 15:40:00 to 16:00:00
+				 North bound vehicles     = 10.42
+				 South bound vehicles     = 11.38
+		  From 16:00:00 to 16:20:00
+				 North bound vehicles     = 13.76
+				 South bound vehicles     = 12.12
+		  From 16:20:00 to 16:40:00
+				 North bound vehicles     = 12.09
+				 South bound vehicles     = 12.83
+		  From 16:40:00 to 17:00:00
+				 North bound vehicles     = 8.06
+				 South bound vehicles     = 8.90
+		  From 17:00:00 to 17:20:00
+				 North bound vehicles     = 5.88
+				 South bound vehicles     = 12.12
+		  From 17:20:00 to 17:40:00
+				 North bound vehicles     = 6.23
+				 South bound vehicles     = 16.66
+		  From 17:40:00 to 18:00:00
+				 North bound vehicles     = 6.51
+				 South bound vehicles     = 10.69
+		  From 18:00:00 to 18:20:00
+				 North bound vehicles     = 6.59
+				 South bound vehicles     = 11.22
+		  From 18:20:00 to 18:40:00
+				 North bound vehicles     = 10.71
+				 South bound vehicles     = 28.02
+		  From 18:40:00 to 19:00:00
+				 North bound vehicles     = 27.14
+				 South bound vehicles     = 56.15
+		  From 19:00:00 to 19:20:00
+				 North bound vehicles     = 22.02
+				 South bound vehicles     = 109.18
+		  From 19:20:00 to 19:40:00
+				 North bound vehicles     = 27.21
+				 South bound vehicles     = 46.61
+		  From 19:40:00 to 20:00:00
+				 North bound vehicles     = 85.34
+				 South bound vehicles     = 57.70
+		  From 20:00:00 to 20:20:00
+				 North bound vehicles     = 78.46
+				 South bound vehicles     = 104.03
+		  From 20:20:00 to 20:40:00
+				 North bound vehicles     = 81.29
+				 South bound vehicles     = 102.35
+		  From 20:40:00 to 21:00:00
+				 North bound vehicles     = 98.76
+				 South bound vehicles     = 58.02
+		  From 21:00:00 to 21:20:00
+				 North bound vehicles     = 100.94
+				 South bound vehicles     = 59.06
+		  From 21:20:00 to 21:40:00
+				 North bound vehicles     = 53.71
+				 South bound vehicles     = 58.55
+		  From 21:40:00 to 22:00:00
+				 North bound vehicles     = 52.28
+				 South bound vehicles     = 78.64
+		  From 22:00:00 to 22:20:00
+				 North bound vehicles     = 52.12
+				 South bound vehicles     = 43.40
+		  From 22:20:00 to 22:40:00
+				 North bound vehicles     = 58.99
+				 South bound vehicles     = 84.31
+		  From 22:40:00 to 23:00:00
+				 North bound vehicles     = 91.68
+				 South bound vehicles     = 113.76
+		  From 23:00:00 to 23:20:00
+				 North bound vehicles     = 71.61
+				 South bound vehicles     = 81.95
+		  From 23:20:00 to 23:40:00
+				 North bound vehicles     = 109.85
+				 South bound vehicles     = 80.08
+		  From 23:40:00 to 00:00:00
+				 North bound vehicles     = 161.81
+				 South bound vehicles     = 512.54
+		 PER_15_MINUTES
+		  From 00:00:00 to 00:15:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:15:00 to 00:30:00
+				 North bound vehicles     = 8.93
+				 South bound vehicles     = 1.83
+		  From 00:30:00 to 00:45:00
+				 North bound vehicles     = 6.53
+				 South bound vehicles     = 2.45
+		  From 00:45:00 to 01:00:00
+				 North bound vehicles     = 22.62
+				 South bound vehicles     = 15.98
+		  From 01:00:00 to 01:15:00
+				 North bound vehicles     = 35.31
+				 South bound vehicles     = 33.64
+		  From 01:15:00 to 01:30:00
+				 North bound vehicles     = 23.71
+				 South bound vehicles     = 16.97
+		  From 01:30:00 to 01:45:00
+				 North bound vehicles     = 76.89
+				 South bound vehicles     = 33.63
+		  From 01:45:00 to 02:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 36.34
+		  From 02:00:00 to 02:15:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 12.43
+		  From 02:15:00 to 02:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 11.08
+		  From 02:30:00 to 02:45:00
+				 North bound vehicles     = 142.56
+				 South bound vehicles     = 23.38
+		  From 02:45:00 to 03:00:00
+				 North bound vehicles     = 74.84
+				 South bound vehicles     = 26.49
+		  From 03:00:00 to 03:15:00
+				 North bound vehicles     = 76.27
+				 South bound vehicles     = 36.09
+		  From 03:15:00 to 03:30:00
+				 North bound vehicles     = 109.78
+				 South bound vehicles     = 55.72
+		  From 03:30:00 to 03:45:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 37.99
+		  From 03:45:00 to 04:00:00
+				 North bound vehicles     = 255.31
+				 South bound vehicles     = 40.49
+		  From 04:00:00 to 04:15:00
+				 North bound vehicles     = 86.36
+				 South bound vehicles     = 53.33
+		  From 04:15:00 to 04:30:00
+				 North bound vehicles     = 47.72
+				 South bound vehicles     = 63.31
+		  From 04:30:00 to 04:45:00
+				 North bound vehicles     = 51.69
+				 South bound vehicles     = 123.60
+		  From 04:45:00 to 05:00:00
+				 North bound vehicles     = 65.72
+				 South bound vehicles     = 262.57
+		  From 05:00:00 to 05:15:00
+				 North bound vehicles     = 276.07
+				 South bound vehicles     = 278.18
+		  From 05:15:00 to 05:30:00
+				 North bound vehicles     = 208.79
+				 South bound vehicles     = 21.67
+		  From 05:30:00 to 05:45:00
+				 North bound vehicles     = 208.79
+				 South bound vehicles     = 17.68
+		  From 05:45:00 to 06:00:00
+				 North bound vehicles     = 321.81
+				 South bound vehicles     = 27.44
+		  From 06:00:00 to 06:15:00
+				 North bound vehicles     = 108.27
+				 South bound vehicles     = 17.82
+		  From 06:15:00 to 06:30:00
+				 North bound vehicles     = 18.11
+				 South bound vehicles     = 16.86
+		  From 06:30:00 to 06:45:00
+				 North bound vehicles     = 11.14
+				 South bound vehicles     = 25.51
+		  From 06:45:00 to 07:00:00
+				 North bound vehicles     = 9.55
+				 South bound vehicles     = 23.58
+		  From 07:00:00 to 07:15:00
+				 North bound vehicles     = 15.01
+				 South bound vehicles     = 22.72
+		  From 07:15:00 to 07:30:00
+				 North bound vehicles     = 19.38
+				 South bound vehicles     = 4.51
+		  From 07:30:00 to 07:45:00
+				 North bound vehicles     = 17.44
+				 South bound vehicles     = 3.15
+		  From 07:45:00 to 08:00:00
+				 North bound vehicles     = 7.50
+				 South bound vehicles     = 3.48
+		  From 08:00:00 to 08:15:00
+				 North bound vehicles     = 4.72
+				 South bound vehicles     = 3.61
+		  From 08:15:00 to 08:30:00
+				 North bound vehicles     = 4.50
+				 South bound vehicles     = 4.20
+		  From 08:30:00 to 08:45:00
+				 North bound vehicles     = 5.64
+				 South bound vehicles     = 4.41
+		  From 08:45:00 to 09:00:00
+				 North bound vehicles     = 5.51
+				 South bound vehicles     = 2.55
+		  From 09:00:00 to 09:15:00
+				 North bound vehicles     = 5.76
+				 South bound vehicles     = 1.82
+		  From 09:15:00 to 09:30:00
+				 North bound vehicles     = 5.30
+				 South bound vehicles     = 3.09
+		  From 09:30:00 to 09:45:00
+				 North bound vehicles     = 6.85
+				 South bound vehicles     = 16.36
+		  From 09:45:00 to 10:00:00
+				 North bound vehicles     = 11.67
+				 South bound vehicles     = 14.94
+		  From 10:00:00 to 10:15:00
+				 North bound vehicles     = 11.39
+				 South bound vehicles     = 10.23
+		  From 10:15:00 to 10:30:00
+				 North bound vehicles     = 11.58
+				 South bound vehicles     = 17.94
+		  From 10:30:00 to 10:45:00
+				 North bound vehicles     = 9.74
+				 South bound vehicles     = 12.55
+		  From 10:45:00 to 11:00:00
+				 North bound vehicles     = 13.98
+				 South bound vehicles     = 14.28
+		  From 11:00:00 to 11:15:00
+				 North bound vehicles     = 19.67
+				 South bound vehicles     = 13.27
+		  From 11:15:00 to 11:30:00
+				 North bound vehicles     = 20.69
+				 South bound vehicles     = 12.44
+		  From 11:30:00 to 11:45:00
+				 North bound vehicles     = 17.02
+				 South bound vehicles     = 9.90
+		  From 11:45:00 to 12:00:00
+				 North bound vehicles     = 12.93
+				 South bound vehicles     = 12.41
+		  From 12:00:00 to 12:15:00
+				 North bound vehicles     = 11.61
+				 South bound vehicles     = 11.39
+		  From 12:15:00 to 12:30:00
+				 North bound vehicles     = 10.93
+				 South bound vehicles     = 10.94
+		  From 12:30:00 to 12:45:00
+				 North bound vehicles     = 13.25
+				 South bound vehicles     = 10.87
+		  From 12:45:00 to 13:00:00
+				 North bound vehicles     = 15.39
+				 South bound vehicles     = 12.63
+		  From 13:00:00 to 13:15:00
+				 North bound vehicles     = 15.10
+				 South bound vehicles     = 12.39
+		  From 13:15:00 to 13:30:00
+				 North bound vehicles     = 15.08
+				 South bound vehicles     = 10.00
+		  From 13:30:00 to 13:45:00
+				 North bound vehicles     = 18.09
+				 South bound vehicles     = 11.74
+		  From 13:45:00 to 14:00:00
+				 North bound vehicles     = 18.82
+				 South bound vehicles     = 10.53
+		  From 14:00:00 to 14:15:00
+				 North bound vehicles     = 19.61
+				 South bound vehicles     = 11.51
+		  From 14:15:00 to 14:30:00
+				 North bound vehicles     = 16.81
+				 South bound vehicles     = 9.93
+		  From 14:30:00 to 14:45:00
+				 North bound vehicles     = 22.56
+				 South bound vehicles     = 7.46
+		  From 14:45:00 to 15:00:00
+				 North bound vehicles     = 16.42
+				 South bound vehicles     = 9.32
+		  From 15:00:00 to 15:15:00
+				 North bound vehicles     = 18.05
+				 South bound vehicles     = 9.26
+		  From 15:15:00 to 15:30:00
+				 North bound vehicles     = 12.37
+				 South bound vehicles     = 11.30
+		  From 15:30:00 to 15:45:00
+				 North bound vehicles     = 9.24
+				 South bound vehicles     = 9.51
+		  From 15:45:00 to 16:00:00
+				 North bound vehicles     = 9.05
+				 South bound vehicles     = 13.34
+		  From 16:00:00 to 16:15:00
+				 North bound vehicles     = 13.76
+				 South bound vehicles     = 12.12
+		  From 16:15:00 to 16:30:00
+				 North bound vehicles     = 10.93
+				 South bound vehicles     = 12.36
+		  From 16:30:00 to 16:45:00
+				 North bound vehicles     = 9.85
+				 South bound vehicles     = 10.99
+		  From 16:45:00 to 17:00:00
+				 North bound vehicles     = 6.53
+				 South bound vehicles     = 11.29
+		  From 17:00:00 to 17:15:00
+				 North bound vehicles     = 5.88
+				 South bound vehicles     = 12.12
+		  From 17:15:00 to 17:30:00
+				 North bound vehicles     = 5.70
+				 South bound vehicles     = 13.81
+		  From 17:30:00 to 17:45:00
+				 North bound vehicles     = 6.44
+				 South bound vehicles     = 14.39
+		  From 17:45:00 to 18:00:00
+				 North bound vehicles     = 6.15
+				 South bound vehicles     = 10.86
+		  From 18:00:00 to 18:15:00
+				 North bound vehicles     = 6.59
+				 South bound vehicles     = 11.22
+		  From 18:15:00 to 18:30:00
+				 North bound vehicles     = 10.86
+				 South bound vehicles     = 26.81
+		  From 18:30:00 to 18:45:00
+				 North bound vehicles     = 18.83
+				 South bound vehicles     = 66.37
+		  From 18:45:00 to 19:00:00
+				 North bound vehicles     = 24.46
+				 South bound vehicles     = 48.10
+		  From 19:00:00 to 19:15:00
+				 North bound vehicles     = 22.02
+				 South bound vehicles     = 109.18
+		  From 19:15:00 to 19:30:00
+				 North bound vehicles     = 29.16
+				 South bound vehicles     = 65.24
+		  From 19:30:00 to 19:45:00
+				 North bound vehicles     = 64.93
+				 South bound vehicles     = 37.99
+		  From 19:45:00 to 20:00:00
+				 North bound vehicles     = 123.30
+				 South bound vehicles     = 64.52
+		  From 20:00:00 to 20:15:00
+				 North bound vehicles     = 78.46
+				 South bound vehicles     = 104.03
+		  From 20:15:00 to 20:30:00
+				 North bound vehicles     = 61.94
+				 South bound vehicles     = 67.53
+		  From 20:30:00 to 20:45:00
+				 North bound vehicles     = 131.47
+				 South bound vehicles     = 59.20
+		  From 20:45:00 to 21:00:00
+				 North bound vehicles     = 84.55
+				 South bound vehicles     = 105.63
+		  From 21:00:00 to 21:15:00
+				 North bound vehicles     = 100.94
+				 South bound vehicles     = 59.06
+		  From 21:15:00 to 21:30:00
+				 North bound vehicles     = 71.23
+				 South bound vehicles     = 37.22
+		  From 21:30:00 to 21:45:00
+				 North bound vehicles     = 37.33
+				 South bound vehicles     = 67.49
+		  From 21:45:00 to 22:00:00
+				 North bound vehicles     = 47.70
+				 South bound vehicles     = 62.15
+		  From 22:00:00 to 22:15:00
+				 North bound vehicles     = 52.12
+				 South bound vehicles     = 43.40
+		  From 22:15:00 to 22:30:00
+				 North bound vehicles     = 50.11
+				 South bound vehicles     = 53.09
+		  From 22:30:00 to 22:45:00
+				 North bound vehicles     = 74.51
+				 South bound vehicles     = 109.84
+		  From 22:45:00 to 23:00:00
+				 North bound vehicles     = 87.31
+				 South bound vehicles     = 132.11
+		  From 23:00:00 to 23:15:00
+				 North bound vehicles     = 71.61
+				 South bound vehicles     = 81.95
+		  From 23:15:00 to 23:30:00
+				 North bound vehicles     = 87.79
+				 South bound vehicles     = 74.62
+		  From 23:30:00 to 23:45:00
+				 North bound vehicles     = 138.39
+				 South bound vehicles     = 135.37
+		  From 23:45:00 to 00:00:00
+				 North bound vehicles     = 108.18
+				 South bound vehicles     = 257.29
+	Report on Day - 3
+	Rough distance between vehicles on day 2
+		 MORNING
+		  From 00:00:00 to 12:00:00
+				 North bound vehicles     = 0.17
+				 South bound vehicles     = 0.10
+		 EVENING
+		  From 18:00:00 to 00:00:00
+				 North bound vehicles     = 6.00
+				 South bound vehicles     = 9.22
+		 PER_HOUR
+		  From 00:00:00 to 01:00:00
+				 North bound vehicles     = 7.75
+				 South bound vehicles     = 0.47
+		  From 01:00:00 to 02:00:00
+				 North bound vehicles     = 14.99
+				 South bound vehicles     = 9.44
+		  From 02:00:00 to 03:00:00
+				 North bound vehicles     = 146.20
+				 South bound vehicles     = 16.02
+		  From 03:00:00 to 04:00:00
+				 North bound vehicles     = 44.77
+				 South bound vehicles     = 16.76
+		  From 04:00:00 to 05:00:00
+				 North bound vehicles     = 52.58
+				 South bound vehicles     = 28.58
+		  From 05:00:00 to 06:00:00
+				 North bound vehicles     = 88.69
+				 South bound vehicles     = 9.20
+		  From 06:00:00 to 07:00:00
+				 North bound vehicles     = 6.53
+				 South bound vehicles     = 9.69
+		  From 07:00:00 to 08:00:00
+				 North bound vehicles     = 4.14
+				 South bound vehicles     = 1.38
+		  From 08:00:00 to 09:00:00
+				 North bound vehicles     = 3.24
+				 South bound vehicles     = 1.22
+		  From 09:00:00 to 10:00:00
+				 North bound vehicles     = 5.31
+				 South bound vehicles     = 7.71
+		  From 10:00:00 to 11:00:00
+				 North bound vehicles     = 5.47
+				 South bound vehicles     = 8.30
+		  From 11:00:00 to 12:00:00
+				 North bound vehicles     = 7.20
+				 South bound vehicles     = 4.49
+		  From 12:00:00 to 13:00:00
+				 North bound vehicles     = 8.48
+				 South bound vehicles     = 5.91
+		  From 13:00:00 to 14:00:00
+				 North bound vehicles     = 7.92
+				 South bound vehicles     = 7.46
+		  From 14:00:00 to 15:00:00
+				 North bound vehicles     = 7.35
+				 South bound vehicles     = 4.45
+		  From 15:00:00 to 16:00:00
+				 North bound vehicles     = 4.04
+				 South bound vehicles     = 6.40
+		  From 16:00:00 to 17:00:00
+				 North bound vehicles     = 3.30
+				 South bound vehicles     = 4.89
+		  From 17:00:00 to 18:00:00
+				 North bound vehicles     = 2.61
+				 South bound vehicles     = 6.24
+		  From 18:00:00 to 19:00:00
+				 North bound vehicles     = 11.84
+				 South bound vehicles     = 30.07
+		  From 19:00:00 to 20:00:00
+				 North bound vehicles     = 27.59
+				 South bound vehicles     = 32.88
+		  From 20:00:00 to 21:00:00
+				 North bound vehicles     = 23.57
+				 South bound vehicles     = 45.82
+		  From 21:00:00 to 22:00:00
+				 North bound vehicles     = 37.86
+				 South bound vehicles     = 43.20
+		  From 22:00:00 to 23:00:00
+				 North bound vehicles     = 35.55
+				 South bound vehicles     = 52.71
+		  From 23:00:00 to 00:00:00
+				 North bound vehicles     = 46.37
+				 South bound vehicles     = 62.33
+		 PER_HALF_AN_HOUR
+		  From 00:00:00 to 00:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:30:00 to 01:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.39
+		  From 01:00:00 to 01:30:00
+				 North bound vehicles     = 7.75
+				 South bound vehicles     = 9.54
+		  From 01:30:00 to 02:00:00
+				 North bound vehicles     = 23.83
+				 South bound vehicles     = 43.78
+		  From 02:00:00 to 02:30:00
+				 North bound vehicles     = 42.02
+				 South bound vehicles     = 12.76
+		  From 02:30:00 to 03:00:00
+				 North bound vehicles     = 146.20
+				 South bound vehicles     = 21.55
+		  From 03:00:00 to 03:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 52.27
+		  From 03:30:00 to 04:00:00
+				 North bound vehicles     = 70.62
+				 South bound vehicles     = 32.81
+		  From 04:00:00 to 04:30:00
+				 North bound vehicles     = 98.73
+				 South bound vehicles     = 34.39
+		  From 04:30:00 to 05:00:00
+				 North bound vehicles     = 104.02
+				 South bound vehicles     = 49.26
+		  From 05:00:00 to 05:30:00
+				 North bound vehicles     = 104.24
+				 South bound vehicles     = 73.48
+		  From 05:30:00 to 06:00:00
+				 North bound vehicles     = 175.08
+				 South bound vehicles     = 17.34
+		  From 06:00:00 to 06:30:00
+				 North bound vehicles     = 173.10
+				 South bound vehicles     = 17.35
+		  From 06:30:00 to 07:00:00
+				 North bound vehicles     = 10.39
+				 South bound vehicles     = 17.55
+		  From 07:00:00 to 07:30:00
+				 North bound vehicles     = 19.99
+				 South bound vehicles     = 21.87
+		  From 07:30:00 to 08:00:00
+				 North bound vehicles     = 31.75
+				 South bound vehicles     = 2.65
+		  From 08:00:00 to 08:30:00
+				 North bound vehicles     = 4.27
+				 South bound vehicles     = 3.63
+		  From 08:30:00 to 09:00:00
+				 North bound vehicles     = 6.57
+				 South bound vehicles     = 4.71
+		  From 09:00:00 to 09:30:00
+				 North bound vehicles     = 5.80
+				 South bound vehicles     = 1.86
+		  From 09:30:00 to 10:00:00
+				 North bound vehicles     = 9.52
+				 South bound vehicles     = 13.63
+		  From 10:00:00 to 10:30:00
+				 North bound vehicles     = 9.65
+				 South bound vehicles     = 19.80
+		  From 10:30:00 to 11:00:00
+				 North bound vehicles     = 10.64
+				 South bound vehicles     = 14.87
+		  From 11:00:00 to 11:30:00
+				 North bound vehicles     = 15.75
+				 South bound vehicles     = 20.32
+		  From 11:30:00 to 12:00:00
+				 North bound vehicles     = 14.34
+				 South bound vehicles     = 8.86
+		  From 12:00:00 to 12:30:00
+				 North bound vehicles     = 14.75
+				 South bound vehicles     = 10.13
+		  From 12:30:00 to 13:00:00
+				 North bound vehicles     = 17.56
+				 South bound vehicles     = 11.43
+		  From 13:00:00 to 13:30:00
+				 North bound vehicles     = 16.00
+				 South bound vehicles     = 16.46
+		  From 13:30:00 to 14:00:00
+				 North bound vehicles     = 16.93
+				 South bound vehicles     = 16.42
+		  From 14:00:00 to 14:30:00
+				 North bound vehicles     = 17.25
+				 South bound vehicles     = 12.76
+		  From 14:30:00 to 15:00:00
+				 North bound vehicles     = 14.88
+				 South bound vehicles     = 8.95
+		  From 15:00:00 to 15:30:00
+				 North bound vehicles     = 14.83
+				 South bound vehicles     = 9.81
+		  From 15:30:00 to 16:00:00
+				 North bound vehicles     = 8.04
+				 South bound vehicles     = 14.21
+		  From 16:00:00 to 16:30:00
+				 North bound vehicles     = 9.32
+				 South bound vehicles     = 10.94
+		  From 16:30:00 to 17:00:00
+				 North bound vehicles     = 10.07
+				 South bound vehicles     = 10.59
+		  From 17:00:00 to 17:30:00
+				 North bound vehicles     = 5.74
+				 South bound vehicles     = 11.93
+		  From 17:30:00 to 18:00:00
+				 North bound vehicles     = 4.90
+				 South bound vehicles     = 12.01
+		  From 18:00:00 to 18:30:00
+				 North bound vehicles     = 6.01
+				 South bound vehicles     = 14.04
+		  From 18:30:00 to 19:00:00
+				 North bound vehicles     = 22.77
+				 South bound vehicles     = 69.27
+		  From 19:00:00 to 19:30:00
+				 North bound vehicles     = 25.71
+				 South bound vehicles     = 50.07
+		  From 19:30:00 to 20:00:00
+				 North bound vehicles     = 57.65
+				 South bound vehicles     = 59.58
+		  From 20:00:00 to 20:30:00
+				 North bound vehicles     = 58.25
+				 South bound vehicles     = 85.05
+		  From 20:30:00 to 21:00:00
+				 North bound vehicles     = 43.94
+				 South bound vehicles     = 82.56
+		  From 21:00:00 to 21:30:00
+				 North bound vehicles     = 66.54
+				 South bound vehicles     = 89.76
+		  From 21:30:00 to 22:00:00
+				 North bound vehicles     = 75.54
+				 South bound vehicles     = 107.60
+		  From 22:00:00 to 22:30:00
+				 North bound vehicles     = 67.96
+				 South bound vehicles     = 57.93
+		  From 22:30:00 to 23:00:00
+				 North bound vehicles     = 60.76
+				 South bound vehicles     = 96.88
+		  From 23:00:00 to 23:30:00
+				 North bound vehicles     = 104.23
+				 South bound vehicles     = 126.61
+		  From 23:30:00 to 00:00:00
+				 North bound vehicles     = 87.40
+				 South bound vehicles     = 168.63
+		 PER_20_MINUTES
+		  From 00:00:00 to 00:20:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:20:00 to 00:40:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.51
+		  From 00:40:00 to 01:00:00
+				 North bound vehicles     = 14.24
+				 South bound vehicles     = 2.07
+		  From 01:00:00 to 01:20:00
+				 North bound vehicles     = 7.75
+				 South bound vehicles     = 9.54
+		  From 01:20:00 to 01:40:00
+				 North bound vehicles     = 21.63
+				 South bound vehicles     = 43.78
+		  From 01:40:00 to 02:00:00
+				 North bound vehicles     = 42.59
+				 South bound vehicles     = 22.91
+		  From 02:00:00 to 02:20:00
+				 North bound vehicles     = 42.02
+				 South bound vehicles     = 12.76
+		  From 02:20:00 to 02:40:00
+				 North bound vehicles     = 55.49
+				 South bound vehicles     = 11.95
+		  From 02:40:00 to 03:00:00
+				 North bound vehicles     = 146.20
+				 South bound vehicles     = 22.14
+		  From 03:00:00 to 03:20:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 52.27
+		  From 03:20:00 to 03:40:00
+				 North bound vehicles     = 105.66
+				 South bound vehicles     = 31.99
+		  From 03:40:00 to 04:00:00
+				 North bound vehicles     = 271.05
+				 South bound vehicles     = 43.43
+		  From 04:00:00 to 04:20:00
+				 North bound vehicles     = 98.73
+				 South bound vehicles     = 34.39
+		  From 04:20:00 to 04:40:00
+				 North bound vehicles     = 129.84
+				 South bound vehicles     = 45.69
+		  From 04:40:00 to 05:00:00
+				 North bound vehicles     = 87.16
+				 South bound vehicles     = 42.74
+		  From 05:00:00 to 05:20:00
+				 North bound vehicles     = 104.24
+				 South bound vehicles     = 73.48
+		  From 05:20:00 to 05:40:00
+				 North bound vehicles     = 167.18
+				 South bound vehicles     = 20.22
+		  From 05:40:00 to 06:00:00
+				 North bound vehicles     = 175.08
+				 South bound vehicles     = 17.58
+		  From 06:00:00 to 06:20:00
+				 North bound vehicles     = 173.10
+				 South bound vehicles     = 17.35
+		  From 06:20:00 to 06:40:00
+				 North bound vehicles     = 15.77
+				 South bound vehicles     = 11.97
+		  From 06:40:00 to 07:00:00
+				 North bound vehicles     = 9.52
+				 South bound vehicles     = 31.06
+		  From 07:00:00 to 07:20:00
+				 North bound vehicles     = 19.99
+				 South bound vehicles     = 21.87
+		  From 07:20:00 to 07:40:00
+				 North bound vehicles     = 17.21
+				 South bound vehicles     = 4.21
+		  From 07:40:00 to 08:00:00
+				 North bound vehicles     = 9.87
+				 South bound vehicles     = 3.35
+		  From 08:00:00 to 08:20:00
+				 North bound vehicles     = 4.27
+				 South bound vehicles     = 3.63
+		  From 08:20:00 to 08:40:00
+				 North bound vehicles     = 6.88
+				 South bound vehicles     = 4.52
+		  From 08:40:00 to 09:00:00
+				 North bound vehicles     = 6.23
+				 South bound vehicles     = 3.60
+		  From 09:00:00 to 09:20:00
+				 North bound vehicles     = 5.80
+				 South bound vehicles     = 1.86
+		  From 09:20:00 to 09:40:00
+				 North bound vehicles     = 7.09
+				 South bound vehicles     = 4.59
+		  From 09:40:00 to 10:00:00
+				 North bound vehicles     = 12.67
+				 South bound vehicles     = 13.15
+		  From 10:00:00 to 10:20:00
+				 North bound vehicles     = 9.65
+				 South bound vehicles     = 19.80
+		  From 10:20:00 to 10:40:00
+				 North bound vehicles     = 12.18
+				 South bound vehicles     = 11.86
+		  From 10:40:00 to 11:00:00
+				 North bound vehicles     = 11.44
+				 South bound vehicles     = 17.00
+		  From 11:00:00 to 11:20:00
+				 North bound vehicles     = 15.75
+				 South bound vehicles     = 20.32
+		  From 11:20:00 to 11:40:00
+				 North bound vehicles     = 9.98
+				 South bound vehicles     = 13.90
+		  From 11:40:00 to 12:00:00
+				 North bound vehicles     = 14.90
+				 South bound vehicles     = 11.21
+		  From 12:00:00 to 12:20:00
+				 North bound vehicles     = 14.75
+				 South bound vehicles     = 10.13
+		  From 12:20:00 to 12:40:00
+				 North bound vehicles     = 16.42
+				 South bound vehicles     = 13.41
+		  From 12:40:00 to 13:00:00
+				 North bound vehicles     = 13.84
+				 South bound vehicles     = 10.87
+		  From 13:00:00 to 13:20:00
+				 North bound vehicles     = 16.00
+				 South bound vehicles     = 16.46
+		  From 13:20:00 to 13:40:00
+				 North bound vehicles     = 21.29
+				 South bound vehicles     = 13.58
+		  From 13:40:00 to 14:00:00
+				 North bound vehicles     = 13.71
+				 South bound vehicles     = 16.57
+		  From 14:00:00 to 14:20:00
+				 North bound vehicles     = 17.25
+				 South bound vehicles     = 12.76
+		  From 14:20:00 to 14:40:00
+				 North bound vehicles     = 18.91
+				 South bound vehicles     = 9.12
+		  From 14:40:00 to 15:00:00
+				 North bound vehicles     = 15.73
+				 South bound vehicles     = 7.24
+		  From 15:00:00 to 15:20:00
+				 North bound vehicles     = 14.83
+				 South bound vehicles     = 9.81
+		  From 15:20:00 to 15:40:00
+				 North bound vehicles     = 11.20
+				 South bound vehicles     = 11.61
+		  From 15:40:00 to 16:00:00
+				 North bound vehicles     = 12.50
+				 South bound vehicles     = 9.06
+		  From 16:00:00 to 16:20:00
+				 North bound vehicles     = 9.32
+				 South bound vehicles     = 10.94
+		  From 16:20:00 to 16:40:00
+				 North bound vehicles     = 8.29
+				 South bound vehicles     = 13.79
+		  From 16:40:00 to 17:00:00
+				 North bound vehicles     = 7.82
+				 South bound vehicles     = 10.84
+		  From 17:00:00 to 17:20:00
+				 North bound vehicles     = 5.74
+				 South bound vehicles     = 11.93
+		  From 17:20:00 to 17:40:00
+				 North bound vehicles     = 4.97
+				 South bound vehicles     = 13.34
+		  From 17:40:00 to 18:00:00
+				 North bound vehicles     = 4.73
+				 South bound vehicles     = 11.03
+		  From 18:00:00 to 18:20:00
+				 North bound vehicles     = 6.01
+				 South bound vehicles     = 14.04
+		  From 18:20:00 to 18:40:00
+				 North bound vehicles     = 13.67
+				 South bound vehicles     = 31.16
+		  From 18:40:00 to 19:00:00
+				 North bound vehicles     = 22.09
+				 South bound vehicles     = 60.25
+		  From 19:00:00 to 19:20:00
+				 North bound vehicles     = 25.71
+				 South bound vehicles     = 50.07
+		  From 19:20:00 to 19:40:00
+				 North bound vehicles     = 48.88
+				 South bound vehicles     = 54.64
+		  From 19:40:00 to 20:00:00
+				 North bound vehicles     = 58.98
+				 South bound vehicles     = 82.94
+		  From 20:00:00 to 20:20:00
+				 North bound vehicles     = 58.25
+				 South bound vehicles     = 85.05
+		  From 20:20:00 to 20:40:00
+				 North bound vehicles     = 43.00
+				 South bound vehicles     = 102.39
+		  From 20:40:00 to 21:00:00
+				 North bound vehicles     = 46.48
+				 South bound vehicles     = 97.67
+		  From 21:00:00 to 21:20:00
+				 North bound vehicles     = 66.54
+				 South bound vehicles     = 89.76
+		  From 21:20:00 to 21:40:00
+				 North bound vehicles     = 67.42
+				 South bound vehicles     = 85.28
+		  From 21:40:00 to 22:00:00
+				 North bound vehicles     = 65.40
+				 South bound vehicles     = 60.29
+		  From 22:00:00 to 22:20:00
+				 North bound vehicles     = 67.96
+				 South bound vehicles     = 57.93
+		  From 22:20:00 to 22:40:00
+				 North bound vehicles     = 52.84
+				 South bound vehicles     = 83.60
+		  From 22:40:00 to 23:00:00
+				 North bound vehicles     = 58.29
+				 South bound vehicles     = 194.13
+		  From 23:00:00 to 23:20:00
+				 North bound vehicles     = 104.23
+				 South bound vehicles     = 126.61
+		  From 23:20:00 to 23:40:00
+				 North bound vehicles     = 66.34
+				 South bound vehicles     = 187.12
+		  From 23:40:00 to 00:00:00
+				 North bound vehicles     = 130.78
+				 South bound vehicles     = 168.86
+		 PER_15_MINUTES
+		  From 00:00:00 to 00:15:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:15:00 to 00:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.51
+		  From 00:30:00 to 00:45:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.39
+		  From 00:45:00 to 01:00:00
+				 North bound vehicles     = 14.24
+				 South bound vehicles     = 4.38
+		  From 01:00:00 to 01:15:00
+				 North bound vehicles     = 7.75
+				 South bound vehicles     = 9.54
+		  From 01:15:00 to 01:30:00
+				 North bound vehicles     = 14.04
+				 South bound vehicles     = 16.59
+		  From 01:30:00 to 01:45:00
+				 North bound vehicles     = 23.83
+				 South bound vehicles     = 43.78
+		  From 01:45:00 to 02:00:00
+				 North bound vehicles     = 42.59
+				 South bound vehicles     = 33.24
+		  From 02:00:00 to 02:15:00
+				 North bound vehicles     = 42.02
+				 South bound vehicles     = 12.76
+		  From 02:15:00 to 02:30:00
+				 North bound vehicles     = 108.29
+				 South bound vehicles     = 10.24
+		  From 02:30:00 to 02:45:00
+				 North bound vehicles     = 146.20
+				 South bound vehicles     = 21.55
+		  From 02:45:00 to 03:00:00
+				 North bound vehicles     = 146.20
+				 South bound vehicles     = 41.62
+		  From 03:00:00 to 03:15:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 52.27
+		  From 03:15:00 to 03:30:00
+				 North bound vehicles     = 105.66
+				 South bound vehicles     = 39.76
+		  From 03:30:00 to 03:45:00
+				 North bound vehicles     = 70.62
+				 South bound vehicles     = 32.81
+		  From 03:45:00 to 04:00:00
+				 North bound vehicles     = 271.05
+				 South bound vehicles     = 35.85
+		  From 04:00:00 to 04:15:00
+				 North bound vehicles     = 98.73
+				 South bound vehicles     = 34.39
+		  From 04:15:00 to 04:30:00
+				 North bound vehicles     = 66.16
+				 South bound vehicles     = 45.40
+		  From 04:30:00 to 04:45:00
+				 North bound vehicles     = 104.02
+				 South bound vehicles     = 49.26
+		  From 04:45:00 to 05:00:00
+				 North bound vehicles     = 65.63
+				 South bound vehicles     = 49.76
+		  From 05:00:00 to 05:15:00
+				 North bound vehicles     = 104.24
+				 South bound vehicles     = 73.48
+		  From 05:15:00 to 05:30:00
+				 North bound vehicles     = 167.18
+				 South bound vehicles     = 26.92
+		  From 05:30:00 to 05:45:00
+				 North bound vehicles     = 175.08
+				 South bound vehicles     = 17.34
+		  From 05:45:00 to 06:00:00
+				 North bound vehicles     = 140.14
+				 South bound vehicles     = 17.74
+		  From 06:00:00 to 06:15:00
+				 North bound vehicles     = 173.10
+				 South bound vehicles     = 17.35
+		  From 06:15:00 to 06:30:00
+				 North bound vehicles     = 25.53
+				 South bound vehicles     = 13.76
+		  From 06:30:00 to 06:45:00
+				 North bound vehicles     = 10.39
+				 South bound vehicles     = 17.55
+		  From 06:45:00 to 07:00:00
+				 North bound vehicles     = 8.79
+				 South bound vehicles     = 25.37
+		  From 07:00:00 to 07:15:00
+				 North bound vehicles     = 19.99
+				 South bound vehicles     = 21.87
+		  From 07:15:00 to 07:30:00
+				 North bound vehicles     = 17.89
+				 South bound vehicles     = 4.26
+		  From 07:30:00 to 07:45:00
+				 North bound vehicles     = 31.75
+				 South bound vehicles     = 2.65
+		  From 07:45:00 to 08:00:00
+				 North bound vehicles     = 6.91
+				 South bound vehicles     = 4.83
+		  From 08:00:00 to 08:15:00
+				 North bound vehicles     = 4.27
+				 South bound vehicles     = 3.63
+		  From 08:15:00 to 08:30:00
+				 North bound vehicles     = 4.57
+				 South bound vehicles     = 4.72
+		  From 08:30:00 to 08:45:00
+				 North bound vehicles     = 6.57
+				 South bound vehicles     = 4.71
+		  From 08:45:00 to 09:00:00
+				 North bound vehicles     = 5.16
+				 South bound vehicles     = 2.77
+		  From 09:00:00 to 09:15:00
+				 North bound vehicles     = 5.80
+				 South bound vehicles     = 1.86
+		  From 09:15:00 to 09:30:00
+				 North bound vehicles     = 7.77
+				 South bound vehicles     = 3.87
+		  From 09:30:00 to 09:45:00
+				 North bound vehicles     = 9.52
+				 South bound vehicles     = 13.63
+		  From 09:45:00 to 10:00:00
+				 North bound vehicles     = 7.76
+				 South bound vehicles     = 16.54
+		  From 10:00:00 to 10:15:00
+				 North bound vehicles     = 9.65
+				 South bound vehicles     = 19.80
+		  From 10:15:00 to 10:30:00
+				 North bound vehicles     = 8.93
+				 South bound vehicles     = 16.76
+		  From 10:30:00 to 10:45:00
+				 North bound vehicles     = 10.64
+				 South bound vehicles     = 14.87
+		  From 10:45:00 to 11:00:00
+				 North bound vehicles     = 14.03
+				 South bound vehicles     = 19.41
+		  From 11:00:00 to 11:15:00
+				 North bound vehicles     = 15.75
+				 South bound vehicles     = 20.32
+		  From 11:15:00 to 11:30:00
+				 North bound vehicles     = 12.28
+				 South bound vehicles     = 13.99
+		  From 11:30:00 to 11:45:00
+				 North bound vehicles     = 14.34
+				 South bound vehicles     = 8.86
+		  From 11:45:00 to 12:00:00
+				 North bound vehicles     = 11.46
+				 South bound vehicles     = 12.36
+		  From 12:00:00 to 12:15:00
+				 North bound vehicles     = 14.75
+				 South bound vehicles     = 10.13
+		  From 12:15:00 to 12:30:00
+				 North bound vehicles     = 17.15
+				 South bound vehicles     = 11.93
+		  From 12:30:00 to 12:45:00
+				 North bound vehicles     = 17.56
+				 South bound vehicles     = 11.43
+		  From 12:45:00 to 13:00:00
+				 North bound vehicles     = 14.95
+				 South bound vehicles     = 12.43
+		  From 13:00:00 to 13:15:00
+				 North bound vehicles     = 16.00
+				 South bound vehicles     = 16.46
+		  From 13:15:00 to 13:30:00
+				 North bound vehicles     = 16.63
+				 South bound vehicles     = 16.06
+		  From 13:30:00 to 13:45:00
+				 North bound vehicles     = 16.93
+				 South bound vehicles     = 16.42
+		  From 13:45:00 to 14:00:00
+				 North bound vehicles     = 15.54
+				 South bound vehicles     = 12.19
+		  From 14:00:00 to 14:15:00
+				 North bound vehicles     = 17.25
+				 South bound vehicles     = 12.76
+		  From 14:15:00 to 14:30:00
+				 North bound vehicles     = 21.29
+				 South bound vehicles     = 11.65
+		  From 14:30:00 to 14:45:00
+				 North bound vehicles     = 14.88
+				 South bound vehicles     = 8.95
+		  From 14:45:00 to 15:00:00
+				 North bound vehicles     = 18.39
+				 South bound vehicles     = 8.12
+		  From 15:00:00 to 15:15:00
+				 North bound vehicles     = 14.83
+				 South bound vehicles     = 9.81
+		  From 15:15:00 to 15:30:00
+				 North bound vehicles     = 15.50
+				 South bound vehicles     = 8.66
+		  From 15:30:00 to 15:45:00
+				 North bound vehicles     = 8.04
+				 South bound vehicles     = 14.21
+		  From 15:45:00 to 16:00:00
+				 North bound vehicles     = 10.12
+				 South bound vehicles     = 12.64
+		  From 16:00:00 to 16:15:00
+				 North bound vehicles     = 9.32
+				 South bound vehicles     = 10.94
+		  From 16:15:00 to 16:30:00
+				 North bound vehicles     = 6.27
+				 South bound vehicles     = 9.59
+		  From 16:30:00 to 16:45:00
+				 North bound vehicles     = 10.07
+				 South bound vehicles     = 10.59
+		  From 16:45:00 to 17:00:00
+				 North bound vehicles     = 6.09
+				 South bound vehicles     = 13.27
+		  From 17:00:00 to 17:15:00
+				 North bound vehicles     = 5.74
+				 South bound vehicles     = 11.93
+		  From 17:15:00 to 17:30:00
+				 North bound vehicles     = 5.09
+				 South bound vehicles     = 13.10
+		  From 17:30:00 to 17:45:00
+				 North bound vehicles     = 4.90
+				 South bound vehicles     = 12.01
+		  From 17:45:00 to 18:00:00
+				 North bound vehicles     = 5.36
+				 South bound vehicles     = 13.27
+		  From 18:00:00 to 18:15:00
+				 North bound vehicles     = 6.01
+				 South bound vehicles     = 14.04
+		  From 18:15:00 to 18:30:00
+				 North bound vehicles     = 9.62
+				 South bound vehicles     = 28.95
+		  From 18:30:00 to 18:45:00
+				 North bound vehicles     = 22.77
+				 South bound vehicles     = 69.27
+		  From 18:45:00 to 19:00:00
+				 North bound vehicles     = 24.09
+				 South bound vehicles     = 47.75
+		  From 19:00:00 to 19:15:00
+				 North bound vehicles     = 25.71
+				 South bound vehicles     = 50.07
+		  From 19:15:00 to 19:30:00
+				 North bound vehicles     = 32.31
+				 South bound vehicles     = 53.17
+		  From 19:30:00 to 19:45:00
+				 North bound vehicles     = 57.65
+				 South bound vehicles     = 59.58
+		  From 19:45:00 to 20:00:00
+				 North bound vehicles     = 59.84
+				 South bound vehicles     = 65.68
+		  From 20:00:00 to 20:15:00
+				 North bound vehicles     = 58.25
+				 South bound vehicles     = 85.05
+		  From 20:15:00 to 20:30:00
+				 North bound vehicles     = 50.66
+				 South bound vehicles     = 68.34
+		  From 20:30:00 to 20:45:00
+				 North bound vehicles     = 43.94
+				 South bound vehicles     = 82.56
+		  From 20:45:00 to 21:00:00
+				 North bound vehicles     = 65.13
+				 South bound vehicles     = 74.46
+		  From 21:00:00 to 21:15:00
+				 North bound vehicles     = 66.54
+				 South bound vehicles     = 89.76
+		  From 21:15:00 to 21:30:00
+				 North bound vehicles     = 80.68
+				 South bound vehicles     = 115.08
+		  From 21:30:00 to 21:45:00
+				 North bound vehicles     = 75.54
+				 South bound vehicles     = 107.60
+		  From 21:45:00 to 22:00:00
+				 North bound vehicles     = 53.78
+				 South bound vehicles     = 60.17
+		  From 22:00:00 to 22:15:00
+				 North bound vehicles     = 67.96
+				 South bound vehicles     = 57.93
+		  From 22:15:00 to 22:30:00
+				 North bound vehicles     = 66.63
+				 South bound vehicles     = 70.89
+		  From 22:30:00 to 22:45:00
+				 North bound vehicles     = 60.76
+				 South bound vehicles     = 96.88
+		  From 22:45:00 to 23:00:00
+				 North bound vehicles     = 155.79
+				 South bound vehicles     = 132.95
+		  From 23:00:00 to 23:15:00
+				 North bound vehicles     = 104.23
+				 South bound vehicles     = 126.61
+		  From 23:15:00 to 23:30:00
+				 North bound vehicles     = 70.29
+				 South bound vehicles     = 148.22
+		  From 23:30:00 to 23:45:00
+				 North bound vehicles     = 87.40
+				 South bound vehicles     = 168.63
+		  From 23:45:00 to 00:00:00
+				 North bound vehicles     = 105.01
+				 South bound vehicles     = 130.00
+	Report on Day - 4
+	Rough distance between vehicles on day 3
+		 MORNING
+		  From 00:00:00 to 12:00:00
+				 North bound vehicles     = 0.17
+				 South bound vehicles     = 0.09
+		 EVENING
+		  From 18:00:00 to 00:00:00
+				 North bound vehicles     = 6.29
+				 South bound vehicles     = 7.13
+		 PER_HOUR
+		  From 00:00:00 to 01:00:00
+				 North bound vehicles     = 12.11
+				 South bound vehicles     = 3.07
+		  From 01:00:00 to 02:00:00
+				 North bound vehicles     = 8.93
+				 South bound vehicles     = 15.22
+		  From 02:00:00 to 03:00:00
+				 North bound vehicles     = 26.25
+				 South bound vehicles     = 32.26
+		  From 03:00:00 to 04:00:00
+				 North bound vehicles     = 19.04
+				 South bound vehicles     = 27.91
+		  From 04:00:00 to 05:00:00
+				 North bound vehicles     = 149.31
+				 South bound vehicles     = 59.80
+		  From 05:00:00 to 06:00:00
+				 North bound vehicles     = 122.82
+				 South bound vehicles     = 10.72
+		  From 06:00:00 to 07:00:00
+				 North bound vehicles     = 7.32
+				 South bound vehicles     = 11.33
+		  From 07:00:00 to 08:00:00
+				 North bound vehicles     = 2.89
+				 South bound vehicles     = 1.61
+		  From 08:00:00 to 09:00:00
+				 North bound vehicles     = 2.73
+				 South bound vehicles     = 1.04
+		  From 09:00:00 to 10:00:00
+				 North bound vehicles     = 3.62
+				 South bound vehicles     = 7.30
+		  From 10:00:00 to 11:00:00
+				 North bound vehicles     = 5.93
+				 South bound vehicles     = 6.18
+		  From 11:00:00 to 12:00:00
+				 North bound vehicles     = 8.12
+				 South bound vehicles     = 5.84
+		  From 12:00:00 to 13:00:00
+				 North bound vehicles     = 7.37
+				 South bound vehicles     = 5.81
+		  From 13:00:00 to 14:00:00
+				 North bound vehicles     = 8.14
+				 South bound vehicles     = 8.61
+		  From 14:00:00 to 15:00:00
+				 North bound vehicles     = 11.35
+				 South bound vehicles     = 6.19
+		  From 15:00:00 to 16:00:00
+				 North bound vehicles     = 3.78
+				 South bound vehicles     = 5.47
+		  From 16:00:00 to 17:00:00
+				 North bound vehicles     = 3.25
+				 South bound vehicles     = 6.07
+		  From 17:00:00 to 18:00:00
+				 North bound vehicles     = 2.23
+				 South bound vehicles     = 5.56
+		  From 18:00:00 to 19:00:00
+				 North bound vehicles     = 10.53
+				 South bound vehicles     = 33.22
+		  From 19:00:00 to 20:00:00
+				 North bound vehicles     = 27.59
+				 South bound vehicles     = 27.77
+		  From 20:00:00 to 21:00:00
+				 North bound vehicles     = 24.48
+				 South bound vehicles     = 34.66
+		  From 21:00:00 to 22:00:00
+				 North bound vehicles     = 34.51
+				 South bound vehicles     = 50.13
+		  From 22:00:00 to 23:00:00
+				 North bound vehicles     = 26.01
+				 South bound vehicles     = 43.40
+		  From 23:00:00 to 00:00:00
+				 North bound vehicles     = 51.27
+				 South bound vehicles     = 56.00
+		 PER_HALF_AN_HOUR
+		  From 00:00:00 to 00:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:30:00 to 01:00:00
+				 North bound vehicles     = 12.11
+				 South bound vehicles     = 6.41
+		  From 01:00:00 to 01:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 14.52
+		  From 01:30:00 to 02:00:00
+				 North bound vehicles     = 21.38
+				 South bound vehicles     = 36.01
+		  From 02:00:00 to 02:30:00
+				 North bound vehicles     = 16.38
+				 South bound vehicles     = 44.16
+		  From 02:30:00 to 03:00:00
+				 North bound vehicles     = 40.42
+				 South bound vehicles     = 126.16
+		  From 03:00:00 to 03:30:00
+				 North bound vehicles     = 111.21
+				 South bound vehicles     = 52.52
+		  From 03:30:00 to 04:00:00
+				 North bound vehicles     = 37.36
+				 South bound vehicles     = 47.93
+		  From 04:00:00 to 04:30:00
+				 North bound vehicles     = 46.30
+				 South bound vehicles     = 71.79
+		  From 04:30:00 to 05:00:00
+				 North bound vehicles     = 297.80
+				 South bound vehicles     = 99.21
+		  From 05:00:00 to 05:30:00
+				 North bound vehicles     = 280.00
+				 South bound vehicles     = 137.38
+		  From 05:30:00 to 06:00:00
+				 North bound vehicles     = 182.65
+				 South bound vehicles     = 25.23
+		  From 06:00:00 to 06:30:00
+				 North bound vehicles     = 354.57
+				 South bound vehicles     = 18.54
+		  From 06:30:00 to 07:00:00
+				 North bound vehicles     = 17.05
+				 South bound vehicles     = 19.81
+		  From 07:00:00 to 07:30:00
+				 North bound vehicles     = 10.03
+				 South bound vehicles     = 28.59
+		  From 07:30:00 to 08:00:00
+				 North bound vehicles     = 13.09
+				 South bound vehicles     = 3.15
+		  From 08:00:00 to 08:30:00
+				 North bound vehicles     = 4.10
+				 South bound vehicles     = 3.12
+		  From 08:30:00 to 09:00:00
+				 North bound vehicles     = 5.46
+				 South bound vehicles     = 3.90
+		  From 09:00:00 to 09:30:00
+				 North bound vehicles     = 5.87
+				 South bound vehicles     = 1.39
+		  From 09:30:00 to 10:00:00
+				 North bound vehicles     = 6.31
+				 South bound vehicles     = 14.15
+		  From 10:00:00 to 10:30:00
+				 North bound vehicles     = 10.81
+				 South bound vehicles     = 13.91
+		  From 10:30:00 to 11:00:00
+				 North bound vehicles     = 10.55
+				 South bound vehicles     = 11.32
+		  From 11:00:00 to 11:30:00
+				 North bound vehicles     = 12.43
+				 South bound vehicles     = 21.21
+		  From 11:30:00 to 12:00:00
+				 North bound vehicles     = 16.70
+				 South bound vehicles     = 12.09
+		  From 12:00:00 to 12:30:00
+				 North bound vehicles     = 15.33
+				 South bound vehicles     = 11.41
+		  From 12:30:00 to 13:00:00
+				 North bound vehicles     = 14.51
+				 South bound vehicles     = 11.54
+		  From 13:00:00 to 13:30:00
+				 North bound vehicles     = 15.76
+				 South bound vehicles     = 14.17
+		  From 13:30:00 to 14:00:00
+				 North bound vehicles     = 17.04
+				 South bound vehicles     = 16.77
+		  From 14:00:00 to 14:30:00
+				 North bound vehicles     = 13.42
+				 South bound vehicles     = 19.44
+		  From 14:30:00 to 15:00:00
+				 North bound vehicles     = 26.38
+				 South bound vehicles     = 11.43
+		  From 15:00:00 to 15:30:00
+				 North bound vehicles     = 16.17
+				 South bound vehicles     = 10.94
+		  From 15:30:00 to 16:00:00
+				 North bound vehicles     = 7.65
+				 South bound vehicles     = 9.57
+		  From 16:00:00 to 16:30:00
+				 North bound vehicles     = 9.38
+				 South bound vehicles     = 12.38
+		  From 16:30:00 to 17:00:00
+				 North bound vehicles     = 8.92
+				 South bound vehicles     = 14.59
+		  From 17:00:00 to 17:30:00
+				 North bound vehicles     = 5.08
+				 South bound vehicles     = 8.29
+		  From 17:30:00 to 18:00:00
+				 North bound vehicles     = 4.56
+				 South bound vehicles     = 11.12
+		  From 18:00:00 to 18:30:00
+				 North bound vehicles     = 4.60
+				 South bound vehicles     = 12.57
+		  From 18:30:00 to 19:00:00
+				 North bound vehicles     = 19.24
+				 South bound vehicles     = 59.13
+		  From 19:00:00 to 19:30:00
+				 North bound vehicles     = 29.27
+				 South bound vehicles     = 67.94
+		  From 19:30:00 to 20:00:00
+				 North bound vehicles     = 52.54
+				 South bound vehicles     = 53.98
+		  From 20:00:00 to 20:30:00
+				 North bound vehicles     = 72.91
+				 South bound vehicles     = 58.40
+		  From 20:30:00 to 21:00:00
+				 North bound vehicles     = 46.28
+				 South bound vehicles     = 68.96
+		  From 21:00:00 to 21:30:00
+				 North bound vehicles     = 31.17
+				 South bound vehicles     = 63.92
+		  From 21:30:00 to 22:00:00
+				 North bound vehicles     = 60.89
+				 South bound vehicles     = 96.60
+		  From 22:00:00 to 22:30:00
+				 North bound vehicles     = 107.89
+				 South bound vehicles     = 89.55
+		  From 22:30:00 to 23:00:00
+				 North bound vehicles     = 59.97
+				 South bound vehicles     = 99.88
+		  From 23:00:00 to 23:30:00
+				 North bound vehicles     = 56.84
+				 South bound vehicles     = 80.94
+		  From 23:30:00 to 00:00:00
+				 North bound vehicles     = 98.12
+				 South bound vehicles     = 161.00
+		 PER_20_MINUTES
+		  From 00:00:00 to 00:20:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:20:00 to 00:40:00
+				 North bound vehicles     = 22.33
+				 South bound vehicles     = 6.41
+		  From 00:40:00 to 01:00:00
+				 North bound vehicles     = 12.11
+				 South bound vehicles     = 6.41
+		  From 01:00:00 to 01:20:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 14.52
+		  From 01:20:00 to 01:40:00
+				 North bound vehicles     = 21.38
+				 South bound vehicles     = 36.01
+		  From 01:40:00 to 02:00:00
+				 North bound vehicles     = 35.73
+				 South bound vehicles     = 36.01
+		  From 02:00:00 to 02:20:00
+				 North bound vehicles     = 16.38
+				 South bound vehicles     = 44.16
+		  From 02:20:00 to 02:40:00
+				 North bound vehicles     = 30.44
+				 South bound vehicles     = 59.94
+		  From 02:40:00 to 03:00:00
+				 North bound vehicles     = 147.94
+				 South bound vehicles     = 155.78
+		  From 03:00:00 to 03:20:00
+				 North bound vehicles     = 111.21
+				 South bound vehicles     = 52.52
+		  From 03:20:00 to 03:40:00
+				 North bound vehicles     = 64.69
+				 South bound vehicles     = 39.10
+		  From 03:40:00 to 04:00:00
+				 North bound vehicles     = 31.47
+				 South bound vehicles     = 41.33
+		  From 04:00:00 to 04:20:00
+				 North bound vehicles     = 46.30
+				 South bound vehicles     = 71.79
+		  From 04:20:00 to 04:40:00
+				 North bound vehicles     = 130.45
+				 South bound vehicles     = 59.78
+		  From 04:40:00 to 05:00:00
+				 North bound vehicles     = 149.31
+				 South bound vehicles     = 237.03
+		  From 05:00:00 to 05:20:00
+				 North bound vehicles     = 280.00
+				 South bound vehicles     = 137.38
+		  From 05:20:00 to 05:40:00
+				 North bound vehicles     = 359.93
+				 South bound vehicles     = 27.74
+		  From 05:40:00 to 06:00:00
+				 North bound vehicles     = 282.28
+				 South bound vehicles     = 22.53
+		  From 06:00:00 to 06:20:00
+				 North bound vehicles     = 354.57
+				 South bound vehicles     = 18.54
+		  From 06:20:00 to 06:40:00
+				 North bound vehicles     = 35.36
+				 South bound vehicles     = 22.79
+		  From 06:40:00 to 07:00:00
+				 North bound vehicles     = 12.80
+				 South bound vehicles     = 21.51
+		  From 07:00:00 to 07:20:00
+				 North bound vehicles     = 10.03
+				 South bound vehicles     = 28.59
+		  From 07:20:00 to 07:40:00
+				 North bound vehicles     = 13.29
+				 South bound vehicles     = 4.97
+		  From 07:40:00 to 08:00:00
+				 North bound vehicles     = 7.47
+				 South bound vehicles     = 3.33
+		  From 08:00:00 to 08:20:00
+				 North bound vehicles     = 4.10
+				 South bound vehicles     = 3.12
+		  From 08:20:00 to 08:40:00
+				 North bound vehicles     = 6.24
+				 South bound vehicles     = 4.69
+		  From 08:40:00 to 09:00:00
+				 North bound vehicles     = 4.83
+				 South bound vehicles     = 2.78
+		  From 09:00:00 to 09:20:00
+				 North bound vehicles     = 5.87
+				 South bound vehicles     = 1.39
+		  From 09:20:00 to 09:40:00
+				 North bound vehicles     = 5.97
+				 South bound vehicles     = 4.94
+		  From 09:40:00 to 10:00:00
+				 North bound vehicles     = 10.61
+				 South bound vehicles     = 10.69
+		  From 10:00:00 to 10:20:00
+				 North bound vehicles     = 10.81
+				 South bound vehicles     = 13.91
+		  From 10:20:00 to 10:40:00
+				 North bound vehicles     = 9.32
+				 South bound vehicles     = 14.39
+		  From 10:40:00 to 11:00:00
+				 North bound vehicles     = 11.76
+				 South bound vehicles     = 16.51
+		  From 11:00:00 to 11:20:00
+				 North bound vehicles     = 12.43
+				 South bound vehicles     = 21.21
+		  From 11:20:00 to 11:40:00
+				 North bound vehicles     = 18.62
+				 South bound vehicles     = 13.15
+		  From 11:40:00 to 12:00:00
+				 North bound vehicles     = 16.18
+				 South bound vehicles     = 10.46
+		  From 12:00:00 to 12:20:00
+				 North bound vehicles     = 15.33
+				 South bound vehicles     = 11.41
+		  From 12:20:00 to 12:40:00
+				 North bound vehicles     = 15.67
+				 South bound vehicles     = 13.31
+		  From 12:40:00 to 13:00:00
+				 North bound vehicles     = 20.55
+				 South bound vehicles     = 12.13
+		  From 13:00:00 to 13:20:00
+				 North bound vehicles     = 15.76
+				 South bound vehicles     = 14.17
+		  From 13:20:00 to 13:40:00
+				 North bound vehicles     = 18.57
+				 South bound vehicles     = 13.23
+		  From 13:40:00 to 14:00:00
+				 North bound vehicles     = 14.85
+				 South bound vehicles     = 19.53
+		  From 14:00:00 to 14:20:00
+				 North bound vehicles     = 13.42
+				 South bound vehicles     = 19.44
+		  From 14:20:00 to 14:40:00
+				 North bound vehicles     = 22.94
+				 South bound vehicles     = 11.51
+		  From 14:40:00 to 15:00:00
+				 North bound vehicles     = 15.76
+				 South bound vehicles     = 9.26
+		  From 15:00:00 to 15:20:00
+				 North bound vehicles     = 16.17
+				 South bound vehicles     = 10.94
+		  From 15:20:00 to 15:40:00
+				 North bound vehicles     = 10.57
+				 South bound vehicles     = 8.42
+		  From 15:40:00 to 16:00:00
+				 North bound vehicles     = 8.67
+				 South bound vehicles     = 12.63
+		  From 16:00:00 to 16:20:00
+				 North bound vehicles     = 9.38
+				 South bound vehicles     = 12.38
+		  From 16:20:00 to 16:40:00
+				 North bound vehicles     = 8.16
+				 South bound vehicles     = 14.50
+		  From 16:40:00 to 17:00:00
+				 North bound vehicles     = 8.08
+				 South bound vehicles     = 15.36
+		  From 17:00:00 to 17:20:00
+				 North bound vehicles     = 5.08
+				 South bound vehicles     = 8.29
+		  From 17:20:00 to 17:40:00
+				 North bound vehicles     = 6.44
+				 South bound vehicles     = 13.00
+		  From 17:40:00 to 18:00:00
+				 North bound vehicles     = 3.80
+				 South bound vehicles     = 8.42
+		  From 18:00:00 to 18:20:00
+				 North bound vehicles     = 4.60
+				 South bound vehicles     = 12.57
+		  From 18:20:00 to 18:40:00
+				 North bound vehicles     = 12.17
+				 South bound vehicles     = 25.22
+		  From 18:40:00 to 19:00:00
+				 North bound vehicles     = 21.33
+				 South bound vehicles     = 74.39
+		  From 19:00:00 to 19:20:00
+				 North bound vehicles     = 29.27
+				 South bound vehicles     = 67.94
+		  From 19:20:00 to 19:40:00
+				 North bound vehicles     = 45.12
+				 South bound vehicles     = 56.90
+		  From 19:40:00 to 20:00:00
+				 North bound vehicles     = 39.15
+				 South bound vehicles     = 62.95
+		  From 20:00:00 to 20:20:00
+				 North bound vehicles     = 72.91
+				 South bound vehicles     = 58.40
+		  From 20:20:00 to 20:40:00
+				 North bound vehicles     = 55.33
+				 South bound vehicles     = 70.36
+		  From 20:40:00 to 21:00:00
+				 North bound vehicles     = 46.38
+				 South bound vehicles     = 90.59
+		  From 21:00:00 to 21:20:00
+				 North bound vehicles     = 31.17
+				 South bound vehicles     = 63.92
+		  From 21:20:00 to 21:40:00
+				 North bound vehicles     = 65.90
+				 South bound vehicles     = 76.43
+		  From 21:40:00 to 22:00:00
+				 North bound vehicles     = 118.48
+				 South bound vehicles     = 73.93
+		  From 22:00:00 to 22:20:00
+				 North bound vehicles     = 107.89
+				 South bound vehicles     = 89.55
+		  From 22:20:00 to 22:40:00
+				 North bound vehicles     = 66.52
+				 South bound vehicles     = 113.31
+		  From 22:40:00 to 23:00:00
+				 North bound vehicles     = 62.81
+				 South bound vehicles     = 104.18
+		  From 23:00:00 to 23:20:00
+				 North bound vehicles     = 56.84
+				 South bound vehicles     = 80.94
+		  From 23:20:00 to 23:40:00
+				 North bound vehicles     = 98.69
+				 South bound vehicles     = 134.07
+		  From 23:40:00 to 00:00:00
+				 North bound vehicles     = 92.71
+				 South bound vehicles     = 70.65
+		 PER_15_MINUTES
+		  From 00:00:00 to 00:15:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:15:00 to 00:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 12.10
+		  From 00:30:00 to 00:45:00
+				 North bound vehicles     = 12.11
+				 South bound vehicles     = 6.41
+		  From 00:45:00 to 01:00:00
+				 North bound vehicles     = 12.11
+				 South bound vehicles     = 6.14
+		  From 01:00:00 to 01:15:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 14.52
+		  From 01:15:00 to 01:30:00
+				 North bound vehicles     = 57.64
+				 South bound vehicles     = 18.30
+		  From 01:30:00 to 01:45:00
+				 North bound vehicles     = 21.38
+				 South bound vehicles     = 36.01
+		  From 01:45:00 to 02:00:00
+				 North bound vehicles     = 27.55
+				 South bound vehicles     = 65.02
+		  From 02:00:00 to 02:15:00
+				 North bound vehicles     = 16.38
+				 South bound vehicles     = 44.16
+		  From 02:15:00 to 02:30:00
+				 North bound vehicles     = 19.27
+				 South bound vehicles     = 59.94
+		  From 02:30:00 to 02:45:00
+				 North bound vehicles     = 40.42
+				 South bound vehicles     = 126.16
+		  From 02:45:00 to 03:00:00
+				 North bound vehicles     = 219.37
+				 South bound vehicles     = 78.24
+		  From 03:00:00 to 03:15:00
+				 North bound vehicles     = 111.21
+				 South bound vehicles     = 52.52
+		  From 03:15:00 to 03:30:00
+				 North bound vehicles     = 96.43
+				 South bound vehicles     = 52.01
+		  From 03:30:00 to 03:45:00
+				 North bound vehicles     = 37.36
+				 South bound vehicles     = 47.93
+		  From 03:45:00 to 04:00:00
+				 North bound vehicles     = 32.80
+				 South bound vehicles     = 57.68
+		  From 04:00:00 to 04:15:00
+				 North bound vehicles     = 46.30
+				 South bound vehicles     = 71.79
+		  From 04:15:00 to 04:30:00
+				 North bound vehicles     = 56.84
+				 South bound vehicles     = 59.78
+		  From 04:30:00 to 04:45:00
+				 North bound vehicles     = 297.80
+				 South bound vehicles     = 99.21
+		  From 04:45:00 to 05:00:00
+				 North bound vehicles     = 149.31
+				 South bound vehicles     = 0.00
+		  From 05:00:00 to 05:15:00
+				 North bound vehicles     = 280.00
+				 South bound vehicles     = 137.38
+		  From 05:15:00 to 05:30:00
+				 North bound vehicles     = 359.93
+				 South bound vehicles     = 30.78
+		  From 05:30:00 to 05:45:00
+				 North bound vehicles     = 182.65
+				 South bound vehicles     = 25.23
+		  From 05:45:00 to 06:00:00
+				 North bound vehicles     = 282.28
+				 South bound vehicles     = 21.41
+		  From 06:00:00 to 06:15:00
+				 North bound vehicles     = 354.57
+				 South bound vehicles     = 18.54
+		  From 06:15:00 to 06:30:00
+				 North bound vehicles     = 32.59
+				 South bound vehicles     = 21.94
+		  From 06:30:00 to 06:45:00
+				 North bound vehicles     = 17.05
+				 South bound vehicles     = 19.81
+		  From 06:45:00 to 07:00:00
+				 North bound vehicles     = 12.13
+				 South bound vehicles     = 22.46
+		  From 07:00:00 to 07:15:00
+				 North bound vehicles     = 10.03
+				 South bound vehicles     = 28.59
+		  From 07:15:00 to 07:30:00
+				 North bound vehicles     = 11.79
+				 South bound vehicles     = 6.94
+		  From 07:30:00 to 07:45:00
+				 North bound vehicles     = 13.09
+				 South bound vehicles     = 3.15
+		  From 07:45:00 to 08:00:00
+				 North bound vehicles     = 5.95
+				 South bound vehicles     = 2.70
+		  From 08:00:00 to 08:15:00
+				 North bound vehicles     = 4.10
+				 South bound vehicles     = 3.12
+		  From 08:15:00 to 08:30:00
+				 North bound vehicles     = 4.59
+				 South bound vehicles     = 3.82
+		  From 08:30:00 to 08:45:00
+				 North bound vehicles     = 5.46
+				 South bound vehicles     = 3.90
+		  From 08:45:00 to 09:00:00
+				 North bound vehicles     = 4.30
+				 South bound vehicles     = 2.40
+		  From 09:00:00 to 09:15:00
+				 North bound vehicles     = 5.87
+				 South bound vehicles     = 1.39
+		  From 09:15:00 to 09:30:00
+				 North bound vehicles     = 6.42
+				 South bound vehicles     = 2.33
+		  From 09:30:00 to 09:45:00
+				 North bound vehicles     = 6.31
+				 South bound vehicles     = 14.15
+		  From 09:45:00 to 10:00:00
+				 North bound vehicles     = 12.70
+				 South bound vehicles     = 16.09
+		  From 10:00:00 to 10:15:00
+				 North bound vehicles     = 10.81
+				 South bound vehicles     = 13.91
+		  From 10:15:00 to 10:30:00
+				 North bound vehicles     = 13.16
+				 South bound vehicles     = 19.12
+		  From 10:30:00 to 10:45:00
+				 North bound vehicles     = 10.55
+				 South bound vehicles     = 11.32
+		  From 10:45:00 to 11:00:00
+				 North bound vehicles     = 11.74
+				 South bound vehicles     = 17.09
+		  From 11:00:00 to 11:15:00
+				 North bound vehicles     = 12.43
+				 South bound vehicles     = 21.21
+		  From 11:15:00 to 11:30:00
+				 North bound vehicles     = 15.45
+				 South bound vehicles     = 14.65
+		  From 11:30:00 to 11:45:00
+				 North bound vehicles     = 16.70
+				 South bound vehicles     = 12.09
+		  From 11:45:00 to 12:00:00
+				 North bound vehicles     = 15.86
+				 South bound vehicles     = 12.43
+		  From 12:00:00 to 12:15:00
+				 North bound vehicles     = 15.33
+				 South bound vehicles     = 11.41
+		  From 12:15:00 to 12:30:00
+				 North bound vehicles     = 22.23
+				 South bound vehicles     = 11.08
+		  From 12:30:00 to 12:45:00
+				 North bound vehicles     = 14.51
+				 South bound vehicles     = 11.54
+		  From 12:45:00 to 13:00:00
+				 North bound vehicles     = 21.65
+				 South bound vehicles     = 14.46
+		  From 13:00:00 to 13:15:00
+				 North bound vehicles     = 15.76
+				 South bound vehicles     = 14.17
+		  From 13:15:00 to 13:30:00
+				 North bound vehicles     = 18.35
+				 South bound vehicles     = 14.28
+		  From 13:30:00 to 13:45:00
+				 North bound vehicles     = 17.04
+				 South bound vehicles     = 16.77
+		  From 13:45:00 to 14:00:00
+				 North bound vehicles     = 16.63
+				 South bound vehicles     = 25.06
+		  From 14:00:00 to 14:15:00
+				 North bound vehicles     = 13.42
+				 South bound vehicles     = 19.44
+		  From 14:15:00 to 14:30:00
+				 North bound vehicles     = 21.57
+				 South bound vehicles     = 13.39
+		  From 14:30:00 to 14:45:00
+				 North bound vehicles     = 26.38
+				 South bound vehicles     = 11.43
+		  From 14:45:00 to 15:00:00
+				 North bound vehicles     = 15.89
+				 South bound vehicles     = 11.11
+		  From 15:00:00 to 15:15:00
+				 North bound vehicles     = 16.17
+				 South bound vehicles     = 10.94
+		  From 15:15:00 to 15:30:00
+				 North bound vehicles     = 14.11
+				 South bound vehicles     = 11.98
+		  From 15:30:00 to 15:45:00
+				 North bound vehicles     = 7.65
+				 South bound vehicles     = 9.57
+		  From 15:45:00 to 16:00:00
+				 North bound vehicles     = 8.13
+				 South bound vehicles     = 10.59
+		  From 16:00:00 to 16:15:00
+				 North bound vehicles     = 9.38
+				 South bound vehicles     = 12.38
+		  From 16:15:00 to 16:30:00
+				 North bound vehicles     = 6.27
+				 South bound vehicles     = 11.07
+		  From 16:30:00 to 16:45:00
+				 North bound vehicles     = 8.92
+				 South bound vehicles     = 14.59
+		  From 16:45:00 to 17:00:00
+				 North bound vehicles     = 4.88
+				 South bound vehicles     = 11.97
+		  From 17:00:00 to 17:15:00
+				 North bound vehicles     = 5.08
+				 South bound vehicles     = 8.29
+		  From 17:15:00 to 17:30:00
+				 North bound vehicles     = 6.96
+				 South bound vehicles     = 14.32
+		  From 17:30:00 to 17:45:00
+				 North bound vehicles     = 4.56
+				 South bound vehicles     = 11.12
+		  From 17:45:00 to 18:00:00
+				 North bound vehicles     = 5.60
+				 South bound vehicles     = 12.50
+		  From 18:00:00 to 18:15:00
+				 North bound vehicles     = 4.60
+				 South bound vehicles     = 12.57
+		  From 18:15:00 to 18:30:00
+				 North bound vehicles     = 8.93
+				 South bound vehicles     = 20.82
+		  From 18:30:00 to 18:45:00
+				 North bound vehicles     = 19.24
+				 South bound vehicles     = 59.13
+		  From 18:45:00 to 19:00:00
+				 North bound vehicles     = 20.66
+				 South bound vehicles     = 43.93
+		  From 19:00:00 to 19:15:00
+				 North bound vehicles     = 29.27
+				 South bound vehicles     = 67.94
+		  From 19:15:00 to 19:30:00
+				 North bound vehicles     = 32.39
+				 South bound vehicles     = 65.98
+		  From 19:30:00 to 19:45:00
+				 North bound vehicles     = 52.54
+				 South bound vehicles     = 53.98
+		  From 19:45:00 to 20:00:00
+				 North bound vehicles     = 41.27
+				 South bound vehicles     = 72.66
+		  From 20:00:00 to 20:15:00
+				 North bound vehicles     = 72.91
+				 South bound vehicles     = 58.40
+		  From 20:15:00 to 20:30:00
+				 North bound vehicles     = 61.63
+				 South bound vehicles     = 61.56
+		  From 20:30:00 to 20:45:00
+				 North bound vehicles     = 46.28
+				 South bound vehicles     = 68.96
+		  From 20:45:00 to 21:00:00
+				 North bound vehicles     = 49.54
+				 South bound vehicles     = 79.85
+		  From 21:00:00 to 21:15:00
+				 North bound vehicles     = 31.17
+				 South bound vehicles     = 63.92
+		  From 21:15:00 to 21:30:00
+				 North bound vehicles     = 46.51
+				 South bound vehicles     = 57.97
+		  From 21:30:00 to 21:45:00
+				 North bound vehicles     = 60.89
+				 South bound vehicles     = 96.60
+		  From 21:45:00 to 22:00:00
+				 North bound vehicles     = 164.56
+				 South bound vehicles     = 86.75
+		  From 22:00:00 to 22:15:00
+				 North bound vehicles     = 107.89
+				 South bound vehicles     = 89.55
+		  From 22:15:00 to 22:30:00
+				 North bound vehicles     = 64.64
+				 South bound vehicles     = 106.67
+		  From 22:30:00 to 22:45:00
+				 North bound vehicles     = 59.97
+				 South bound vehicles     = 99.88
+		  From 22:45:00 to 23:00:00
+				 North bound vehicles     = 77.73
+				 South bound vehicles     = 106.57
+		  From 23:00:00 to 23:15:00
+				 North bound vehicles     = 56.84
+				 South bound vehicles     = 80.94
+		  From 23:15:00 to 23:30:00
+				 North bound vehicles     = 81.66
+				 South bound vehicles     = 117.39
+		  From 23:30:00 to 23:45:00
+				 North bound vehicles     = 98.12
+				 South bound vehicles     = 161.00
+		  From 23:45:00 to 00:00:00
+				 North bound vehicles     = 91.51
+				 South bound vehicles     = 77.39
+	Report on Day - 5
+	Rough distance between vehicles on day 4
+		 MORNING
+		  From 00:00:00 to 12:00:00
+				 North bound vehicles     = 0.16
+				 South bound vehicles     = 0.12
+		 EVENING
+		  From 18:00:00 to 00:00:00
+				 North bound vehicles     = 5.68
+				 South bound vehicles     = 6.08
+		 PER_HOUR
+		  From 00:00:00 to 01:00:00
+				 North bound vehicles     = 1.97
+				 South bound vehicles     = 4.41
+		  From 01:00:00 to 02:00:00
+				 North bound vehicles     = 33.24
+				 South bound vehicles     = 9.06
+		  From 02:00:00 to 03:00:00
+				 North bound vehicles     = 43.85
+				 South bound vehicles     = 19.94
+		  From 03:00:00 to 04:00:00
+				 North bound vehicles     = 32.89
+				 South bound vehicles     = 19.22
+		  From 04:00:00 to 05:00:00
+				 North bound vehicles     = 65.09
+				 South bound vehicles     = 19.74
+		  From 05:00:00 to 06:00:00
+				 North bound vehicles     = 75.88
+				 South bound vehicles     = 11.10
+		  From 06:00:00 to 07:00:00
+				 North bound vehicles     = 5.01
+				 South bound vehicles     = 8.98
+		  From 07:00:00 to 08:00:00
+				 North bound vehicles     = 3.08
+				 South bound vehicles     = 1.65
+		  From 08:00:00 to 09:00:00
+				 North bound vehicles     = 2.32
+				 South bound vehicles     = 1.14
+		  From 09:00:00 to 10:00:00
+				 North bound vehicles     = 7.42
+				 South bound vehicles     = 9.13
+		  From 10:00:00 to 11:00:00
+				 North bound vehicles     = 7.26
+				 South bound vehicles     = 7.55
+		  From 11:00:00 to 12:00:00
+				 North bound vehicles     = 7.70
+				 South bound vehicles     = 5.06
+		  From 12:00:00 to 13:00:00
+				 North bound vehicles     = 7.11
+				 South bound vehicles     = 5.06
+		  From 13:00:00 to 14:00:00
+				 North bound vehicles     = 9.23
+				 South bound vehicles     = 5.68
+		  From 14:00:00 to 15:00:00
+				 North bound vehicles     = 7.95
+				 South bound vehicles     = 5.78
+		  From 15:00:00 to 16:00:00
+				 North bound vehicles     = 3.79
+				 South bound vehicles     = 5.93
+		  From 16:00:00 to 17:00:00
+				 North bound vehicles     = 3.27
+				 South bound vehicles     = 5.77
+		  From 17:00:00 to 18:00:00
+				 North bound vehicles     = 2.82
+				 South bound vehicles     = 5.11
+		  From 18:00:00 to 19:00:00
+				 North bound vehicles     = 12.70
+				 South bound vehicles     = 28.84
+		  From 19:00:00 to 20:00:00
+				 North bound vehicles     = 19.65
+				 South bound vehicles     = 22.36
+		  From 20:00:00 to 21:00:00
+				 North bound vehicles     = 25.63
+				 South bound vehicles     = 30.86
+		  From 21:00:00 to 22:00:00
+				 North bound vehicles     = 48.42
+				 South bound vehicles     = 37.90
+		  From 22:00:00 to 23:00:00
+				 North bound vehicles     = 38.37
+				 South bound vehicles     = 59.47
+		  From 23:00:00 to 00:00:00
+				 North bound vehicles     = 62.47
+				 South bound vehicles     = 53.69
+		 PER_HALF_AN_HOUR
+		  From 00:00:00 to 00:30:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:30:00 to 01:00:00
+				 North bound vehicles     = 2.01
+				 South bound vehicles     = 10.58
+		  From 01:00:00 to 01:30:00
+				 North bound vehicles     = 23.09
+				 South bound vehicles     = 9.96
+		  From 01:30:00 to 02:00:00
+				 North bound vehicles     = 84.89
+				 South bound vehicles     = 14.33
+		  From 02:00:00 to 02:30:00
+				 North bound vehicles     = 44.86
+				 South bound vehicles     = 31.17
+		  From 02:30:00 to 03:00:00
+				 North bound vehicles     = 64.86
+				 South bound vehicles     = 23.93
+		  From 03:00:00 to 03:30:00
+				 North bound vehicles     = 167.26
+				 South bound vehicles     = 166.87
+		  From 03:30:00 to 04:00:00
+				 North bound vehicles     = 97.86
+				 South bound vehicles     = 36.76
+		  From 04:00:00 to 04:30:00
+				 North bound vehicles     = 64.93
+				 South bound vehicles     = 45.22
+		  From 04:30:00 to 05:00:00
+				 North bound vehicles     = 82.22
+				 South bound vehicles     = 33.00
+		  From 05:00:00 to 05:30:00
+				 North bound vehicles     = 393.56
+				 South bound vehicles     = 59.15
+		  From 05:30:00 to 06:00:00
+				 North bound vehicles     = 93.38
+				 South bound vehicles     = 18.85
+		  From 06:00:00 to 06:30:00
+				 North bound vehicles     = 427.58
+				 South bound vehicles     = 25.30
+		  From 06:30:00 to 07:00:00
+				 North bound vehicles     = 10.51
+				 South bound vehicles     = 23.02
+		  From 07:00:00 to 07:30:00
+				 North bound vehicles     = 13.50
+				 South bound vehicles     = 17.66
+		  From 07:30:00 to 08:00:00
+				 North bound vehicles     = 11.49
+				 South bound vehicles     = 3.23
+		  From 08:00:00 to 08:30:00
+				 North bound vehicles     = 5.10
+				 South bound vehicles     = 3.38
+		  From 08:30:00 to 09:00:00
+				 North bound vehicles     = 4.79
+				 South bound vehicles     = 4.15
+		  From 09:00:00 to 09:30:00
+				 North bound vehicles     = 4.10
+				 South bound vehicles     = 2.17
+		  From 09:30:00 to 10:00:00
+				 North bound vehicles     = 11.92
+				 South bound vehicles     = 21.04
+		  From 10:00:00 to 10:30:00
+				 North bound vehicles     = 19.26
+				 South bound vehicles     = 14.63
+		  From 10:30:00 to 11:00:00
+				 North bound vehicles     = 14.87
+				 South bound vehicles     = 11.82
+		  From 11:00:00 to 11:30:00
+				 North bound vehicles     = 12.73
+				 South bound vehicles     = 19.52
+		  From 11:30:00 to 12:00:00
+				 North bound vehicles     = 14.27
+				 South bound vehicles     = 8.21
+		  From 12:00:00 to 12:30:00
+				 North bound vehicles     = 16.06
+				 South bound vehicles     = 16.14
+		  From 12:30:00 to 13:00:00
+				 North bound vehicles     = 15.30
+				 South bound vehicles     = 11.17
+		  From 13:00:00 to 13:30:00
+				 North bound vehicles     = 15.95
+				 South bound vehicles     = 11.22
+		  From 13:30:00 to 14:00:00
+				 North bound vehicles     = 23.19
+				 South bound vehicles     = 10.97
+		  From 14:00:00 to 14:30:00
+				 North bound vehicles     = 14.00
+				 South bound vehicles     = 14.57
+		  From 14:30:00 to 15:00:00
+				 North bound vehicles     = 15.63
+				 South bound vehicles     = 10.73
+		  From 15:00:00 to 15:30:00
+				 North bound vehicles     = 19.26
+				 South bound vehicles     = 10.82
+		  From 15:30:00 to 16:00:00
+				 North bound vehicles     = 7.11
+				 South bound vehicles     = 11.44
+		  From 16:00:00 to 16:30:00
+				 North bound vehicles     = 11.26
+				 South bound vehicles     = 13.13
+		  From 16:30:00 to 17:00:00
+				 North bound vehicles     = 9.27
+				 South bound vehicles     = 10.96
+		  From 17:00:00 to 17:30:00
+				 North bound vehicles     = 3.97
+				 South bound vehicles     = 14.56
+		  From 17:30:00 to 18:00:00
+				 North bound vehicles     = 5.94
+				 South bound vehicles     = 10.97
+		  From 18:00:00 to 18:30:00
+				 North bound vehicles     = 5.66
+				 South bound vehicles     = 10.83
+		  From 18:30:00 to 19:00:00
+				 North bound vehicles     = 25.10
+				 South bound vehicles     = 50.24
+		  From 19:00:00 to 19:30:00
+				 North bound vehicles     = 24.05
+				 South bound vehicles     = 72.14
+		  From 19:30:00 to 20:00:00
+				 North bound vehicles     = 38.36
+				 South bound vehicles     = 48.52
+		  From 20:00:00 to 20:30:00
+				 North bound vehicles     = 46.78
+				 South bound vehicles     = 43.17
+		  From 20:30:00 to 21:00:00
+				 North bound vehicles     = 52.27
+				 South bound vehicles     = 64.49
+		  From 21:00:00 to 21:30:00
+				 North bound vehicles     = 77.27
+				 South bound vehicles     = 54.39
+		  From 21:30:00 to 22:00:00
+				 North bound vehicles     = 101.70
+				 South bound vehicles     = 116.90
+		  From 22:00:00 to 22:30:00
+				 North bound vehicles     = 61.32
+				 South bound vehicles     = 56.61
+		  From 22:30:00 to 23:00:00
+				 North bound vehicles     = 60.15
+				 South bound vehicles     = 160.30
+		  From 23:00:00 to 23:30:00
+				 North bound vehicles     = 147.13
+				 South bound vehicles     = 65.70
+		  From 23:30:00 to 00:00:00
+				 North bound vehicles     = 130.27
+				 South bound vehicles     = 79.12
+		 PER_20_MINUTES
+		  From 00:00:00 to 00:20:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:20:00 to 00:40:00
+				 North bound vehicles     = 5.73
+				 South bound vehicles     = 10.58
+		  From 00:40:00 to 01:00:00
+				 North bound vehicles     = 4.63
+				 South bound vehicles     = 7.90
+		  From 01:00:00 to 01:20:00
+				 North bound vehicles     = 23.09
+				 South bound vehicles     = 9.96
+		  From 01:20:00 to 01:40:00
+				 North bound vehicles     = 35.81
+				 South bound vehicles     = 16.02
+		  From 01:40:00 to 02:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 11.96
+		  From 02:00:00 to 02:20:00
+				 North bound vehicles     = 44.86
+				 South bound vehicles     = 31.17
+		  From 02:20:00 to 02:40:00
+				 North bound vehicles     = 49.44
+				 South bound vehicles     = 57.93
+		  From 02:40:00 to 03:00:00
+				 North bound vehicles     = 173.59
+				 South bound vehicles     = 21.56
+		  From 03:00:00 to 03:20:00
+				 North bound vehicles     = 167.26
+				 South bound vehicles     = 166.87
+		  From 03:20:00 to 03:40:00
+				 North bound vehicles     = 97.86
+				 South bound vehicles     = 90.28
+		  From 03:40:00 to 04:00:00
+				 North bound vehicles     = 129.33
+				 South bound vehicles     = 45.50
+		  From 04:00:00 to 04:20:00
+				 North bound vehicles     = 64.93
+				 South bound vehicles     = 45.22
+		  From 04:20:00 to 04:40:00
+				 North bound vehicles     = 56.84
+				 South bound vehicles     = 29.64
+		  From 04:40:00 to 05:00:00
+				 North bound vehicles     = 103.24
+				 South bound vehicles     = 34.16
+		  From 05:00:00 to 05:20:00
+				 North bound vehicles     = 393.56
+				 South bound vehicles     = 59.15
+		  From 05:20:00 to 05:40:00
+				 North bound vehicles     = 131.99
+				 South bound vehicles     = 17.71
+		  From 05:40:00 to 06:00:00
+				 North bound vehicles     = 100.57
+				 South bound vehicles     = 15.31
+		  From 06:00:00 to 06:20:00
+				 North bound vehicles     = 427.58
+				 South bound vehicles     = 25.30
+		  From 06:20:00 to 06:40:00
+				 North bound vehicles     = 18.83
+				 South bound vehicles     = 22.61
+		  From 06:40:00 to 07:00:00
+				 North bound vehicles     = 13.90
+				 South bound vehicles     = 44.74
+		  From 07:00:00 to 07:20:00
+				 North bound vehicles     = 13.50
+				 South bound vehicles     = 17.66
+		  From 07:20:00 to 07:40:00
+				 North bound vehicles     = 9.53
+				 South bound vehicles     = 4.20
+		  From 07:40:00 to 08:00:00
+				 North bound vehicles     = 11.35
+				 South bound vehicles     = 2.58
+		  From 08:00:00 to 08:20:00
+				 North bound vehicles     = 5.10
+				 South bound vehicles     = 3.38
+		  From 08:20:00 to 08:40:00
+				 North bound vehicles     = 4.16
+				 South bound vehicles     = 4.36
+		  From 08:40:00 to 09:00:00
+				 North bound vehicles     = 4.31
+				 South bound vehicles     = 2.20
+		  From 09:00:00 to 09:20:00
+				 North bound vehicles     = 4.10
+				 South bound vehicles     = 2.17
+		  From 09:20:00 to 09:40:00
+				 North bound vehicles     = 7.41
+				 South bound vehicles     = 5.54
+		  From 09:40:00 to 10:00:00
+				 North bound vehicles     = 13.36
+				 South bound vehicles     = 14.26
+		  From 10:00:00 to 10:20:00
+				 North bound vehicles     = 19.26
+				 South bound vehicles     = 14.63
+		  From 10:20:00 to 10:40:00
+				 North bound vehicles     = 9.39
+				 South bound vehicles     = 10.95
+		  From 10:40:00 to 11:00:00
+				 North bound vehicles     = 10.56
+				 South bound vehicles     = 14.09
+		  From 11:00:00 to 11:20:00
+				 North bound vehicles     = 12.73
+				 South bound vehicles     = 19.52
+		  From 11:20:00 to 11:40:00
+				 North bound vehicles     = 13.07
+				 South bound vehicles     = 13.25
+		  From 11:40:00 to 12:00:00
+				 North bound vehicles     = 13.62
+				 South bound vehicles     = 10.26
+		  From 12:00:00 to 12:20:00
+				 North bound vehicles     = 16.06
+				 South bound vehicles     = 16.14
+		  From 12:20:00 to 12:40:00
+				 North bound vehicles     = 18.73
+				 South bound vehicles     = 13.17
+		  From 12:40:00 to 13:00:00
+				 North bound vehicles     = 17.63
+				 South bound vehicles     = 14.26
+		  From 13:00:00 to 13:20:00
+				 North bound vehicles     = 15.95
+				 South bound vehicles     = 11.22
+		  From 13:20:00 to 13:40:00
+				 North bound vehicles     = 22.27
+				 South bound vehicles     = 8.77
+		  From 13:40:00 to 14:00:00
+				 North bound vehicles     = 14.41
+				 South bound vehicles     = 10.41
+		  From 14:00:00 to 14:20:00
+				 North bound vehicles     = 14.00
+				 South bound vehicles     = 14.57
+		  From 14:20:00 to 14:40:00
+				 North bound vehicles     = 16.83
+				 South bound vehicles     = 9.93
+		  From 14:40:00 to 15:00:00
+				 North bound vehicles     = 16.35
+				 South bound vehicles     = 8.73
+		  From 15:00:00 to 15:20:00
+				 North bound vehicles     = 19.26
+				 South bound vehicles     = 10.82
+		  From 15:20:00 to 15:40:00
+				 North bound vehicles     = 11.23
+				 South bound vehicles     = 13.80
+		  From 15:40:00 to 16:00:00
+				 North bound vehicles     = 8.77
+				 South bound vehicles     = 11.92
+		  From 16:00:00 to 16:20:00
+				 North bound vehicles     = 11.26
+				 South bound vehicles     = 13.13
+		  From 16:20:00 to 16:40:00
+				 North bound vehicles     = 8.32
+				 South bound vehicles     = 12.13
+		  From 16:40:00 to 17:00:00
+				 North bound vehicles     = 6.33
+				 South bound vehicles     = 12.43
+		  From 17:00:00 to 17:20:00
+				 North bound vehicles     = 3.97
+				 South bound vehicles     = 14.56
+		  From 17:20:00 to 17:40:00
+				 North bound vehicles     = 6.25
+				 South bound vehicles     = 14.32
+		  From 17:40:00 to 18:00:00
+				 North bound vehicles     = 6.84
+				 South bound vehicles     = 17.63
+		  From 18:00:00 to 18:20:00
+				 North bound vehicles     = 5.66
+				 South bound vehicles     = 10.83
+		  From 18:20:00 to 18:40:00
+				 North bound vehicles     = 12.72
+				 South bound vehicles     = 31.00
+		  From 18:40:00 to 19:00:00
+				 North bound vehicles     = 22.30
+				 South bound vehicles     = 60.15
+		  From 19:00:00 to 19:20:00
+				 North bound vehicles     = 24.05
+				 South bound vehicles     = 72.14
+		  From 19:20:00 to 19:40:00
+				 North bound vehicles     = 34.62
+				 South bound vehicles     = 47.46
+		  From 19:40:00 to 20:00:00
+				 North bound vehicles     = 44.67
+				 South bound vehicles     = 75.54
+		  From 20:00:00 to 20:20:00
+				 North bound vehicles     = 46.78
+				 South bound vehicles     = 43.17
+		  From 20:20:00 to 20:40:00
+				 North bound vehicles     = 79.34
+				 South bound vehicles     = 45.34
+		  From 20:40:00 to 21:00:00
+				 North bound vehicles     = 55.07
+				 South bound vehicles     = 94.75
+		  From 21:00:00 to 21:20:00
+				 North bound vehicles     = 77.27
+				 South bound vehicles     = 54.39
+		  From 21:20:00 to 21:40:00
+				 North bound vehicles     = 50.37
+				 South bound vehicles     = 102.00
+		  From 21:40:00 to 22:00:00
+				 North bound vehicles     = 99.41
+				 South bound vehicles     = 109.37
+		  From 22:00:00 to 22:20:00
+				 North bound vehicles     = 61.32
+				 South bound vehicles     = 56.61
+		  From 22:20:00 to 22:40:00
+				 North bound vehicles     = 53.85
+				 South bound vehicles     = 71.63
+		  From 22:40:00 to 23:00:00
+				 North bound vehicles     = 71.08
+				 South bound vehicles     = 109.98
+		  From 23:00:00 to 23:20:00
+				 North bound vehicles     = 147.13
+				 South bound vehicles     = 65.70
+		  From 23:20:00 to 23:40:00
+				 North bound vehicles     = 137.66
+				 South bound vehicles     = 84.43
+		  From 23:40:00 to 00:00:00
+				 North bound vehicles     = 140.99
+				 South bound vehicles     = 95.91
+		 PER_15_MINUTES
+		  From 00:00:00 to 00:15:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 0.00
+		  From 00:15:00 to 00:30:00
+				 North bound vehicles     = 10.63
+				 South bound vehicles     = 0.00
+		  From 00:30:00 to 00:45:00
+				 North bound vehicles     = 2.01
+				 South bound vehicles     = 10.58
+		  From 00:45:00 to 01:00:00
+				 North bound vehicles     = 3.90
+				 South bound vehicles     = 7.90
+		  From 01:00:00 to 01:15:00
+				 North bound vehicles     = 23.09
+				 South bound vehicles     = 9.96
+		  From 01:15:00 to 01:30:00
+				 North bound vehicles     = 35.81
+				 South bound vehicles     = 11.44
+		  From 01:30:00 to 01:45:00
+				 North bound vehicles     = 84.89
+				 South bound vehicles     = 14.33
+		  From 01:45:00 to 02:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 20.00
+		  From 02:00:00 to 02:15:00
+				 North bound vehicles     = 44.86
+				 South bound vehicles     = 31.17
+		  From 02:15:00 to 02:30:00
+				 North bound vehicles     = 30.38
+				 South bound vehicles     = 53.06
+		  From 02:30:00 to 02:45:00
+				 North bound vehicles     = 64.86
+				 South bound vehicles     = 23.93
+		  From 02:45:00 to 03:00:00
+				 North bound vehicles     = 87.72
+				 South bound vehicles     = 21.56
+		  From 03:00:00 to 03:15:00
+				 North bound vehicles     = 167.26
+				 South bound vehicles     = 166.87
+		  From 03:15:00 to 03:30:00
+				 North bound vehicles     = 97.86
+				 South bound vehicles     = 90.28
+		  From 03:30:00 to 03:45:00
+				 North bound vehicles     = 97.86
+				 South bound vehicles     = 36.76
+		  From 03:45:00 to 04:00:00
+				 North bound vehicles     = 86.50
+				 South bound vehicles     = 45.50
+		  From 04:00:00 to 04:15:00
+				 North bound vehicles     = 64.93
+				 South bound vehicles     = 45.22
+		  From 04:15:00 to 04:30:00
+				 North bound vehicles     = 56.84
+				 South bound vehicles     = 43.79
+		  From 04:30:00 to 04:45:00
+				 North bound vehicles     = 82.22
+				 South bound vehicles     = 33.00
+		  From 04:45:00 to 05:00:00
+				 North bound vehicles     = 0.00
+				 South bound vehicles     = 56.77
+		  From 05:00:00 to 05:15:00
+				 North bound vehicles     = 393.56
+				 South bound vehicles     = 59.15
+		  From 05:15:00 to 05:30:00
+				 North bound vehicles     = 131.99
+				 South bound vehicles     = 25.05
+		  From 05:30:00 to 05:45:00
+				 North bound vehicles     = 93.38
+				 South bound vehicles     = 18.85
+		  From 05:45:00 to 06:00:00
+				 North bound vehicles     = 182.08
+				 South bound vehicles     = 15.87
+		  From 06:00:00 to 06:15:00
+				 North bound vehicles     = 427.58
+				 South bound vehicles     = 25.30
+		  From 06:15:00 to 06:30:00
+				 North bound vehicles     = 24.04
+				 South bound vehicles     = 19.14
+		  From 06:30:00 to 06:45:00
+				 North bound vehicles     = 10.51
+				 South bound vehicles     = 23.02
+		  From 06:45:00 to 07:00:00
+				 North bound vehicles     = 12.84
+				 South bound vehicles     = 24.05
+		  From 07:00:00 to 07:15:00
+				 North bound vehicles     = 13.50
+				 South bound vehicles     = 17.66
+		  From 07:15:00 to 07:30:00
+				 North bound vehicles     = 12.60
+				 South bound vehicles     = 4.49
+		  From 07:30:00 to 07:45:00
+				 North bound vehicles     = 11.49
+				 South bound vehicles     = 3.23
+		  From 07:45:00 to 08:00:00
+				 North bound vehicles     = 6.15
+				 South bound vehicles     = 3.36
+		  From 08:00:00 to 08:15:00
+				 North bound vehicles     = 5.10
+				 South bound vehicles     = 3.38
+		  From 08:15:00 to 08:30:00
+				 North bound vehicles     = 4.12
+				 South bound vehicles     = 4.29
+		  From 08:30:00 to 08:45:00
+				 North bound vehicles     = 4.79
+				 South bound vehicles     = 4.15
+		  From 08:45:00 to 09:00:00
+				 North bound vehicles     = 4.52
+				 South bound vehicles     = 1.93
+		  From 09:00:00 to 09:15:00
+				 North bound vehicles     = 4.10
+				 South bound vehicles     = 2.17
+		  From 09:15:00 to 09:30:00
+				 North bound vehicles     = 6.08
+				 South bound vehicles     = 4.22
+		  From 09:30:00 to 09:45:00
+				 North bound vehicles     = 11.92
+				 South bound vehicles     = 21.04
+		  From 09:45:00 to 10:00:00
+				 North bound vehicles     = 13.29
+				 South bound vehicles     = 15.19
+		  From 10:00:00 to 10:15:00
+				 North bound vehicles     = 19.26
+				 South bound vehicles     = 14.63
+		  From 10:15:00 to 10:30:00
+				 North bound vehicles     = 13.20
+				 South bound vehicles     = 10.13
+		  From 10:30:00 to 10:45:00
+				 North bound vehicles     = 14.87
+				 South bound vehicles     = 11.82
+		  From 10:45:00 to 11:00:00
+				 North bound vehicles     = 12.86
+				 South bound vehicles     = 11.69
+		  From 11:00:00 to 11:15:00
+				 North bound vehicles     = 12.73
+				 South bound vehicles     = 19.52
+		  From 11:15:00 to 11:30:00
+				 North bound vehicles     = 14.71
+				 South bound vehicles     = 13.26
+		  From 11:30:00 to 11:45:00
+				 North bound vehicles     = 14.27
+				 South bound vehicles     = 8.21
+		  From 11:45:00 to 12:00:00
+				 North bound vehicles     = 17.72
+				 South bound vehicles     = 15.76
+		  From 12:00:00 to 12:15:00
+				 North bound vehicles     = 16.06
+				 South bound vehicles     = 16.14
+		  From 12:15:00 to 12:30:00
+				 North bound vehicles     = 20.92
+				 South bound vehicles     = 10.33
+		  From 12:30:00 to 12:45:00
+				 North bound vehicles     = 15.30
+				 South bound vehicles     = 11.17
+		  From 12:45:00 to 13:00:00
+				 North bound vehicles     = 16.12
+				 South bound vehicles     = 15.53
+		  From 13:00:00 to 13:15:00
+				 North bound vehicles     = 15.95
+				 South bound vehicles     = 11.22
+		  From 13:15:00 to 13:30:00
+				 North bound vehicles     = 14.99
+				 South bound vehicles     = 9.17
+		  From 13:30:00 to 13:45:00
+				 North bound vehicles     = 23.19
+				 South bound vehicles     = 10.97
+		  From 13:45:00 to 14:00:00
+				 North bound vehicles     = 20.53
+				 South bound vehicles     = 11.45
+		  From 14:00:00 to 14:15:00
+				 North bound vehicles     = 14.00
+				 South bound vehicles     = 14.57
+		  From 14:15:00 to 14:30:00
+				 North bound vehicles     = 23.34
+				 South bound vehicles     = 10.59
+		  From 14:30:00 to 14:45:00
+				 North bound vehicles     = 15.63
+				 South bound vehicles     = 10.73
+		  From 14:45:00 to 15:00:00
+				 North bound vehicles     = 14.83
+				 South bound vehicles     = 9.40
+		  From 15:00:00 to 15:15:00
+				 North bound vehicles     = 19.26
+				 South bound vehicles     = 10.82
+		  From 15:15:00 to 15:30:00
+				 North bound vehicles     = 12.16
+				 South bound vehicles     = 17.65
+		  From 15:30:00 to 15:45:00
+				 North bound vehicles     = 7.11
+				 South bound vehicles     = 11.44
+		  From 15:45:00 to 16:00:00
+				 North bound vehicles     = 9.52
+				 South bound vehicles     = 13.51
+		  From 16:00:00 to 16:15:00
+				 North bound vehicles     = 11.26
+				 South bound vehicles     = 13.13
+		  From 16:15:00 to 16:30:00
+				 North bound vehicles     = 9.14
+				 South bound vehicles     = 10.52
+		  From 16:30:00 to 16:45:00
+				 North bound vehicles     = 9.27
+				 South bound vehicles     = 10.96
+		  From 16:45:00 to 17:00:00
+				 North bound vehicles     = 6.21
+				 South bound vehicles     = 11.51
+		  From 17:00:00 to 17:15:00
+				 North bound vehicles     = 3.97
+				 South bound vehicles     = 14.56
+		  From 17:15:00 to 17:30:00
+				 North bound vehicles     = 5.39
+				 South bound vehicles     = 12.63
+		  From 17:30:00 to 17:45:00
+				 North bound vehicles     = 5.94
+				 South bound vehicles     = 10.97
+		  From 17:45:00 to 18:00:00
+				 North bound vehicles     = 5.76
+				 South bound vehicles     = 9.69
+		  From 18:00:00 to 18:15:00
+				 North bound vehicles     = 5.66
+				 South bound vehicles     = 10.83
+		  From 18:15:00 to 18:30:00
+				 North bound vehicles     = 8.36
+				 South bound vehicles     = 18.30
+		  From 18:30:00 to 18:45:00
+				 North bound vehicles     = 25.10
+				 South bound vehicles     = 50.24
+		  From 18:45:00 to 19:00:00
+				 North bound vehicles     = 19.58
+				 South bound vehicles     = 79.06
+		  From 19:00:00 to 19:15:00
+				 North bound vehicles     = 24.05
+				 South bound vehicles     = 72.14
+		  From 19:15:00 to 19:30:00
+				 North bound vehicles     = 30.03
+				 South bound vehicles     = 31.55
+		  From 19:30:00 to 19:45:00
+				 North bound vehicles     = 38.36
+				 South bound vehicles     = 48.52
+		  From 19:45:00 to 20:00:00
+				 North bound vehicles     = 24.75
+				 South bound vehicles     = 58.20
+		  From 20:00:00 to 20:15:00
+				 North bound vehicles     = 46.78
+				 South bound vehicles     = 43.17
+		  From 20:15:00 to 20:30:00
+				 North bound vehicles     = 67.08
+				 South bound vehicles     = 57.13
+		  From 20:30:00 to 20:45:00
+				 North bound vehicles     = 52.27
+				 South bound vehicles     = 64.49
+		  From 20:45:00 to 21:00:00
+				 North bound vehicles     = 50.50
+				 South bound vehicles     = 78.61
+		  From 21:00:00 to 21:15:00
+				 North bound vehicles     = 77.27
+				 South bound vehicles     = 54.39
+		  From 21:15:00 to 21:30:00
+				 North bound vehicles     = 54.32
+				 South bound vehicles     = 83.14
+		  From 21:30:00 to 21:45:00
+				 North bound vehicles     = 101.70
+				 South bound vehicles     = 116.90
+		  From 21:45:00 to 22:00:00
+				 North bound vehicles     = 99.82
+				 South bound vehicles     = 93.32
+		  From 22:00:00 to 22:15:00
+				 North bound vehicles     = 61.32
+				 South bound vehicles     = 56.61
+		  From 22:15:00 to 22:30:00
+				 North bound vehicles     = 65.20
+				 South bound vehicles     = 66.88
+		  From 22:30:00 to 22:45:00
+				 North bound vehicles     = 60.15
+				 South bound vehicles     = 160.30
+		  From 22:45:00 to 23:00:00
+				 North bound vehicles     = 62.21
+				 South bound vehicles     = 148.89
+		  From 23:00:00 to 23:15:00
+				 North bound vehicles     = 147.13
+				 South bound vehicles     = 65.70
+		  From 23:15:00 to 23:30:00
+				 North bound vehicles     = 96.77
+				 South bound vehicles     = 71.61
+		  From 23:30:00 to 23:45:00
+				 North bound vehicles     = 130.27
+				 South bound vehicles     = 79.12
+		  From 23:45:00 to 00:00:00
+				 North bound vehicles     = 128.04
+				 South bound vehicles     = 100.27
