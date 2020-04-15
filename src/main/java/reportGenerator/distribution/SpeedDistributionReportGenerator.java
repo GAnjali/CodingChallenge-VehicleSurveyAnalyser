@@ -12,7 +12,7 @@ import static helper.VehicleSurveyAnalyserConstants.*;
 public class SpeedDistributionReportGenerator extends DistributionReportGenerator {
     private SpeedDistributionReportGeneratorUtil util;
 
-    public SpeedDistributionReportGenerator(){
+    public SpeedDistributionReportGenerator() {
         util = new SpeedDistributionReportGeneratorUtil();
     }
 
@@ -25,7 +25,7 @@ public class SpeedDistributionReportGenerator extends DistributionReportGenerato
 
     private void getReport(List<Vehicle> vehicles) {
         Double highestSpeedOfVehicle = getHighestSpeed(vehicles);
-        for (float speed = DISTRIBUTION_GAP; speed <= highestSpeedOfVehicle; speed = speed + DISTRIBUTION_GAP) {
+        for (float speed = DISTRIBUTION_GAP; speed <= highestSpeedOfVehicle + DISTRIBUTION_GAP; speed = speed + DISTRIBUTION_GAP) {
             List<Vehicle> vehiclesOnCurrentSpeed = util.getVehiclesOnCurrentSpeed(vehicles, speed);
             String percentageOfVehiclesOnCurrentSpeed = getPercentageOfVehiclesOnCurrentSpeed(vehiclesOnCurrentSpeed, vehicles);
             printStream.print(String.format(FROM_SPEED_TO_SPEED_TEMPLATE, formatSpeed(speed - DISTRIBUTION_GAP), formatSpeed(speed), percentageOfVehiclesOnCurrentSpeed));
@@ -43,6 +43,12 @@ public class SpeedDistributionReportGenerator extends DistributionReportGenerato
     }
 
     private Double getHighestSpeed(List<Vehicle> vehicles) {
-        return vehicles.stream().max(Comparator.comparingDouble(Vehicle::getSpeed)).get().getSpeed();
+        double speed = 0.0;
+        for (Vehicle vehicle : vehicles) {
+            if (vehicle.getSpeed() > speed)
+                speed = vehicle.getSpeed();
+        }
+        return speed;
+//        return vehicles.stream().max(Comparator.comparingDouble(Vehicle::getSpeed)).get().getSpeed();
     }
 }

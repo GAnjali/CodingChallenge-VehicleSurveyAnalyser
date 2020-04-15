@@ -52,8 +52,18 @@ public class DataParser {
             throw new InvalidDataException(records.get(recordIndex));
         }
         int frontAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex));
-        int rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 1));
-        vehicles.add(new Vehicle(direction, frontAxleTime, dataParserUtil.calculateSpeed(rearAxleTime - frontAxleTime), day));
+        double speedOfVehicle = getSpeedOfVehicle(records, recordIndex, direction);
+        vehicles.add(new Vehicle(direction, frontAxleTime, speedOfVehicle, day));
+    }
+
+    private Double getSpeedOfVehicle(List<String> records, int recordIndex, Direction direction) throws InvalidTimeException {
+        int frontAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex));
+        int rearAxleTime;
+        if (direction.equals(Direction.NORTH))
+            rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 1));
+        else
+            rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 2));
+        return dataParserUtil.calculateSpeed(rearAxleTime - frontAxleTime);
     }
 
     private boolean isValidRecords(List<String> records, int recordIndex, Direction direction) {
