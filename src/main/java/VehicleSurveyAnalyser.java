@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 
 public class VehicleSurveyAnalyser {
-    static List<String> records;
+    private static List<String> records;
 
     public static void main(String[] args) throws IOException, NoSuchFileFoundException, InvalidDataException, InvalidTimeException, UnableToCreateFileException {
         initialize();
