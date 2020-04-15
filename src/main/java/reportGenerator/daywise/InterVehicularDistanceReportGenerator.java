@@ -11,10 +11,10 @@ import java.util.List;
 import static helper.VehicleSurveyAnalyserConstants.*;
 
 public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerator {
-    private InterVehicularDistanceReportGeneratorUtil util;
+    private InterVehicularDistanceReportGeneratorUtil interVehicularDistanceUtil;
 
     public InterVehicularDistanceReportGenerator() {
-        util = new InterVehicularDistanceReportGeneratorUtil();
+        interVehicularDistanceUtil = new InterVehicularDistanceReportGeneratorUtil();
     }
 
     @Override
@@ -38,7 +38,7 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
 
     private void formatReportByDirection(List<Vehicle> vehicles, Direction direction) {
         List<Double> interVehicularDistance = calculateDistance(util.getVehiclesByDirection(vehicles, direction));
-        printStream.print(getBoundedVehiclesMessage(direction) + String.format("%.2f", util.getAverage(interVehicularDistance)));
+        printStream.print(getBoundedVehiclesMessage(direction) + String.format("%.2f", interVehicularDistanceUtil.getAverage(interVehicularDistance)));
     }
 
     private String getBoundedVehiclesMessage(Direction direction) {
@@ -56,7 +56,7 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
     }
 
     private Double getInterVehicularDistance(Vehicle previousVehicle, Vehicle currentVehicle) {
-        double timeGapAmongVehiclesInSeconds = util.getTimeGapAmongVehiclesInSeconds(previousVehicle.getPassingTimeInMilliSeconds(), currentVehicle.getPassingTimeInMilliSeconds());
+        double timeGapAmongVehiclesInSeconds = interVehicularDistanceUtil.getTimeGapAmongVehiclesInSeconds(previousVehicle.getPassingTimeInMilliSeconds(), currentVehicle.getPassingTimeInMilliSeconds());
         double speedGapAmongVehicles = Math.abs(previousVehicle.getSpeed() - currentVehicle.getSpeed());
         return Double.parseDouble(String.format("%.2f", timeGapAmongVehiclesInSeconds * speedGapAmongVehicles / 1000));
     }

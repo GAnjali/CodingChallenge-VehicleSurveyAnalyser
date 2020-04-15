@@ -60,7 +60,7 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
     @Override
     public void formatReport(List<Vehicle> vehicles) {
         printStream.print("\n" + TOTAL_PEAK_VOLUME_TIMES_MESSAGE_TEMPLATE + vehicles.size());
-        printStream.print("\n" + NORTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE_TEMPLATE + util.getVehicleCountByDirection(vehicles, Direction.NORTH));
-        printStream.print("\n" + SOUTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE_TEMPLATE + util.getVehicleCountByDirection(vehicles, Direction.SOUTH));
+        printStream.print("\n" + NORTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE_TEMPLATE + util.getVehiclesByDirection(vehicles, Direction.NORTH).size());
+        printStream.print("\n" + SOUTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE_TEMPLATE + util.getVehiclesByDirection(vehicles, Direction.SOUTH).size());
     }
 }

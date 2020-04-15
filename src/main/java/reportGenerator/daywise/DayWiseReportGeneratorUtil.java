@@ -56,8 +56,8 @@ public class DayWiseReportGeneratorUtil {
         return vehicles.stream().filter(vehicle -> (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
     }
 
-    public int getVehicleCountByDirection(List<Vehicle> vehicles, Direction direction) {
-        return (int) vehicles.stream().filter(vehicle -> vehicle.getDirection().equals(direction)).count();
+    public List<Vehicle> getVehiclesByDirection(List<Vehicle> vehicles, Direction direction) {
+        return vehicles.stream().filter(vehicle -> vehicle.getDirection().equals(direction)).collect(Collectors.toList());
     }
 
     public String getFormattedTime(int hour) {

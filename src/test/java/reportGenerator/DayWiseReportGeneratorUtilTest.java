@@ -108,8 +108,8 @@ public class DayWiseReportGeneratorUtilTest {
         vehicles.add(new Vehicle(Direction.NORTH, 99060186, 5.00, 0));
         vehicles.add(new Vehicle(Direction.NORTH, 560601863, 5.00, 0));
         vehicles.add(new Vehicle(Direction.SOUTH, 776356956, 5.00, 0));
-        int countOfVehiclesMovingTowardsSouth = util.getVehicleCountByDirection(vehicles, Direction.SOUTH);
-        Assert.assertEquals(1, countOfVehiclesMovingTowardsSouth);
+        List<Vehicle> vehiclesMovingTowardsSouth = util.getVehiclesByDirection(vehicles, Direction.SOUTH);
+        Assert.assertTrue(vehiclesMovingTowardsSouth.contains(vehicles.get(2)));
     }
 
     @Test
@@ -117,8 +117,8 @@ public class DayWiseReportGeneratorUtilTest {
         vehicles.add(new Vehicle(Direction.NORTH, 99060186, 5.00, 0));
         vehicles.add(new Vehicle(Direction.NORTH, 560601863, 5.00, 0));
         vehicles.add(new Vehicle(Direction.SOUTH, 776356956, 5.00, 0));
-        int countOfVehiclesMovingTowardsSouth = util.getVehicleCountByDirection(vehicles, Direction.NORTH);
-        Assert.assertEquals(2, countOfVehiclesMovingTowardsSouth);
+        List<Vehicle> vehiclesMovingTowardsNorth = util.getVehiclesByDirection(vehicles, Direction.NORTH);
+        Assert.assertTrue(vehiclesMovingTowardsNorth.contains(vehicles.get(1)));
     }
 
     @Test
