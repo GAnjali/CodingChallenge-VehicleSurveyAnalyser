@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 public class DayWiseReportGeneratorUtil {
     private TimeUtil timeUtil;
 
-    public DayWiseReportGeneratorUtil(){
+    public DayWiseReportGeneratorUtil() {
         timeUtil = new TimeUtil();
     }
 
@@ -43,17 +43,17 @@ public class DayWiseReportGeneratorUtil {
     }
 
     private long getVehiclePassingHourInDay(Vehicle vehicle) {
-        return timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds());
+        return timeUtil.getHoursByDay(vehicle.getPassingTimeInMilliSeconds());
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour) {
-        return vehicles.stream().filter(vehicle -> timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) == hour).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> timeUtil.getHoursByDay(vehicle.getPassingTimeInMilliSeconds()) == hour).collect(Collectors.toList());
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour, int minutes) {
         int toMinutes = hour * 60 + minutes;
         int fromMinutes = toMinutes - 30;
-        return vehicles.stream().filter(vehicle -> (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && (timeUtil.getHours(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutes(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> (timeUtil.getHoursByDay(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutesByHour(vehicle.getPassingTimeInMilliSeconds()) < toMinutes && (timeUtil.getHoursByDay(vehicle.getPassingTimeInMilliSeconds()) * 60) + timeUtil.getMinutesByHour(vehicle.getPassingTimeInMilliSeconds()) >= fromMinutes).collect(Collectors.toList());
     }
 
     public List<Vehicle> getVehiclesByDirection(List<Vehicle> vehicles, Direction direction) {
