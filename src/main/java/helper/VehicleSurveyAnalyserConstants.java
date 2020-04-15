@@ -14,7 +14,7 @@ public class VehicleSurveyAnalyserConstants {
     public static final int DISTRIBUTION_GAP = 5;
     //EXCEPTION MESSAGES
     public static final String NO_FILE_FOUND_MESSAGE = "No Such File found, Please provide data file";
-    public static final String INVALID_DATA_MESSAGE = "Invalid Data found, Please provide proper data";
+    public static final String INVALID_DATA_MESSAGE = "Invalid Data found, Please provide proper data\nException occurred while parsing the Record ";
     public static final String INVALID_TIME_MESSAGE = "Invalid Time found, Please provide proper data";
     public static final String UNABLE_TO_CREATE_FILE_MESSAGE = "Unable to create file";
     //REPORT FILE NAMES

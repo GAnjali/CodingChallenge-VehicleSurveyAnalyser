@@ -2,12 +2,12 @@ package exceptions;
 
 import static helper.VehicleSurveyAnalyserConstants.INVALID_TIME_MESSAGE;
 
-public class InvalidTimeException extends Exception{
+public class InvalidTimeException extends Exception {
     private final String message;
 
-    public InvalidTimeException() {
+    public InvalidTimeException(Exception exception) {
         super();
-        this.message = INVALID_TIME_MESSAGE;
+        this.message = INVALID_TIME_MESSAGE + "\n" + exception;
     }
 
     @Override

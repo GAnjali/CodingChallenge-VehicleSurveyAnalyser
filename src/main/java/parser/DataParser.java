@@ -49,7 +49,7 @@ public class DataParser {
 
     private void addVehicle(List<String> records, int recordIndex, List<Vehicle> vehicles, int day, Direction direction) throws InvalidDataException, InvalidTimeException {
         if (!isValidRecords(records, recordIndex, direction)) {
-            throw new InvalidDataException();
+            throw new InvalidDataException(records.get(recordIndex));
         }
         int frontAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex));
         int rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 1));

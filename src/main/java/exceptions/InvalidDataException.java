@@ -5,9 +5,9 @@ import static helper.VehicleSurveyAnalyserConstants.INVALID_DATA_MESSAGE;
 public class InvalidDataException extends Exception {
     private final String message;
 
-    public InvalidDataException() {
+    public InvalidDataException(String record) {
         super();
-        this.message = INVALID_DATA_MESSAGE;
+        this.message = INVALID_DATA_MESSAGE + record;
     }
 
     @Override

@@ -16,7 +16,7 @@ public class DataParserUtil {
                 return 0;
             return Integer.parseInt(record.substring(1));
         } catch (Exception exception) {
-            throw new InvalidTimeException();
+            throw new InvalidTimeException(exception);
         }
     }
 }
