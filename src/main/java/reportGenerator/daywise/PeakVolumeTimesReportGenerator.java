@@ -20,14 +20,14 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
     @Override
     public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
         writeToFile(PEAK_VOLUME_TIMES_REPORT_FILE_NAME);
-        printStream.print(PEAK_VOLUME_TIMES_REPORT_GENERATOR);
+        printStream.print(PEAK_VOLUME_TIMES_REPORT_GENERATOR_TEMPLATE);
         getReport(vehicles);
     }
 
     @Override
     public void reportForMorningOrEvening(List<Vehicle> vehicles, TimePeriod timePeriod) {
         if (timePeriod.equals(TimePeriod.MORNING)) {
-            printStream.print(MORNING_VS_EVENING_MESSAGE);
+            printStream.print(MORNING_VS_EVENING_MESSAGE_TEMPLATE);
             TimePeriod peakTimePeriod = getPeakTimePeriodMorningVsEvening(vehicles);
             if (peakTimePeriod.equals(TimePeriod.MORNING))
                 printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, helper.getFormattedTime(0), helper.getFormattedTime(12)));
@@ -59,8 +59,8 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
 
     @Override
     public void formatReport(List<Vehicle> vehicles) {
-        printStream.print("\n" + TOTAL_PEAK_VOLUME_TIMES_MESSAGE + vehicles.size());
-        printStream.print("\n" + NORTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
-        printStream.print("\n" + SOUTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
+        printStream.print("\n" + TOTAL_PEAK_VOLUME_TIMES_MESSAGE_TEMPLATE + vehicles.size());
+        printStream.print("\n" + NORTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE_TEMPLATE + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
+        printStream.print("\n" + SOUTH_VEHICLES_PEAK_VOLUME_TIMES_MESSAGE_TEMPLATE + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
     }
 }

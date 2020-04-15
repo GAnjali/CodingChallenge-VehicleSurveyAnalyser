@@ -15,7 +15,7 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
     @Override
     public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
         writeToFile(INTER_VEHICULAR_DISTANCE_REPORT_FILE_NAME);
-        printStream.print(INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING);
+        printStream.print(INTER_VEHICULAR_DISTANCE_REPORT_GENERATOR_HEADING_TEMPLATE);
         getReport(vehicles);
     }
 
@@ -37,7 +37,7 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
     }
 
     private String getBoundedVehiclesMessage(Direction direction) {
-        return direction.equals(Direction.NORTH) ? NORTH_BOUND_VEHICLES_MESSAGE : SOUTH_BOUND_VEHICLES_MESSAGE;
+        return direction.equals(Direction.NORTH) ? NORTH_BOUND_VEHICLES_MESSAGE_TEMPLATE : SOUTH_BOUND_VEHICLES_MESSAGE_TEMPLATE;
     }
 
     private List<Double> calculateDistance(List<Vehicle> vehicles) {

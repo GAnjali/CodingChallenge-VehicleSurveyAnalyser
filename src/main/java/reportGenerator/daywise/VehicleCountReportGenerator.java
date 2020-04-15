@@ -14,7 +14,7 @@ public class VehicleCountReportGenerator extends DayWiseReportGenerator {
     @Override
     public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
         writeToFile(VEHICLE_COUNT_REPORT_FILE_NAME);
-        printStream.print(VEHICLE_COUNT_REPORT_GENERATOR_HEADING);
+        printStream.print(VEHICLE_COUNT_REPORT_GENERATOR_HEADING_TEMPLATE);
         getReport(vehicles);
     }
 
@@ -26,8 +26,8 @@ public class VehicleCountReportGenerator extends DayWiseReportGenerator {
 
     @Override
     public void formatReport(List<Vehicle> vehicles) {
-        printStream.print(TOTAL_VEHICLE_COUNT + vehicles.size());
-        printStream.print(NORTH_VEHICLES_COUNT + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
-        printStream.print(SOUTH_VEHICLES_COUNT + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
+        printStream.print(TOTAL_VEHICLE_COUNT_MESSAGE_TEMPLATE + vehicles.size());
+        printStream.print(NORTH_VEHICLES_COUNT_MESSAGE_TEMPLATE + helper.getVehicleCountByDirection(vehicles, Direction.NORTH));
+        printStream.print(SOUTH_VEHICLES_COUNT_MESSAGE_TEMPLATE + helper.getVehicleCountByDirection(vehicles, Direction.SOUTH));
     }
 }

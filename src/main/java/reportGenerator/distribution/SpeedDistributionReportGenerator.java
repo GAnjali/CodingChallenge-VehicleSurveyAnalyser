@@ -13,7 +13,7 @@ public class SpeedDistributionReportGenerator extends DistributionReportGenerato
     @Override
     public void generate(List<Vehicle> vehicles) throws UnableToCreateFileException, FileNotFoundException {
         writeToFile(SPEED_DISTRIBUTION_REPORT_FILE_NAME);
-        printStream.print(SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING);
+        printStream.print(SPEED_DISTRIBUTION_REPORT_GENERATOR_HEADING_TEMPLATE);
         getReport(vehicles);
     }
 
