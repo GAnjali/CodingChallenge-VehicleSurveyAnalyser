@@ -17,24 +17,12 @@ public class Vehicle {
         return direction;
     }
 
-    public void setDirection(Direction direction) {
-        this.direction = direction;
-    }
-
     public int getPassingTimeInMilliSeconds() {
         return passingTimeInMilliSeconds;
     }
 
-    public void setPassingTimeInMilliSeconds(int passingTimeInMilliSeconds) {
-        this.passingTimeInMilliSeconds = passingTimeInMilliSeconds;
-    }
-
     public Double getSpeed() {
         return speed;
-    }
-
-    public void setSpeed(Double speed) {
-        this.speed = speed;
     }
 
     public int getDay() {
