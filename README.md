@@ -52,7 +52,8 @@ B1089951</code></pre>
 - Package the jar using maven<br/>
 <pre><code> mvn clean package</code></pre>
 - Run the program<br/>
-Specify the survey data in mentioned file and run the application using<br/>
+Specify the survey data in mentioned file and run the application using<br/>Output reports can be found at location
+ VehicleSurveyAnalyser/reports <br/>
 <pre> <code> java -cp target\VehicleSurveyAnalyser-1.0-SNAPSHOT.jar VehicleSurveyAnalyser</code></pre>
 - Run all tests<br/>
 <pre> <code> mvn clean test</code></pre>
