@@ -23,13 +23,13 @@ public class DayWiseReportGeneratorUtilTest {
     @Test
     public void shouldReturnDays1ForGivenVehicleDataWith56060186MilliSeconds() {
         vehicles.add(new Vehicle(Direction.NORTH, 180060911, 5.00, 0));
-        Assert.assertEquals(3, util.getTotalDays(vehicles));
+        Assert.assertEquals(1, util.getTotalDays(vehicles));
     }
 
     @Test
     public void shouldReturnDays6ForGivenVehicleDataWith560601863MilliSeconds() {
         vehicles.add(new Vehicle(Direction.NORTH, 560601863, 5.00, 0));
-        Assert.assertEquals(7, util.getTotalDays(vehicles));
+        Assert.assertEquals(1, util.getTotalDays(vehicles));
     }
 
     @Test
@@ -37,7 +37,7 @@ public class DayWiseReportGeneratorUtilTest {
         vehicles.add(new Vehicle(Direction.SOUTH, 18006091, 5.00, 0));
         vehicles.add(new Vehicle(Direction.SOUTH, 64635695, 5.00, 0));
         vehicles.add(new Vehicle(Direction.SOUTH, 90060911, 5.00, 0));
-        Assert.assertEquals(2, util.getTotalDays(vehicles));
+        Assert.assertEquals(1, util.getTotalDays(vehicles));
     }
 
     @Test

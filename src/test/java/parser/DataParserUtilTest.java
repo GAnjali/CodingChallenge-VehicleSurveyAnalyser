@@ -20,7 +20,7 @@ public class DataParserUtilTest {
 
     @Test
     public void shouldReturnSpeedForGivenMilliSeconds19401611(){
-        Assert.assertEquals((0.13), (dataParserUtil.calculateSpeed(19401611)), 0.00);
+        Assert.assertEquals((0.0), (dataParserUtil.calculateSpeed(19401611)), 0.00);
     }
 
     @Test
