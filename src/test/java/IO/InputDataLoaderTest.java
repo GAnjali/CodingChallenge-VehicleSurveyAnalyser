@@ -8,17 +8,17 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.List;
 
-public class InputTest {
-    private Input input;
+public class InputDataLoaderTest {
+    private InputDataLoader inputDataLoader;
 
     @Before
     public void init() {
-        input = new Input();
+        inputDataLoader = new InputDataLoader();
     }
 
     @Test
     public void shouldReturnListOfRecordsWhenCalledLoad() throws IOException, NoSuchFileFoundException {
-        List<String> records = input.loadData();
+        List<String> records = inputDataLoader.loadData();
         Assert.assertFalse(records.isEmpty());
     }
 }

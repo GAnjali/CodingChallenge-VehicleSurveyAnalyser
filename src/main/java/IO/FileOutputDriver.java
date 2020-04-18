@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 
 import static helper.VehicleSurveyAnalyserConstants.REPORT_FOLDER;
 
-public class Output {
+public class FileOutputDriver {
     public PrintStream getPrintStream(String fileName) throws UnableToCreateFileException, FileNotFoundException {
         File file = createFile(fileName);
         OutputStream os = new FileOutputStream(Paths.get(file.getPath()).toFile());
