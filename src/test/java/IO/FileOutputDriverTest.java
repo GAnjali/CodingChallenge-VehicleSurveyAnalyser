@@ -9,21 +9,21 @@ import java.io.FileNotFoundException;
 
 import static helper.VehicleSurveyAnalyserConstants.VEHICLE_COUNT_REPORT_FILE_NAME;
 
-public class ReportOutputDriverTest {
-    private ReportOutputDriver reportOutputDriver;
+public class FileOutputDriverTest {
+    private FileOutputDriver FileOutputDriver;
 
     @Before
     public void init() {
-        reportOutputDriver = new ReportOutputDriver();
+        FileOutputDriver = new FileOutputDriver();
     }
 
     @Test
     public void shouldGetPrintStreamForTheSpecifiedFile() throws UnableToCreateFileException, FileNotFoundException {
-        Assert.assertNotNull(reportOutputDriver.getPrintStream(VEHICLE_COUNT_REPORT_FILE_NAME));
+        Assert.assertNotNull(FileOutputDriver.getPrintStream(VEHICLE_COUNT_REPORT_FILE_NAME));
     }
 
     @Test(expected = UnableToCreateFileException.class)
     public void shouldThrowUnableToCreateFileExceptionForTheSpecifiedFileName() throws UnableToCreateFileException, FileNotFoundException {
-        reportOutputDriver.getPrintStream("1234_-\n");
+        FileOutputDriver.getPrintStream("1234_-\n");
     }
 }

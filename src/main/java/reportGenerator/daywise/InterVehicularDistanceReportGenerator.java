@@ -49,15 +49,9 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
         List<Double> interVehicularDistance = new ArrayList<>();
         Vehicle previousVehicle = new Vehicle(null, 0, 0.00, 0);
         for (Vehicle currentVehicle : vehicles) {
-            interVehicularDistance.add(getInterVehicularDistance(previousVehicle, currentVehicle));
+            interVehicularDistance.add(previousVehicle.getInterVehicularDistance(currentVehicle));
             previousVehicle = currentVehicle;
         }
         return interVehicularDistance;
-    }
-
-    private Double getInterVehicularDistance(Vehicle previousVehicle, Vehicle currentVehicle) {
-        double timeGapAmongVehiclesInSeconds = interVehicularDistanceUtil.getTimeGapAmongVehiclesInSeconds(previousVehicle.getPassingTimeInMilliSeconds(), currentVehicle.getPassingTimeInMilliSeconds());
-        double speedGapAmongVehicles = Math.abs(previousVehicle.getSpeed() - currentVehicle.getSpeed());
-        return Double.parseDouble(String.format("%.2f", timeGapAmongVehiclesInSeconds * speedGapAmongVehicles / 1000));
     }
 }

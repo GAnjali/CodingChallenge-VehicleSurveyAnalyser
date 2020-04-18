@@ -4,7 +4,6 @@ import exceptions.UnableToCreateFileException;
 import model.Vehicle;
 
 import java.io.FileNotFoundException;
-import java.util.Comparator;
 import java.util.List;
 
 import static helper.VehicleSurveyAnalyserConstants.*;
@@ -44,11 +43,11 @@ public class SpeedDistributionReportGenerator extends DistributionReportGenerato
 
     private Double getHighestSpeed(List<Vehicle> vehicles) {
         double speed = 0.0;
+        Vehicle dummyVehicle = new Vehicle(null, 0, 0.0, 0);
         for (Vehicle vehicle : vehicles) {
-            if (vehicle.getSpeed() > speed)
-                speed = vehicle.getSpeed();
+            speed = dummyVehicle.getHighestSpeedAmong(vehicle);
+            dummyVehicle = vehicle;
         }
         return speed;
-//        return vehicles.stream().max(Comparator.comparingDouble(Vehicle::getSpeed)).get().getSpeed();
     }
 }
