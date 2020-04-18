@@ -24,7 +24,7 @@ public class DataParser {
         String previousRecord = null;
         for (int recordIndex = 0; recordIndex < records.size() - 1; recordIndex++) {
             String currentRecord = records.get(recordIndex);
-            Direction directionOfVehicle = getDirectionOfVehicle(records.get(recordIndex), records.get(recordIndex + 1));
+            Direction directionOfVehicle = calculateDirection(records.get(recordIndex), records.get(recordIndex + 1));
             day = calculateDay(previousRecord, currentRecord, day);
             addVehicle(records, recordIndex, vehicles, day, directionOfVehicle);
             previousRecord = currentRecord;
@@ -33,13 +33,12 @@ public class DataParser {
         return vehicles;
     }
 
-    private Direction getDirectionOfVehicle(String record1, String record2) {
+    private Direction calculateDirection(String record1, String record2) {
         return record1.startsWith(SENSOR1_NAME) & record2.startsWith(SENSOR1_NAME) ? Direction.NORTH : Direction.SOUTH;
     }
 
     private int calculateDay(String previousRecord, String currentRecord, int day) throws InvalidTimeException {
-        if (isNextDay(previousRecord, currentRecord))
-            day++;
+        if (isNextDay(previousRecord, currentRecord)) day++;
         return day;
     }
 
@@ -52,17 +51,16 @@ public class DataParser {
             throw new InvalidDataException(records.get(recordIndex));
         }
         int frontAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex));
-        double speedOfVehicle = getSpeedOfVehicle(records, recordIndex, direction);
+        double speedOfVehicle = calculateSpeed(records, recordIndex, direction);
         vehicles.add(new Vehicle(direction, frontAxleTime, speedOfVehicle, day));
     }
 
-    private Double getSpeedOfVehicle(List<String> records, int recordIndex, Direction direction) throws InvalidTimeException {
+    private Double calculateSpeed(List<String> records, int recordIndex, Direction direction) throws InvalidTimeException {
         int frontAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex));
         int rearAxleTime;
         if (direction.equals(Direction.NORTH))
             rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 1));
-        else
-            rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 2));
+        else rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 2));
         return dataParserUtil.calculateSpeed(rearAxleTime - frontAxleTime);
     }
 
