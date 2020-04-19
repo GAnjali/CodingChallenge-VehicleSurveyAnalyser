@@ -1,6 +1,6 @@
-package reportGenerator.daywise;
+package model;
 
-import model.Vehicle;
+import helper.DayWiseReportGeneratorUtil;
 
 import java.util.List;
 

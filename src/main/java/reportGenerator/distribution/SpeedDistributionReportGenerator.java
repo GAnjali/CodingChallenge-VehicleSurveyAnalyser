@@ -1,6 +1,7 @@
 package reportGenerator.distribution;
 
 import exceptions.UnableToCreateFileException;
+import helper.SpeedDistributionReportGeneratorUtil;
 import model.Vehicle;
 
 import java.io.FileNotFoundException;

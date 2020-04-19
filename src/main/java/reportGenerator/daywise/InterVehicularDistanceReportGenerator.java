@@ -1,6 +1,7 @@
 package reportGenerator.daywise;
 
 import exceptions.UnableToCreateFileException;
+import helper.InterVehicularDistanceReportGeneratorUtil;
 import model.Direction;
 import model.Vehicle;
 

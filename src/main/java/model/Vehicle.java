@@ -1,6 +1,6 @@
 package model;
 
-import reportGenerator.daywise.TimeUtil;
+import helper.TimeUtil;
 
 public class Vehicle {
     TimeUtil timeUtil;

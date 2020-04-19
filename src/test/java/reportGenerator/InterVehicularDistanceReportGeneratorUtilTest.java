@@ -3,7 +3,7 @@ package reportGenerator;
 import model.Vehicle;
 import org.junit.Before;
 import org.junit.Test;
-import reportGenerator.daywise.InterVehicularDistanceReportGeneratorUtil;
+import helper.InterVehicularDistanceReportGeneratorUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;

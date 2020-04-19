@@ -2,8 +2,9 @@ package reportGenerator.daywise;
 
 import exceptions.UnableToCreateFileException;
 import model.Direction;
+import model.PeakVolumeTime;
 import model.Vehicle;
-import reportGenerator.TimePeriod;
+import model.TimePeriod;
 
 import java.io.FileNotFoundException;
 import java.util.List;

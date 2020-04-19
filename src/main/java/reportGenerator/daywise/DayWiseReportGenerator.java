@@ -1,13 +1,13 @@
 package reportGenerator.daywise;
 
 import exceptions.UnableToCreateFileException;
+import helper.DayWiseReportGeneratorUtil;
 import model.Vehicle;
 import reportGenerator.ReportGenerator;
-import reportGenerator.TimePeriod;
+import model.TimePeriod;
 
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
-import java.util.ArrayList;
 import java.util.List;
 
 import static helper.VehicleSurveyAnalyserConstants.*;

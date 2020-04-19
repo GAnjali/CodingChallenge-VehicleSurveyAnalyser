@@ -1,4 +1,4 @@
-package reportGenerator.daywise;
+package helper;
 
 import java.util.List;
 import java.util.OptionalDouble;

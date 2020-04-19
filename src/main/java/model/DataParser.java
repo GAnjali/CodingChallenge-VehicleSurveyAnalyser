@@ -1,9 +1,8 @@
-package parser;
+package model;
 
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
-import model.Direction;
-import model.Vehicle;
+import helper.DataParserUtil;
 
 import java.util.ArrayList;
 import java.util.List;

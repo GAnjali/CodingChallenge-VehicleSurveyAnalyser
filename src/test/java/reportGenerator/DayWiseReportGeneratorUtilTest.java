@@ -1,11 +1,12 @@
 package reportGenerator;
 
 import model.Direction;
+import model.TimePeriod;
 import model.Vehicle;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import reportGenerator.daywise.DayWiseReportGeneratorUtil;
+import helper.DayWiseReportGeneratorUtil;
 
 import java.util.ArrayList;
 import java.util.List;

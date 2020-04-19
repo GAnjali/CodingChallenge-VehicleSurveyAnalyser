@@ -1,4 +1,4 @@
-package reportGenerator.distribution;
+package helper;
 
 import model.Vehicle;
 
