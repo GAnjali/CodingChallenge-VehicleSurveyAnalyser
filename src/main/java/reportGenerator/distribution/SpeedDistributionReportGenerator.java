@@ -43,10 +43,10 @@ public class SpeedDistributionReportGenerator extends DistributionReportGenerato
 
     private Double getHighestSpeed(List<Vehicle> vehicles) {
         double speed = 0.0;
-        Vehicle dummyVehicle = new Vehicle(null, 0, 0.0, 0);
-        for (Vehicle vehicle : vehicles) {
-            speed = dummyVehicle.getHighestSpeedAmong(vehicle);
-            dummyVehicle = vehicle;
+        for (int vehicleIndex = 0; vehicleIndex < vehicles.size() - 1; vehicleIndex++) {
+            Vehicle previousVehicle = vehicles.get(vehicleIndex);
+            Vehicle currentVehicle = vehicles.get(vehicleIndex + 1);
+            speed = previousVehicle.getHighestSpeedAmong(currentVehicle);
         }
         return speed;
     }

@@ -15,6 +15,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
+import static helper.VehicleSurveyAnalyserConstants.DATA_FILE;
+
 public class VehicleSurveyAnalyser {
     private static List<String> records;
 
@@ -33,7 +35,7 @@ public class VehicleSurveyAnalyser {
     }
 
     private static void initialize() throws IOException, NoSuchFileFoundException {
-        InputDataLoader inputDataLoader = new InputDataLoader();
+        InputDataLoader inputDataLoader = new InputDataLoader(DATA_FILE);
         records = inputDataLoader.loadData();
     }
 }

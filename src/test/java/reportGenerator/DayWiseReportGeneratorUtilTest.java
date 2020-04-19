@@ -15,29 +15,9 @@ public class DayWiseReportGeneratorUtilTest {
     private List<Vehicle> vehicles;
 
     @Before
-    public void init(){
+    public void init() {
         util = new DayWiseReportGeneratorUtil();
         vehicles = new ArrayList<>();
-    }
-
-    @Test
-    public void shouldReturnDays1ForGivenVehicleDataWith56060186MilliSeconds() {
-        vehicles.add(new Vehicle(Direction.NORTH, 180060911, 5.00, 0));
-        Assert.assertEquals(1, util.getTotalDays(vehicles));
-    }
-
-    @Test
-    public void shouldReturnDays6ForGivenVehicleDataWith560601863MilliSeconds() {
-        vehicles.add(new Vehicle(Direction.NORTH, 560601863, 5.00, 0));
-        Assert.assertEquals(1, util.getTotalDays(vehicles));
-    }
-
-    @Test
-    public void shouldReturnDays7ForGivenVehicleDataWith646356956MilliSeconds() {
-        vehicles.add(new Vehicle(Direction.SOUTH, 18006091, 5.00, 0));
-        vehicles.add(new Vehicle(Direction.SOUTH, 64635695, 5.00, 0));
-        vehicles.add(new Vehicle(Direction.SOUTH, 90060911, 5.00, 0));
-        Assert.assertEquals(1, util.getTotalDays(vehicles));
     }
 
     @Test
@@ -122,22 +102,22 @@ public class DayWiseReportGeneratorUtilTest {
     }
 
     @Test
-    public void shouldReturnFormattedTimeForGivenHour(){
-        Assert.assertEquals("01:00:00",util.getFormattedTime(1));
+    public void shouldReturnFormattedTimeForGivenHour() {
+        Assert.assertEquals("01:00:00", util.getFormattedTime(1));
     }
 
     @Test
-    public void shouldReturnFormattedTimeForGivenHour24(){
-        Assert.assertEquals("00:00:00",util.getFormattedTime(24));
+    public void shouldReturnFormattedTimeForGivenHour24() {
+        Assert.assertEquals("00:00:00", util.getFormattedTime(24));
     }
 
     @Test
-    public void shouldReturnFormattedTimeForGivenHourAndMinutes(){
-        Assert.assertEquals("01:30:00",util.getFormattedTime(1, 30));
+    public void shouldReturnFormattedTimeForGivenHourAndMinutes() {
+        Assert.assertEquals("01:30:00", util.getFormattedTime(1, 30));
     }
 
     @Test
-    public void shouldReturnFormattedTimeForGivenHour23Minutes60(){
-        Assert.assertEquals("00:00:00",util.getFormattedTime(23, 60));
+    public void shouldReturnFormattedTimeForGivenHour23Minutes60() {
+        Assert.assertEquals("00:00:00", util.getFormattedTime(23, 60));
     }
 }

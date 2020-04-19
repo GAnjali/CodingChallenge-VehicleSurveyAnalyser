@@ -7,6 +7,7 @@ import reportGenerator.TimePeriod;
 
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
+import java.util.ArrayList;
 import java.util.List;
 
 import static helper.VehicleSurveyAnalyserConstants.*;
@@ -20,9 +21,14 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
     }
 
     void getReport(List<Vehicle> vehicles) {
-        for (long day = 0; day < util.getTotalDays(vehicles); day++) {
+        int day = 0;
+        List<Vehicle> vehicleOnDay;
+        while (true) {
+            vehicleOnDay = util.getVehiclesByDay(day, vehicles);
+            if (vehicleOnDay.size() == 0) break;
             printStream.print(String.format(FULL_DAY_REPORT_MESSAGE_TEMPLATE, (day + 1)));
-            getReportDayWise(util.getVehiclesByDay(day, vehicles), day);
+            getReportDayWise(vehicleOnDay, day);
+            day++;
         }
     }
 
@@ -40,8 +46,7 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
         printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, timePeriod));
         if (timePeriod.equals(TimePeriod.MORNING) || timePeriod.equals(TimePeriod.EVENING))
             reportForMorningOrEvening(util.getVehiclesByTimePeriod(vehicles, timePeriod), timePeriod);
-        else
-            reportByPartsOfTimePeriod(vehicles, timePeriod);
+        else reportByPartsOfTimePeriod(vehicles, timePeriod);
     }
 
     void reportForMorningOrEvening(List<Vehicle> vehicles, TimePeriod timePeriod) {
@@ -67,20 +72,15 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
     }
 
     private List<Vehicle> getCurrentVehicles(List<Vehicle> vehicles, int hour, int half_part, int minutesOfTimePeriod) {
-        if (minutesOfTimePeriod == TOTAL_MINUTES_PER_HOUR)
-            return util.getVehiclesByTimePeriod(vehicles, hour);
+        if (minutesOfTimePeriod == TOTAL_MINUTES_PER_HOUR) return util.getVehiclesByTimePeriod(vehicles, hour);
         return util.getVehiclesByTimePeriod(vehicles, hour, half_part * minutesOfTimePeriod);
     }
 
     int getMinutesOfTimePeriod(TimePeriod timePeriod) {
-        if (timePeriod.equals(TimePeriod.PER_HOUR))
-            return 60;
-        else if (timePeriod.equals(TimePeriod.PER_HALF_AN_HOUR))
-            return 30;
-        else if (timePeriod.equals(TimePeriod.PER_20_MINUTES))
-            return 20;
-        else
-            return 15;
+        if (timePeriod.equals(TimePeriod.PER_HOUR)) return 60;
+        else if (timePeriod.equals(TimePeriod.PER_HALF_AN_HOUR)) return 30;
+        else if (timePeriod.equals(TimePeriod.PER_20_MINUTES)) return 20;
+        else return 15;
     }
 
     abstract void formatReport(List<Vehicle> vehiclesByTimePeriod);

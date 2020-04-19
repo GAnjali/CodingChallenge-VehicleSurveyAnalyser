@@ -10,13 +10,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class DayWiseReportGeneratorUtil {
-    public long getTotalDays(List<Vehicle> vehicles) {
-        Vehicle lastVehicle = vehicles.get(vehicles.size() - 1);
-        return lastVehicle.getDay();
-    }
-
     public List<Vehicle> getVehiclesByDay(long day, List<Vehicle> vehicles) {
-        return vehicles.stream().filter(vehicle -> vehicle.isInThisDay(day)).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> vehicle.isEquals(day)).collect(Collectors.toList());
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {
@@ -26,17 +21,17 @@ public class DayWiseReportGeneratorUtil {
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour) {
-        return vehicles.stream().filter(vehicle -> vehicle.isMovingInThisHour(hour)).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> vehicle.isMoving(hour)).collect(Collectors.toList());
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour, int minutes) {
         int toMinutes = hour * 60 + minutes;
         int fromMinutes = toMinutes - 30;
-        return vehicles.stream().filter(vehicle -> vehicle.isMovingInTheseMinutes(fromMinutes, toMinutes)).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> vehicle.isMoving(fromMinutes, toMinutes)).collect(Collectors.toList());
     }
 
     public List<Vehicle> getVehiclesByDirection(List<Vehicle> vehicles, Direction direction) {
-        return vehicles.stream().filter(vehicle -> vehicle.isInThisDirection(direction)).collect(Collectors.toList());
+        return vehicles.stream().filter(vehicle -> vehicle.isEquals(direction)).collect(Collectors.toList());
     }
 
     public String getFormattedTime(int hour) {

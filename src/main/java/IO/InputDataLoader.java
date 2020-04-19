@@ -1,7 +1,6 @@
 package IO;
 
 import exceptions.NoSuchFileFoundException;
-import helper.VehicleSurveyAnalyserConstants;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
@@ -12,6 +11,12 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class InputDataLoader {
+    private String inputFile;
+
+    public InputDataLoader(String inputFile) {
+        this.inputFile = inputFile;
+    }
+
     public List<String> loadData() throws IOException, NoSuchFileFoundException {
         try {
             return Files.readAllLines(getPath(), StandardCharsets.UTF_8);
@@ -23,6 +28,6 @@ public class InputDataLoader {
     }
 
     private Path getPath() {
-        return Paths.get(VehicleSurveyAnalyserConstants.DATA_FILE);
+        return Paths.get(inputFile);
     }
 }

@@ -8,12 +8,14 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.List;
 
+import static helper.VehicleSurveyAnalyserConstants.DATA_FILE;
+
 public class InputDataLoaderTest {
     private InputDataLoader inputDataLoader;
 
     @Before
     public void init() {
-        inputDataLoader = new InputDataLoader();
+        inputDataLoader = new InputDataLoader(DATA_FILE);
     }
 
     @Test

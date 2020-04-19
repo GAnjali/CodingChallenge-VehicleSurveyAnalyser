@@ -17,15 +17,11 @@ public class Vehicle {
         timeUtil = new TimeUtil();
     }
 
-    public int getDay() {
-        return day + 1;
-    }
-
-    public boolean isInThisDirection(Direction direction) {
+    public boolean isEquals(Direction direction) {
         return this.direction.equals(direction);
     }
 
-    public boolean isInThisDay(long day) {
+    public boolean isEquals(long day) {
         return this.day == day;
     }
 
@@ -43,11 +39,11 @@ public class Vehicle {
         return timeUtil.getHoursByDay(this.passingTimeInMilliSeconds);
     }
 
-    public boolean isMovingInThisHour(int hour) {
+    public boolean isMoving(int hour) {
         return timeUtil.getHoursByDay(this.passingTimeInMilliSeconds) == hour;
     }
 
-    public boolean isMovingInTheseMinutes(int fromMinutes, int toMinutes) {
+    public boolean isMoving(int fromMinutes, int toMinutes) {
         return (timeUtil.getHoursByDay(this.passingTimeInMilliSeconds) * 60) + timeUtil.getMinutesByHour(this.passingTimeInMilliSeconds) < toMinutes && (timeUtil.getHoursByDay(this.passingTimeInMilliSeconds) * 60) + timeUtil.getMinutesByHour(this.passingTimeInMilliSeconds) >= fromMinutes;
     }
 
