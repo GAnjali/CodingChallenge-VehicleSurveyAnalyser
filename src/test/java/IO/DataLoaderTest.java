@@ -10,17 +10,17 @@ import java.util.List;
 
 import static helper.VehicleSurveyAnalyserConstants.DATA_FILE;
 
-public class InputDataLoaderTest {
-    private InputDataLoader inputDataLoader;
+public class DataLoaderTest {
+    private DataLoader dataLoader;
 
     @Before
     public void init() {
-        inputDataLoader = new InputDataLoader(DATA_FILE);
+        dataLoader = new DataLoader(DATA_FILE);
     }
 
     @Test
     public void shouldReturnListOfRecordsWhenCalledLoad() throws IOException, NoSuchFileFoundException {
-        List<String> records = inputDataLoader.loadData();
+        List<String> records = dataLoader.loadData();
         Assert.assertFalse(records.isEmpty());
     }
 }

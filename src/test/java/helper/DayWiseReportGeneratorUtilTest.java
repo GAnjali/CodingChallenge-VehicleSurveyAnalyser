@@ -1,4 +1,4 @@
-package reportGenerator;
+package helper;
 
 import model.Direction;
 import model.TimePeriod;

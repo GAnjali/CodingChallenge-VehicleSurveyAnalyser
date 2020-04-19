@@ -1,4 +1,4 @@
-package parser;
+package helper;
 
 import exceptions.InvalidTimeException;
 import helper.DataParserUtil;

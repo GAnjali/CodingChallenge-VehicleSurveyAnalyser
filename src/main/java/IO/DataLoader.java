@@ -10,10 +10,10 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class InputDataLoader {
+public class DataLoader {
     private String inputFile;
 
-    public InputDataLoader(String inputFile) {
+    public DataLoader(String inputFile) {
         this.inputFile = inputFile;
     }
 

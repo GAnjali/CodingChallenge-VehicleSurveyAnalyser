@@ -1,6 +1,6 @@
 package reportGenerator;
 
-import IO.FileOutputDriver;
+import IO.FileManager;
 import exceptions.UnableToCreateFileException;
 import model.Vehicle;
 
@@ -9,7 +9,7 @@ import java.util.List;
 
 public interface ReportGenerator {
     default PrintStream getOutputStream(String reportFileName) throws UnableToCreateFileException, FileNotFoundException {
-        FileOutputDriver output = new FileOutputDriver();
+        FileManager output = new FileManager();
         return output.getPrintStream(reportFileName);
     }
 

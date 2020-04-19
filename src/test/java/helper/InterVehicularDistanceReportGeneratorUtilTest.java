@@ -1,4 +1,4 @@
-package reportGenerator;
+package helper;
 
 import model.Vehicle;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-import IO.InputDataLoader;
+import IO.DataLoader;
 import model.DataParser;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
@@ -35,7 +35,7 @@ public class VehicleSurveyAnalyser {
     }
 
     private static void initialize() throws IOException, NoSuchFileFoundException {
-        InputDataLoader inputDataLoader = new InputDataLoader(DATA_FILE);
-        records = inputDataLoader.loadData();
+        DataLoader dataLoader = new DataLoader(DATA_FILE);
+        records = dataLoader.loadData();
     }
 }
