@@ -50,7 +50,7 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
         int minutesOfTimePeriod = getMinutesOfTimePeriod(timePeriod);
         peakVolumeTime.calculate(vehicles, TOTAL_MINUTES_PER_HOUR / minutesOfTimePeriod);
         if (timePeriod.equals(TimePeriod.PER_HOUR))
-            printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, peakVolumeTime.geFormattedHour(0), peakVolumeTime.geFormattedHour(1)));
+            printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, peakVolumeTime.getFormattedHour(0), peakVolumeTime.getFormattedHour(1)));
         else
             printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, peakVolumeTime.getFormattedHourAndMinute(0), peakVolumeTime.getFormattedHourAndMinute(minutesOfTimePeriod)));
         formatReport(peakVolumeTime.getVehiclesInTimePeriod(vehicles, timePeriod));

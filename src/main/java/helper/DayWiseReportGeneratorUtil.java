@@ -16,8 +16,8 @@ public class DayWiseReportGeneratorUtil {
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {
         if (timePeriod.equals(TimePeriod.MORNING))
-            return vehicles.stream().filter(Vehicle::isVehicleMovingInMorning).collect(Collectors.toList());
-        else return vehicles.stream().filter(Vehicle::isVehicleMovingInEvening).collect(Collectors.toList());
+            return vehicles.stream().filter(Vehicle::isMovingInMorning).collect(Collectors.toList());
+        else return vehicles.stream().filter(Vehicle::isMovingInEvening).collect(Collectors.toList());
     }
 
     public List<Vehicle> getVehiclesByTimePeriod(List<Vehicle> vehicles, int hour) {

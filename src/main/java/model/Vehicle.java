@@ -25,12 +25,12 @@ public class Vehicle {
         return this.day == day;
     }
 
-    public boolean isVehicleMovingInEvening() {
+    public boolean isMovingInEvening() {
         long vehiclePassingHour = getVehiclePassingHourInDay();
         return vehiclePassingHour > 18 && vehiclePassingHour <= 24;
     }
 
-    public boolean isVehicleMovingInMorning() {
+    public boolean isMovingInMorning() {
         long vehiclePassingHour = getVehiclePassingHourInDay();
         return vehiclePassingHour <= 12 && vehiclePassingHour >= 0;
     }
@@ -44,7 +44,8 @@ public class Vehicle {
     }
 
     public boolean isMoving(int fromMinutes, int toMinutes) {
-        return (timeUtil.getHoursByDay(this.passingTimeInMilliSeconds) * 60) + timeUtil.getMinutesByHour(this.passingTimeInMilliSeconds) < toMinutes && (timeUtil.getHoursByDay(this.passingTimeInMilliSeconds) * 60) + timeUtil.getMinutesByHour(this.passingTimeInMilliSeconds) >= fromMinutes;
+        long minutes = (timeUtil.getHoursByDay(this.passingTimeInMilliSeconds) * 60) + timeUtil.getMinutesByHour(this.passingTimeInMilliSeconds);
+        return minutes < toMinutes && minutes >= fromMinutes;
     }
 
     public boolean isSpeedInBetween(float fromSpeed, float toSpeed) {
