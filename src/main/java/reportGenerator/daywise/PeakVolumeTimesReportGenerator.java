@@ -49,13 +49,11 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
         printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, timePeriod));
         int minutesOfTimePeriod = getMinutesOfTimePeriod(timePeriod);
         peakVolumeTime.calculate(vehicles, TOTAL_MINUTES_PER_HOUR / minutesOfTimePeriod);
-        if (timePeriod.equals(TimePeriod.PER_HOUR)) {
-            printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, util.getFormattedTime(peakVolumeTime.getHour()), util.getFormattedTime(peakVolumeTime.getHour() + 1)));
-            formatReport(util.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour()));
-        } else {
-            printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, util.getFormattedTime(peakVolumeTime.getHour(), peakVolumeTime.getMinutes()), util.getFormattedTime(peakVolumeTime.getHour(), (peakVolumeTime.getMinutes() + minutesOfTimePeriod))));
-            formatReport(util.getVehiclesByTimePeriod(vehicles, peakVolumeTime.getHour(), peakVolumeTime.getMinutes()));
-        }
+        if (timePeriod.equals(TimePeriod.PER_HOUR))
+            printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, peakVolumeTime.geFormattedHour(0), peakVolumeTime.geFormattedHour(1)));
+        else
+            printStream.print(String.format(FROM_TIME_TO_TIME_TEMPLATE, peakVolumeTime.getFormattedHourAndMinute(0), peakVolumeTime.getFormattedHourAndMinute(minutesOfTimePeriod)));
+        formatReport(peakVolumeTime.getVehiclesInTimePeriod(vehicles, timePeriod));
     }
 
     @Override
