@@ -1,5 +1,5 @@
 import IO.DataLoader;
-import model.DataParser;
+import parser.DataParser;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
 import exceptions.NoSuchFileFoundException;

@@ -2,7 +2,7 @@ package model;
 
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
-import model.DataParser;
+import parser.DataParser;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

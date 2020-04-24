@@ -1,7 +1,7 @@
 package IO;
 
 import model.Direction;
-import model.PeakVolumeTime;
+import reportGenerator.daywise.PeakVolumeTime;
 import model.TimePeriod;
 import model.Vehicle;
 import org.junit.Assert;
