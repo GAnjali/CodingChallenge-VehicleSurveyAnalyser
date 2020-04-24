@@ -2,6 +2,7 @@ package reportGenerator.daywise;
 
 import exceptions.UnableToCreateFileException;
 import helper.DayWiseReportGeneratorUtil;
+import model.Day;
 import model.Vehicle;
 import reportGenerator.ReportGenerator;
 import model.TimePeriod;
@@ -21,18 +22,18 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
     }
 
     void getReport(List<Vehicle> vehicles) {
-        int day = 0;
+        Day day = Day.MONDAY;
         List<Vehicle> vehicleOnDay;
         while (true) {
             vehicleOnDay = util.getVehiclesByDay(day, vehicles);
             if (vehicleOnDay.size() == 0) break;
-            printStream.print(String.format(FULL_DAY_REPORT_MESSAGE_TEMPLATE, (day + 1)));
+            printStream.print(String.format(FULL_DAY_REPORT_MESSAGE_TEMPLATE, Day.valueOfLabel(day.label)));
             getReportDayWise(vehicleOnDay, day);
-            day++;
+            day = Day.valueOfLabel(day.label + 1);
         }
     }
 
-    public void getReportDayWise(List<Vehicle> vehicles, long day) {
+    public void getReportDayWise(List<Vehicle> vehicles, Day day) {
         generateFullDayReport(vehicles);
     }
 

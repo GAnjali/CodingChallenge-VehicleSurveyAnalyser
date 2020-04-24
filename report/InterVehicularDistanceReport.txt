@@ -1,6 +1,6 @@
 ***************Inter Vehicular Distance Report***************
-	Report on Day - 1
-	Rough distance between vehicles on day 0
+	Report on Day - MONDAY
+	Rough distance between vehicles on MONDAY
 		 MORNING
 		  From 00:00:00 to 12:00:00
 				 North bound vehicles     = 0.19
@@ -733,8 +733,8 @@
 		  From 23:45:00 to 00:00:00
 				 North bound vehicles     = 180.14
 				 South bound vehicles     = 148.23
-	Report on Day - 2
-	Rough distance between vehicles on day 1
+	Report on Day - TUESDAY
+	Rough distance between vehicles on TUESDAY
 		 MORNING
 		  From 00:00:00 to 12:00:00
 				 North bound vehicles     = 0.17
@@ -1467,8 +1467,8 @@
 		  From 23:45:00 to 00:00:00
 				 North bound vehicles     = 108.18
 				 South bound vehicles     = 257.29
-	Report on Day - 3
-	Rough distance between vehicles on day 2
+	Report on Day - WEDNESDAY
+	Rough distance between vehicles on WEDNESDAY
 		 MORNING
 		  From 00:00:00 to 12:00:00
 				 North bound vehicles     = 0.17
@@ -2201,8 +2201,8 @@
 		  From 23:45:00 to 00:00:00
 				 North bound vehicles     = 105.01
 				 South bound vehicles     = 130.00
-	Report on Day - 4
-	Rough distance between vehicles on day 3
+	Report on Day - THURSDAY
+	Rough distance between vehicles on THURSDAY
 		 MORNING
 		  From 00:00:00 to 12:00:00
 				 North bound vehicles     = 0.17
@@ -2935,8 +2935,8 @@
 		  From 23:45:00 to 00:00:00
 				 North bound vehicles     = 91.51
 				 South bound vehicles     = 77.39
-	Report on Day - 5
-	Rough distance between vehicles on day 4
+	Report on Day - FRIDAY
+	Rough distance between vehicles on FRIDAY
 		 MORNING
 		  From 00:00:00 to 12:00:00
 				 North bound vehicles     = 0.16

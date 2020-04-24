@@ -2,6 +2,7 @@ package reportGenerator.daywise;
 
 import exceptions.UnableToCreateFileException;
 import helper.InterVehicularDistanceReportGeneratorUtil;
+import model.Day;
 import model.Direction;
 import model.Vehicle;
 
@@ -26,7 +27,7 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
     }
 
     @Override
-    public void getReportDayWise(List<Vehicle> vehicles, long day) {
+    public void getReportDayWise(List<Vehicle> vehicles, Day day) {
         printStream.print(String.format(INTER_VEHICULAR_DISTANCE_REPORT_PER_DAY_MESSAGE_TEMPLATE, day));
         generateFullDayReport(vehicles);
     }
@@ -48,7 +49,7 @@ public class InterVehicularDistanceReportGenerator extends DayWiseReportGenerato
 
     private List<Double> calculateDistance(List<Vehicle> vehicles) {
         List<Double> interVehicularDistance = new ArrayList<>();
-        Vehicle previousVehicle = new Vehicle(null, 0, 0.00, 0);
+        Vehicle previousVehicle = new Vehicle(null, 0, 0.00, null);
         for (Vehicle currentVehicle : vehicles) {
             interVehicularDistance.add(previousVehicle.getInterVehicularDistance(currentVehicle));
             previousVehicle = currentVehicle;

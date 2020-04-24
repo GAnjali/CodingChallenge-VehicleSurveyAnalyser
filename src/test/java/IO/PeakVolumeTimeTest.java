@@ -1,5 +1,6 @@
 package IO;
 
+import model.Day;
 import model.Direction;
 import reportGenerator.daywise.PeakVolumeTime;
 import model.TimePeriod;
@@ -19,9 +20,9 @@ public class PeakVolumeTimeTest {
     public void init() {
         peakVolumeTime = new PeakVolumeTime();
         vehicles = new ArrayList<>();
-        vehicles.add(new Vehicle(Direction.SOUTH, 18006091, 5.00, 0));
-        vehicles.add(new Vehicle(Direction.SOUTH, 64635695, 5.00, 1));
-        vehicles.add(new Vehicle(Direction.SOUTH, 90060911, 5.00, 2));
+        vehicles.add(new Vehicle(Direction.SOUTH, 18006091, 5.00, Day.MONDAY));
+        vehicles.add(new Vehicle(Direction.SOUTH, 64635695, 5.00, Day.TUESDAY));
+        vehicles.add(new Vehicle(Direction.SOUTH, 90060911, 5.00, Day.WEDNESDAY));
         peakVolumeTime.calculate(vehicles, 1);
     }
 

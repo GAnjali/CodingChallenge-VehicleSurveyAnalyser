@@ -1,5 +1,5 @@
 ***************Peak Volume Times Report***************
-	Report on Day - 1
+	Report on Day - MONDAY
 		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00
@@ -31,7 +31,7 @@
 			Total vehicles in Peak volume time: 410
 			total vehicles in peak volume time moving in North direction: 90
 			total vehicles in peak volume time moving in South direction: 320
-	Report on Day - 2
+	Report on Day - TUESDAY
 		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00
@@ -63,7 +63,7 @@
 			Total vehicles in Peak volume time: 435
 			total vehicles in peak volume time moving in North direction: 93
 			total vehicles in peak volume time moving in South direction: 342
-	Report on Day - 3
+	Report on Day - WEDNESDAY
 		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00
@@ -95,7 +95,7 @@
 			Total vehicles in Peak volume time: 405
 			total vehicles in peak volume time moving in North direction: 91
 			total vehicles in peak volume time moving in South direction: 314
-	Report on Day - 4
+	Report on Day - THURSDAY
 		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00
@@ -127,7 +127,7 @@
 			Total vehicles in Peak volume time: 457
 			total vehicles in peak volume time moving in North direction: 105
 			total vehicles in peak volume time moving in South direction: 352
-	Report on Day - 5
+	Report on Day - FRIDAY
 		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00

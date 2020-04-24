@@ -3,5 +3,3 @@
 		  Speed From 5.00 to 10.00 = 0.03%
 		  Speed From 10.00 to 15.00 = 13.73%
 		  Speed From 15.00 to 20.00 = 70.68%
-		  Speed From 20.00 to 25.00 = 15.38%
-		  Speed From 25.00 to 30.00 = 0.19%

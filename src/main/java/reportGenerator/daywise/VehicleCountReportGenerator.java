@@ -1,6 +1,7 @@
 package reportGenerator.daywise;
 
 import exceptions.UnableToCreateFileException;
+import model.Day;
 import model.Direction;
 import model.Vehicle;
 
@@ -19,8 +20,8 @@ public class VehicleCountReportGenerator extends DayWiseReportGenerator {
     }
 
     @Override
-    public void getReportDayWise(List<Vehicle> vehicles, long day){
-        printStream.print(String.format(VEHICLE_COUNT_REPORT_PER_DAY_MESSAGE_TEMPLATE, day+1, vehicles.size()));
+    public void getReportDayWise(List<Vehicle> vehicles, Day day) {
+        printStream.print(String.format(VEHICLE_COUNT_REPORT_PER_DAY_MESSAGE_TEMPLATE, Day.valueOfLabel(day.label), vehicles.size()));
         generateFullDayReport(vehicles);
     }
 

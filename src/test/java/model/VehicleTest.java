@@ -9,7 +9,7 @@ public class VehicleTest {
 
     @Before
     public void init() {
-        vehicle = new Vehicle(Direction.SOUTH, 18006091, 5.00, 0);
+        vehicle = new Vehicle(Direction.SOUTH, 18006091, 5.00, Day.MONDAY);
     }
 
     @Test
@@ -24,12 +24,12 @@ public class VehicleTest {
 
     @Test
     public void shouldReturnTrueForIsEqualsOfGivenDay() {
-        Assert.assertTrue(vehicle.isEquals(0));
+        Assert.assertTrue(vehicle.isEquals(Day.MONDAY));
     }
 
     @Test
     public void shouldReturnFalseForIsEqualsOfGivenDay() {
-        Assert.assertFalse(vehicle.isEquals(1));
+        Assert.assertFalse(vehicle.isEquals(Day.TUESDAY));
     }
 
     @Test
@@ -49,7 +49,7 @@ public class VehicleTest {
 
     @Test
     public void shouldReturnFalseWhenCalledIsMovingInGivenHour() {
-        Assert.assertTrue(vehicle.isMoving(4));
+        Assert.assertFalse(vehicle.isMoving(4));
     }
 
     @Test
@@ -59,7 +59,7 @@ public class VehicleTest {
 
     @Test
     public void shouldReturnFalseWhenCalledIsMovingInGivenHourAndMinutes() {
-        Assert.assertTrue(vehicle.isMoving(4, 0));
+        Assert.assertFalse(vehicle.isMoving(4, 0));
     }
 
     @Test
@@ -69,24 +69,24 @@ public class VehicleTest {
 
     @Test
     public void shouldReturnFalseWhenCalledIsSpeedInBetweenForGivenSpeed() {
-        Assert.assertTrue(vehicle.isSpeedInBetween(5.0f, 10.0f));
+        Assert.assertFalse(vehicle.isSpeedInBetween(5.0f, 10.0f));
     }
 
     @Test
     public void shouldReturnInterVehicularDistanceWithGivenVehicle() {
-        Vehicle toVehicle = new Vehicle(Direction.SOUTH, 18106091, 10.00, 0);
+        Vehicle toVehicle = new Vehicle(Direction.SOUTH, 18106091, 10.00, Day.MONDAY);
         Assert.assertEquals(0.5, vehicle.getInterVehicularDistance(toVehicle), 0.0);
     }
 
     @Test
     public void shouldReturnInterVehicularDistanceViceVersa() {
-        Vehicle toVehicle = new Vehicle(Direction.SOUTH, 18106091, 10.00, 0);
+        Vehicle toVehicle = new Vehicle(Direction.SOUTH, 18106091, 10.00, Day.MONDAY);
         Assert.assertEquals(0.5, toVehicle.getInterVehicularDistance(vehicle), 0.0);
     }
 
     @Test
     public void shouldReturnHighSpeedAmongVehicles() {
-        Vehicle toVehicle = new Vehicle(Direction.SOUTH, 18106091, 10.00, 0);
+        Vehicle toVehicle = new Vehicle(Direction.SOUTH, 18106091, 10.00, Day.MONDAY);
         Assert.assertEquals(10.0, vehicle.getHighestSpeedAmong(toVehicle), 0.0);
     }
 }

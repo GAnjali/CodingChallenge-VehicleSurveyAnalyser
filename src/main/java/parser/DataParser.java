@@ -3,6 +3,7 @@ package parser;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
 import helper.DataParserUtil;
+import model.Day;
 import model.Direction;
 import model.Vehicle;
 
@@ -21,7 +22,7 @@ public class DataParser {
     }
 
     public List<Vehicle> parse(List<String> records) throws InvalidDataException, InvalidTimeException {
-        int day = 0;
+        Day day = Day.MONDAY;
         String previousRecord = null;
         for (int recordIndex = 0; recordIndex < records.size() - 1; recordIndex++) {
             String currentRecord = records.get(recordIndex);
@@ -38,8 +39,10 @@ public class DataParser {
         return record1.startsWith(SENSOR1_NAME) & record2.startsWith(SENSOR1_NAME) ? Direction.NORTH : Direction.SOUTH;
     }
 
-    private int calculateDay(String previousRecord, String currentRecord, int day) throws InvalidTimeException {
-        if (isNextDay(previousRecord, currentRecord)) day++;
+    private Day calculateDay(String previousRecord, String currentRecord, Day day) throws InvalidTimeException {
+        if (isNextDay(previousRecord, currentRecord)) {
+            day = Day.valueOfLabel(day.label + 1);
+        }
         return day;
     }
 
@@ -47,7 +50,7 @@ public class DataParser {
         return dataParserUtil.getExtractedTime(currentRecord) < dataParserUtil.getExtractedTime(previousRecord);
     }
 
-    private void addVehicle(List<String> records, int recordIndex, List<Vehicle> vehicles, int day, Direction direction) throws InvalidDataException, InvalidTimeException {
+    private void addVehicle(List<String> records, int recordIndex, List<Vehicle> vehicles, Day day, Direction direction) throws InvalidDataException, InvalidTimeException {
         if (!isValidRecords(records, recordIndex, direction)) {
             throw new InvalidDataException(records.get(recordIndex));
         }

@@ -1,5 +1,6 @@
 package helper;
 
+import model.Day;
 import model.Direction;
 import model.Vehicle;
 import model.TimePeriod;
@@ -10,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class DayWiseReportGeneratorUtil {
-    public List<Vehicle> getVehiclesByDay(long day, List<Vehicle> vehicles) {
+    public List<Vehicle> getVehiclesByDay(Day day, List<Vehicle> vehicles) {
         return vehicles.stream().filter(vehicle -> vehicle.isEquals(day)).collect(Collectors.toList());
     }
 
