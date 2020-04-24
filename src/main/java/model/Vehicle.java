@@ -1,9 +1,11 @@
 package model;
 
-import helper.TimeUtil;
+import java.util.concurrent.TimeUnit;
+
+import static helper.VehicleSurveyAnalyserConstants.TOTAL_HOURS_PER_DAY;
+import static helper.VehicleSurveyAnalyserConstants.TOTAL_MINUTES_PER_HOUR;
 
 public class Vehicle {
-    TimeUtil timeUtil;
     private int passingTimeInMilliSeconds;
     private Direction direction;
     private Double speed;
@@ -14,7 +16,6 @@ public class Vehicle {
         this.speed = speed;
         this.direction = direction;
         this.day = day;
-        timeUtil = new TimeUtil();
     }
 
     public boolean isEquals(Direction direction) {
@@ -36,16 +37,24 @@ public class Vehicle {
     }
 
     private long getVehiclePassingHourInDay() {
-        return timeUtil.getHoursByDay(this.passingTimeInMilliSeconds);
+        return getHoursByDay(this.passingTimeInMilliSeconds);
+    }
+
+    private long getHoursByDay(int passingTimeInMilliSeconds) {
+        return TimeUnit.MILLISECONDS.toHours(passingTimeInMilliSeconds) % TOTAL_HOURS_PER_DAY;
     }
 
     public boolean isMoving(int hour) {
-        return timeUtil.getHoursByDay(this.passingTimeInMilliSeconds) == hour;
+        return getHoursByDay(this.passingTimeInMilliSeconds) == hour;
     }
 
     public boolean isMoving(int fromMinutes, int toMinutes) {
-        long minutes = (timeUtil.getHoursByDay(this.passingTimeInMilliSeconds) * 60) + timeUtil.getMinutesByHour(this.passingTimeInMilliSeconds);
+        long minutes = (getHoursByDay(this.passingTimeInMilliSeconds) * 60) + getMinutesByHour(this.passingTimeInMilliSeconds);
         return minutes < toMinutes && minutes >= fromMinutes;
+    }
+
+    private long getMinutesByHour(int passingTimeInMilliSeconds) {
+        return TimeUnit.MILLISECONDS.toMinutes(passingTimeInMilliSeconds) % TOTAL_MINUTES_PER_HOUR;
     }
 
     public boolean isSpeedInBetween(float fromSpeed, float toSpeed) {
