@@ -1,10 +1,10 @@
 import IO.DataLoader;
-import parser.DataParser;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
 import exceptions.NoSuchFileFoundException;
 import exceptions.UnableToCreateFileException;
 import model.Vehicle;
+import parser.TollCounter;
 import reportGenerator.ReportGenerator;
 import reportGenerator.daywise.InterVehicularDistanceReportGenerator;
 import reportGenerator.daywise.PeakVolumeTimesReportGenerator;
@@ -26,8 +26,8 @@ public class VehicleSurveyAnalyser {
     }
 
     private static void generateReports() throws InvalidDataException, InvalidTimeException, FileNotFoundException, UnableToCreateFileException {
-        DataParser dataParser = new DataParser();
-        List<Vehicle> vehicles = dataParser.parse(records);
+        TollCounter tollCounter = new TollCounter();
+        List<Vehicle> vehicles = tollCounter.interpret(records);
         ReportGenerator[] reportGenerator = {new VehicleCountReportGenerator(), new PeakVolumeTimesReportGenerator(), new SpeedDistributionReportGenerator(), new InterVehicularDistanceReportGenerator()};
         for (ReportGenerator generator : reportGenerator) {
             generator.generate(vehicles);

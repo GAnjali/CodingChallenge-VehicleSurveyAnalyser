@@ -2,7 +2,6 @@ package parser;
 
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
-import helper.DataParserUtil;
 import model.Day;
 import model.Direction;
 import model.Sensor;
@@ -11,16 +10,19 @@ import model.Vehicle;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataParser {
-    private List<Vehicle> vehicles;
-    private DataParserUtil dataParserUtil;
+import static helper.VehicleSurveyAnalyserConstants.AVERAGE_WHEEL_BASE;
 
-    public DataParser() {
-        vehicles = new ArrayList<>();
-        dataParserUtil = new DataParserUtil();
+public class TollCounter {
+    private Sensor firstSensor;
+    private Sensor secondSensor;
+
+    public TollCounter() {
+        firstSensor = new Sensor("A");
+        secondSensor = new Sensor("B");
     }
 
-    public List<Vehicle> parse(List<String> records) throws InvalidDataException, InvalidTimeException {
+    public List<Vehicle> interpret(List<String> records) throws InvalidTimeException, InvalidDataException {
+        List<Vehicle> vehicles = new ArrayList<>();
         Day day = Day.MONDAY;
         String previousRecord = null;
         for (int recordIndex = 0; recordIndex < records.size() - 1; recordIndex++) {
@@ -35,7 +37,11 @@ public class DataParser {
     }
 
     private Direction calculateDirection(String record1, String record2) {
-        return record1.startsWith(String.valueOf(Sensor.A)) & record2.startsWith(String.valueOf(Sensor.A)) ? Direction.NORTH : Direction.SOUTH;
+        return firstSensor.isEqual(getSensorLabel(record1)) & firstSensor.isEqual(getSensorLabel(record2)) ? Direction.NORTH : Direction.SOUTH;
+    }
+
+    private String getSensorLabel(String record1) {
+        return String.valueOf(record1.charAt(0));
     }
 
     private Day calculateDay(String previousRecord, String currentRecord, Day day) throws InvalidTimeException {
@@ -46,25 +52,24 @@ public class DataParser {
     }
 
     private boolean isNextDay(String previousRecord, String currentRecord) throws InvalidTimeException {
-        return dataParserUtil.getExtractedTime(currentRecord) < dataParserUtil.getExtractedTime(previousRecord);
+        return getExtractedTime(currentRecord) < getExtractedTime(previousRecord);
     }
 
     private void addVehicle(List<String> records, int recordIndex, List<Vehicle> vehicles, Day day, Direction direction) throws InvalidDataException, InvalidTimeException {
         if (!isValidRecords(records, recordIndex, direction)) {
             throw new InvalidDataException(records.get(recordIndex));
         }
-        int frontAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex));
+        int frontAxleTime = getExtractedTime(records.get(recordIndex));
         double speedOfVehicle = calculateSpeed(records, recordIndex, direction);
         vehicles.add(new Vehicle(direction, frontAxleTime, speedOfVehicle, day));
     }
 
     private Double calculateSpeed(List<String> records, int recordIndex, Direction direction) throws InvalidTimeException {
-        int frontAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex));
+        int frontAxleTime = getExtractedTime(records.get(recordIndex));
         int rearAxleTime;
-        if (direction.equals(Direction.NORTH))
-            rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 1));
-        else rearAxleTime = dataParserUtil.getExtractedTime(records.get(recordIndex + 2));
-        return dataParserUtil.calculateSpeed(rearAxleTime - frontAxleTime);
+        if (direction.equals(Direction.NORTH)) rearAxleTime = getExtractedTime(records.get(recordIndex + 1));
+        else rearAxleTime = getExtractedTime(records.get(recordIndex + 2));
+        return calculateSpeed(rearAxleTime - frontAxleTime);
     }
 
     private boolean isValidRecords(List<String> records, int recordIndex, Direction direction) {
@@ -73,14 +78,28 @@ public class DataParser {
             String frontAxleSensor2Record = records.get(recordIndex + 1);
             String rearAxleSensor1Record = records.get(recordIndex + 2);
             String rearAxleSensor2Record = records.get(recordIndex + 3);
-            return frontAxleSensor1Record.startsWith(String.valueOf(Sensor.A)) && frontAxleSensor2Record.startsWith(String.valueOf(Sensor.B)) && rearAxleSensor1Record.startsWith(String.valueOf(Sensor.A)) && rearAxleSensor2Record.startsWith(String.valueOf(Sensor.B));
+            return firstSensor.isEqual(getSensorLabel(frontAxleSensor1Record)) && secondSensor.isEqual(getSensorLabel(frontAxleSensor2Record)) && firstSensor.isEqual(getSensorLabel(rearAxleSensor1Record)) && secondSensor.isEqual(getSensorLabel(rearAxleSensor2Record));
         }
         String frontAxleSensor1Record = records.get(recordIndex);
         String rearAxleSensor1Record = records.get(recordIndex + 1);
-        return frontAxleSensor1Record.startsWith(String.valueOf(Sensor.A)) && rearAxleSensor1Record.startsWith(String.valueOf(Sensor.A));
+        return firstSensor.isEqual(getSensorLabel(frontAxleSensor1Record)) && firstSensor.isEqual(getSensorLabel(rearAxleSensor1Record));
     }
 
     private int getNextRecordIndex(int currentRecordIndex, Direction directionOfVehicle) {
         return directionOfVehicle.equals(Direction.NORTH) ? currentRecordIndex + 1 : currentRecordIndex + 3;
+    }
+
+    private Double calculateSpeed(int timeInMilliSeconds) {
+        double speed = (Double.parseDouble(AVERAGE_WHEEL_BASE) / timeInMilliSeconds) * 1000;
+        return Double.parseDouble(String.format("%.02f", speed));
+    }
+
+    private int getExtractedTime(String record) throws InvalidTimeException {
+        try {
+            if (record == null) return 0;
+            return Integer.parseInt(record.substring(1));
+        } catch (Exception exception) {
+            throw new InvalidTimeException(exception);
+        }
     }
 }
