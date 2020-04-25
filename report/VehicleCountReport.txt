@@ -1,6 +1,6 @@
 ***************Vehicle Count Report***************
 	Report on Day - MONDAY
-	Total vehicle count on TUESDAY = 4414
+	Total vehicle count on MONDAY = 4414
 		 MORNING
 		  From 00:00:00 to 12:00:00
 			Total vehicle count: 2002
@@ -976,7 +976,7 @@
 			total vehicle count moving in North direction: 8
 			total vehicle count moving in South direction: 10
 	Report on Day - TUESDAY
-	Total vehicle count on WEDNESDAY = 4527
+	Total vehicle count on TUESDAY = 4527
 		 MORNING
 		  From 00:00:00 to 12:00:00
 			Total vehicle count: 2112
@@ -1952,7 +1952,7 @@
 			total vehicle count moving in North direction: 12
 			total vehicle count moving in South direction: 6
 	Report on Day - WEDNESDAY
-	Total vehicle count on THURSDAY = 4436
+	Total vehicle count on WEDNESDAY = 4436
 		 MORNING
 		  From 00:00:00 to 12:00:00
 			Total vehicle count: 2045
@@ -2928,7 +2928,7 @@
 			total vehicle count moving in North direction: 13
 			total vehicle count moving in South direction: 11
 	Report on Day - THURSDAY
-	Total vehicle count on FRIDAY = 4516
+	Total vehicle count on THURSDAY = 4516
 		 MORNING
 		  From 00:00:00 to 12:00:00
 			Total vehicle count: 2103
@@ -3904,7 +3904,7 @@
 			total vehicle count moving in North direction: 17
 			total vehicle count moving in South direction: 17
 	Report on Day - FRIDAY
-	Total vehicle count on SATURDAY = 4479
+	Total vehicle count on FRIDAY = 4479
 		 MORNING
 		  From 00:00:00 to 12:00:00
 			Total vehicle count: 2046
