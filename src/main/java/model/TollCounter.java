@@ -25,7 +25,7 @@ public class TollCounter {
         String previousRecord = null;
         for (int recordIndex = 0; recordIndex < records.size() - 1; recordIndex++) {
             String currentRecord = records.get(recordIndex);
-            Direction directionOfVehicle = calculateDirection(records.get(recordIndex), records.get(recordIndex + 1));
+            Direction directionOfVehicle = extractDirection(records.get(recordIndex), records.get(recordIndex + 1));
             day = calculateDay(previousRecord, currentRecord, day);
             addVehicle(records, recordIndex, vehicles, day, directionOfVehicle);
             previousRecord = currentRecord;
@@ -34,7 +34,7 @@ public class TollCounter {
         return vehicles;
     }
 
-    private Direction calculateDirection(String previousRecord, String currentRecord) {
+    private Direction extractDirection(String previousRecord, String currentRecord) {
         return sensorA.isEqual(getSensorLabel(previousRecord)) & sensorA.isEqual(getSensorLabel(currentRecord)) ? Direction.NORTH : Direction.SOUTH;
     }
 
@@ -58,11 +58,11 @@ public class TollCounter {
             throw new InvalidDataException(records.get(recordIndex));
         }
         int frontAxleTime = getExtractedTime(records.get(recordIndex));
-        double speedOfVehicle = calculateSpeed(records, recordIndex, direction);
+        double speedOfVehicle = extractSpeed(records, recordIndex, direction);
         vehicles.add(new Vehicle(direction, frontAxleTime, speedOfVehicle, day));
     }
 
-    private Double calculateSpeed(List<String> records, int recordIndex, Direction direction) throws InvalidTimeException {
+    private Double extractSpeed(List<String> records, int recordIndex, Direction direction) throws InvalidTimeException {
         int frontAxleTime = getExtractedTime(records.get(recordIndex));
         int rearAxleTime;
         if (direction.equals(Direction.NORTH)) rearAxleTime = getExtractedTime(records.get(recordIndex + 1));

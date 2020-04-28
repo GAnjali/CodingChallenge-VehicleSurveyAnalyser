@@ -36,7 +36,6 @@ public class VehicleSurveyAnalyser {
         }
     }
 
-
     private static void initialize() throws IOException, NoSuchFileFoundException {
         DataLoader dataLoader = new DataLoader(DATA_FILE);
         records = dataLoader.loadData();
