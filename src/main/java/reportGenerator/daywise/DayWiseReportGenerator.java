@@ -43,7 +43,7 @@ public abstract class DayWiseReportGenerator implements ReportGenerator {
         }
     }
 
-    private void reportByTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {
+    void reportByTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {
         printStream.print(String.format(TIME_PERIOD_MESSAGE_TEMPLATE, timePeriod));
         if (timePeriod.equals(TimePeriod.MORNING) || timePeriod.equals(TimePeriod.EVENING))
             reportForMorningOrEvening(util.getVehiclesByTimePeriod(vehicles, timePeriod), timePeriod);

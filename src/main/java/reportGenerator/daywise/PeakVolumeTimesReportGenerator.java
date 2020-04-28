@@ -25,6 +25,13 @@ public class PeakVolumeTimesReportGenerator extends DayWiseReportGenerator {
     }
 
     @Override
+    public void reportByTimePeriod(List<Vehicle> vehicles, TimePeriod timePeriod) {
+        if (timePeriod.equals(TimePeriod.MORNING) || timePeriod.equals(TimePeriod.EVENING))
+            reportForMorningOrEvening(util.getVehiclesByTimePeriod(vehicles, timePeriod), timePeriod);
+        else reportByPartsOfTimePeriod(vehicles, timePeriod);
+    }
+
+    @Override
     public void reportForMorningOrEvening(List<Vehicle> vehicles, TimePeriod timePeriod) {
         if (timePeriod.equals(TimePeriod.MORNING)) {
             printStream.print(MORNING_VS_EVENING_MESSAGE_TEMPLATE);

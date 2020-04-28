@@ -1,159 +1,129 @@
 ***************Peak Volume Times Report***************
 	Report on Day - MONDAY
-		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00
 			Total vehicles in Peak volume time: 2002
 			total vehicles in peak volume time moving in North direction: 823
 			total vehicles in peak volume time moving in South direction: 1179
-		 EVENING
-		 PER_HOUR
 		 PER_HOUR
 		  From 08:00:00 to 09:00:00
 			Total vehicles in Peak volume time: 638
 			total vehicles in peak volume time moving in North direction: 184
 			total vehicles in peak volume time moving in South direction: 454
 		 PER_HALF_AN_HOUR
-		 PER_HALF_AN_HOUR
 		  From 09:00:00 to 09:30:00
 			Total vehicles in Peak volume time: 410
 			total vehicles in peak volume time moving in North direction: 90
 			total vehicles in peak volume time moving in South direction: 320
 		 PER_20_MINUTES
-		 PER_20_MINUTES
 		  From 09:00:00 to 09:20:00
 			Total vehicles in Peak volume time: 410
 			total vehicles in peak volume time moving in North direction: 90
 			total vehicles in peak volume time moving in South direction: 320
-		 PER_15_MINUTES
 		 PER_15_MINUTES
 		  From 09:00:00 to 09:15:00
 			Total vehicles in Peak volume time: 410
 			total vehicles in peak volume time moving in North direction: 90
 			total vehicles in peak volume time moving in South direction: 320
 	Report on Day - TUESDAY
-		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00
 			Total vehicles in Peak volume time: 2112
 			total vehicles in peak volume time moving in North direction: 830
 			total vehicles in peak volume time moving in South direction: 1282
-		 EVENING
-		 PER_HOUR
 		 PER_HOUR
 		  From 08:00:00 to 09:00:00
 			Total vehicles in Peak volume time: 665
 			total vehicles in peak volume time moving in North direction: 196
 			total vehicles in peak volume time moving in South direction: 469
 		 PER_HALF_AN_HOUR
-		 PER_HALF_AN_HOUR
 		  From 09:00:00 to 09:30:00
 			Total vehicles in Peak volume time: 435
 			total vehicles in peak volume time moving in North direction: 93
 			total vehicles in peak volume time moving in South direction: 342
 		 PER_20_MINUTES
-		 PER_20_MINUTES
 		  From 09:00:00 to 09:20:00
 			Total vehicles in Peak volume time: 435
 			total vehicles in peak volume time moving in North direction: 93
 			total vehicles in peak volume time moving in South direction: 342
-		 PER_15_MINUTES
 		 PER_15_MINUTES
 		  From 09:00:00 to 09:15:00
 			Total vehicles in Peak volume time: 435
 			total vehicles in peak volume time moving in North direction: 93
 			total vehicles in peak volume time moving in South direction: 342
 	Report on Day - WEDNESDAY
-		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00
 			Total vehicles in Peak volume time: 2045
 			total vehicles in peak volume time moving in North direction: 827
 			total vehicles in peak volume time moving in South direction: 1218
-		 EVENING
-		 PER_HOUR
 		 PER_HOUR
 		  From 08:00:00 to 09:00:00
 			Total vehicles in Peak volume time: 600
 			total vehicles in peak volume time moving in North direction: 178
 			total vehicles in peak volume time moving in South direction: 422
 		 PER_HALF_AN_HOUR
-		 PER_HALF_AN_HOUR
 		  From 09:00:00 to 09:30:00
 			Total vehicles in Peak volume time: 405
 			total vehicles in peak volume time moving in North direction: 91
 			total vehicles in peak volume time moving in South direction: 314
 		 PER_20_MINUTES
-		 PER_20_MINUTES
 		  From 09:00:00 to 09:20:00
 			Total vehicles in Peak volume time: 405
 			total vehicles in peak volume time moving in North direction: 91
 			total vehicles in peak volume time moving in South direction: 314
-		 PER_15_MINUTES
 		 PER_15_MINUTES
 		  From 09:00:00 to 09:15:00
 			Total vehicles in Peak volume time: 405
 			total vehicles in peak volume time moving in North direction: 91
 			total vehicles in peak volume time moving in South direction: 314
 	Report on Day - THURSDAY
-		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00
 			Total vehicles in Peak volume time: 2103
 			total vehicles in peak volume time moving in North direction: 855
 			total vehicles in peak volume time moving in South direction: 1248
-		 EVENING
-		 PER_HOUR
 		 PER_HOUR
 		  From 08:00:00 to 09:00:00
 			Total vehicles in Peak volume time: 686
 			total vehicles in peak volume time moving in North direction: 208
 			total vehicles in peak volume time moving in South direction: 478
 		 PER_HALF_AN_HOUR
-		 PER_HALF_AN_HOUR
 		  From 09:00:00 to 09:30:00
 			Total vehicles in Peak volume time: 457
 			total vehicles in peak volume time moving in North direction: 105
 			total vehicles in peak volume time moving in South direction: 352
 		 PER_20_MINUTES
-		 PER_20_MINUTES
 		  From 09:00:00 to 09:20:00
 			Total vehicles in Peak volume time: 457
 			total vehicles in peak volume time moving in North direction: 105
 			total vehicles in peak volume time moving in South direction: 352
-		 PER_15_MINUTES
 		 PER_15_MINUTES
 		  From 09:00:00 to 09:15:00
 			Total vehicles in Peak volume time: 457
 			total vehicles in peak volume time moving in North direction: 105
 			total vehicles in peak volume time moving in South direction: 352
 	Report on Day - FRIDAY
-		 MORNING
 		Morning Vs Evening:
 		  From 00:00:00 to 12:00:00
 			Total vehicles in Peak volume time: 2046
 			total vehicles in peak volume time moving in North direction: 831
 			total vehicles in peak volume time moving in South direction: 1215
-		 EVENING
-		 PER_HOUR
 		 PER_HOUR
 		  From 08:00:00 to 09:00:00
 			Total vehicles in Peak volume time: 649
 			total vehicles in peak volume time moving in North direction: 229
 			total vehicles in peak volume time moving in South direction: 420
 		 PER_HALF_AN_HOUR
-		 PER_HALF_AN_HOUR
 		  From 09:00:00 to 09:30:00
 			Total vehicles in Peak volume time: 425
 			total vehicles in peak volume time moving in North direction: 119
 			total vehicles in peak volume time moving in South direction: 306
 		 PER_20_MINUTES
-		 PER_20_MINUTES
 		  From 09:00:00 to 09:20:00
 			Total vehicles in Peak volume time: 425
 			total vehicles in peak volume time moving in North direction: 119
 			total vehicles in peak volume time moving in South direction: 306
-		 PER_15_MINUTES
 		 PER_15_MINUTES
 		  From 09:00:00 to 09:15:00
 			Total vehicles in Peak volume time: 425
