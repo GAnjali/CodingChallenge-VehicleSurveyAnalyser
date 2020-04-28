@@ -1,36 +1,22 @@
 package model;
 
-import IO.DataLoader;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
-import exceptions.NoSuchFileFoundException;
-import model.Day;
-import model.Direction;
-import model.Sensor;
-import model.Vehicle;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import static helper.VehicleSurveyAnalyserConstants.AVERAGE_WHEEL_BASE;
-import static helper.VehicleSurveyAnalyserConstants.DATA_FILE;
 
 public class TollCounter {
-    private Sensor firstSensor;
-    private Sensor secondSensor;
+    private Sensor sensorA;
+    private Sensor sensorB;
     private List<String> records;
 
-    public TollCounter() throws IOException, NoSuchFileFoundException {
-        firstSensor = new Sensor("A");
-        secondSensor = new Sensor("B");
-        records = loadInitialRecords();
-    }
-
-
-    private List<String> loadInitialRecords() throws IOException, NoSuchFileFoundException {
-        DataLoader dataLoader = new DataLoader(DATA_FILE);
-        return dataLoader.loadData();
+    public TollCounter(Sensor sensorA, Sensor sensorB, List<String> records) {
+        this.sensorA = sensorA;
+        this.sensorB = sensorB;
+        this.records = records;
     }
 
     public List<Vehicle> getVehicles() throws InvalidTimeException, InvalidDataException {
@@ -48,12 +34,12 @@ public class TollCounter {
         return vehicles;
     }
 
-    private Direction calculateDirection(String record1, String record2) {
-        return firstSensor.isEqual(getSensorLabel(record1)) & firstSensor.isEqual(getSensorLabel(record2)) ? Direction.NORTH : Direction.SOUTH;
+    private Direction calculateDirection(String previousRecord, String currentRecord) {
+        return sensorA.isEqual(getSensorLabel(previousRecord)) & sensorA.isEqual(getSensorLabel(currentRecord)) ? Direction.NORTH : Direction.SOUTH;
     }
 
-    private String getSensorLabel(String record1) {
-        return String.valueOf(record1.charAt(0));
+    private String getSensorLabel(String record) {
+        return String.valueOf(record.charAt(0));
     }
 
     private Day calculateDay(String previousRecord, String currentRecord, Day day) throws InvalidTimeException {
@@ -90,11 +76,11 @@ public class TollCounter {
             String frontAxleSensor2Record = records.get(recordIndex + 1);
             String rearAxleSensor1Record = records.get(recordIndex + 2);
             String rearAxleSensor2Record = records.get(recordIndex + 3);
-            return firstSensor.isEqual(getSensorLabel(frontAxleSensor1Record)) && secondSensor.isEqual(getSensorLabel(frontAxleSensor2Record)) && firstSensor.isEqual(getSensorLabel(rearAxleSensor1Record)) && secondSensor.isEqual(getSensorLabel(rearAxleSensor2Record));
+            return sensorA.isEqual(getSensorLabel(frontAxleSensor1Record)) && sensorB.isEqual(getSensorLabel(frontAxleSensor2Record)) && sensorA.isEqual(getSensorLabel(rearAxleSensor1Record)) && sensorB.isEqual(getSensorLabel(rearAxleSensor2Record));
         }
         String frontAxleSensor1Record = records.get(recordIndex);
         String rearAxleSensor1Record = records.get(recordIndex + 1);
-        return firstSensor.isEqual(getSensorLabel(frontAxleSensor1Record)) && firstSensor.isEqual(getSensorLabel(rearAxleSensor1Record));
+        return sensorA.isEqual(getSensorLabel(frontAxleSensor1Record)) && sensorA.isEqual(getSensorLabel(rearAxleSensor1Record));
     }
 
     private int getNextRecordIndex(int currentRecordIndex, Direction directionOfVehicle) {

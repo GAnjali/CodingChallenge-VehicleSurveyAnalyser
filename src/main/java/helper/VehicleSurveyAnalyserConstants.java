@@ -4,6 +4,9 @@ public class VehicleSurveyAnalyserConstants {
     //PATH
     public static final String DATA_FILE = System.getProperty("user.dir") + "/src/main/resources/Vehicle Survey Coding Challenge sample data.txt";
     public static final String REPORT_FOLDER = System.getProperty("user.dir") + "/report";
+    //SENSORS
+    public static final String SENSOR_A_LABEL = "A";
+    public static final String SENSOR_B_LABEL = "B";
     //CONSTANT (MAGIC NUMBERS)
     public static final String AVERAGE_WHEEL_BASE = "2.5f";
     public static final int TOTAL_HOURS_PER_DAY = 24;
