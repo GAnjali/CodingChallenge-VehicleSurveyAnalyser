@@ -1,27 +1,39 @@
-package parser;
+package model;
 
+import IO.DataLoader;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
+import exceptions.NoSuchFileFoundException;
 import model.Day;
 import model.Direction;
 import model.Sensor;
 import model.Vehicle;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import static helper.VehicleSurveyAnalyserConstants.AVERAGE_WHEEL_BASE;
+import static helper.VehicleSurveyAnalyserConstants.DATA_FILE;
 
 public class TollCounter {
     private Sensor firstSensor;
     private Sensor secondSensor;
+    private List<String> records;
 
-    public TollCounter() {
+    public TollCounter() throws IOException, NoSuchFileFoundException {
         firstSensor = new Sensor("A");
         secondSensor = new Sensor("B");
+        records = loadInitialRecords();
     }
 
-    public List<Vehicle> interpret(List<String> records) throws InvalidTimeException, InvalidDataException {
+
+    private List<String> loadInitialRecords() throws IOException, NoSuchFileFoundException {
+        DataLoader dataLoader = new DataLoader(DATA_FILE);
+        return dataLoader.loadData();
+    }
+
+    public List<Vehicle> getVehicles() throws InvalidTimeException, InvalidDataException {
         List<Vehicle> vehicles = new ArrayList<>();
         Day day = Day.MONDAY;
         String previousRecord = null;

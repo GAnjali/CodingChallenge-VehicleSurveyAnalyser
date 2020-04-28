@@ -1,41 +1,29 @@
-import IO.DataLoader;
 import exceptions.InvalidDataException;
 import exceptions.InvalidTimeException;
 import exceptions.NoSuchFileFoundException;
 import exceptions.UnableToCreateFileException;
 import model.Vehicle;
-import parser.TollCounter;
+import model.TollCounter;
 import reportGenerator.ReportGenerator;
 import reportGenerator.daywise.InterVehicularDistanceReportGenerator;
 import reportGenerator.daywise.PeakVolumeTimesReportGenerator;
 import reportGenerator.daywise.VehicleCountReportGenerator;
 import reportGenerator.distribution.SpeedDistributionReportGenerator;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.List;
 
-import static helper.VehicleSurveyAnalyserConstants.DATA_FILE;
-
 public class VehicleSurveyAnalyser {
-    private static List<String> records;
-
     public static void main(String[] args) throws IOException, NoSuchFileFoundException, InvalidDataException, InvalidTimeException, UnableToCreateFileException {
-        initialize();
-        generateReports();
+        TollCounter tollCounter = new TollCounter();
+        List<Vehicle> vehicles = tollCounter.getVehicles();
+        generateReports(vehicles);
     }
 
-    private static void generateReports() throws InvalidDataException, InvalidTimeException, FileNotFoundException, UnableToCreateFileException {
-        TollCounter tollCounter = new TollCounter();
-        List<Vehicle> vehicles = tollCounter.interpret(records);
+    private static void generateReports(List<Vehicle> vehicles) throws IOException, UnableToCreateFileException {
         ReportGenerator[] reportGenerator = {new VehicleCountReportGenerator(), new PeakVolumeTimesReportGenerator(), new SpeedDistributionReportGenerator(), new InterVehicularDistanceReportGenerator()};
         for (ReportGenerator generator : reportGenerator) {
             generator.generate(vehicles);
         }
-    }
-
-    private static void initialize() throws IOException, NoSuchFileFoundException {
-        DataLoader dataLoader = new DataLoader(DATA_FILE);
-        records = dataLoader.loadData();
     }
 }
